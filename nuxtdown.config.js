@@ -12,7 +12,7 @@ module.exports = {
     [
       "pages",
       {
-        page: "pages/page/_page",
+        page: "/page/_page",
         permalink: "/:slug",
         isPost: false
       }
