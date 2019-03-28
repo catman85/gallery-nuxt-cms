@@ -25,3 +25,10 @@ See [starter template documentation in the README on GitHub](https://github.com/
 ## Edit content
 
 Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
+
+
+### Ignore Folders:
+(They are auto generated)
+- node_modules/
+- dist/
+- .nuxt/

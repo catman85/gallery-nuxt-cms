@@ -8,6 +8,9 @@
         <li>
           <nuxt-link :to="'/page-2'">Page 2</nuxt-link>
         </li>
+        <li>
+          <nuxt-link :to="'/about'">About</nuxt-link>
+        </li>
       </ul>
     </nav>
     <nuxt/>
