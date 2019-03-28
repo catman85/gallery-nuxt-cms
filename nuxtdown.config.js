@@ -8,14 +8,14 @@ module.exports = {
       browserBaseURL
     };
   },
-  content: //[
-    // [
-      // "pages",
+  content: [
+    [
+      "pages",
       {
         page: "pages/page/_page",
         permalink: "/:slug",
         isPost: false
       }
-    // ]
-  // ]
+    ]
+  ]
 };
