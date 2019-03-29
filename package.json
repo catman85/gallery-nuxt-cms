@@ -10,7 +10,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "generate:manual": "cross-env BASE_URL=https://myproductiondomain.tld nuxt generate",
+    "generate:manual": "cross-env BASE_URL=https://epic-bhaskara-02f420.netlify.com nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
