@@ -1,21 +1,22 @@
 <template>
   <div>
-    <nav>
-      <ul>
-        <li>
-          <nuxt-link :to="'/page-1'">Page 1</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link :to="'/page-2'">Page 2</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link :to="'/about'">About</nuxt-link>
-        </li>
-      </ul>
-    </nav>
+    <MyHeader/>
     <nuxt/>
+    <MyFooter/>
   </div>
 </template>
+
+<script>
+import MyHeader from "@/components/MyHeader";
+import MyFooter from "@/components/MyFooter";
+export default {
+  components: {
+    MyHeader,
+    MyFooter
+  }
+}
+</script>
+
 
 <style>
 html {
