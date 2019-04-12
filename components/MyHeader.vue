@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h2>anthia</h2>
+    <h2>anthia art</h2>
         <nav>
       <ul>
         <li>
