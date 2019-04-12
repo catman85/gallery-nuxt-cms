@@ -1,6 +1,3 @@
-
-This is another example page.
-
 ## Aliqua proident occaecat sint culpa nisi consequat
 
 Consequat nostrud do commodo quis enim duis aliquip. Nulla pariatur deserunt cillum ullamco aliquip quis proident ullamco laborum dolor deserunt id in deserunt. Occaecat excepteur dolore non est. Consectetur Lorem velit aute quis enim occaecat incididunt incididunt laboris. Est proident eiusmod veniam ullamco pariatur pariatur. Velit consequat enim ut do deserunt exercitation quis qui nulla ullamco consectetur incididunt voluptate consectetur.

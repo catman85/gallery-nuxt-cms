@@ -1,5 +1,5 @@
 <template>
-<div>
+    <header>
     <h2>anthia art</h2>
         <nav>
       <ul>
@@ -13,7 +13,8 @@
           <nuxt-link :to="'/about'">About</nuxt-link>
         </li>
       </ul>
-    </nav></div>
+    </nav>
+    </header>
 </template>
 
 <script>
