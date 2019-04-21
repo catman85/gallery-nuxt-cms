@@ -3,19 +3,20 @@
     <h2>WelcomeF</h2>
     <h2>All Posts</h2>
     <br>
-    <div v-for="content in contentPreview" :key="content.title">
+    <div v-for="page in pages" :key="page.title">
       <!-- <div @click="show" >{{content.body}}</div> -->
       <h3>Title:</h3>
-      <nuxtdown-body class="body" :body="content.title" />
+      <nuxtdown-body class="body" :body="page.title" />
       <h3>Body:</h3>
-      <nuxtdown-body class="body" :body="content.body" />
+      <nuxtdown-body class="body" :body="page.body" />
       <br>
     </div>
     <!-- {{contentPreview}} -->
     
     <!-- TODO: 
     mint_setup vue_nuxt_nuxtdown nuxtent
-    meta_content header footer mansory_layout slideshow filters iterate_markdown style_markdown_content bulma google_fonts
+    meta_content header footer mansory_layout slideshow filters iterate_markdown 
+    style_markdown_content bulma google_fonts
     img_descriptions git_lfs form search translate_btn
     deploy_minifications compress_images font-awesome vuetify
     analytics
@@ -41,7 +42,7 @@
       payload
     }) => {
       return {
-        contentPreview: await app.$content('/pages')
+        pages: await app.$content('/pages')
           .query({
             // exclude: ['attributes', 'body']
           })

@@ -1,6 +1,8 @@
 <template>
   <div>
+    <div class="images">
     <nuxtdown-body class="body" :body="page.body" />
+    </div>
   </div>
 </template>
 
@@ -28,3 +30,10 @@
   };
 
 </script>
+
+<style scoped>
+  .images{
+    max-width: 1em;
+  }
+</style>
+

@@ -2,6 +2,8 @@
 
 > Nuxt.js + Netlify CMS project
 
+Visit: https://epic-bhaskara-02f420.netlify.com/
+
 ## Build Setup
 
 ``` bash

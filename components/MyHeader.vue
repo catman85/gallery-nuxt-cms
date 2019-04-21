@@ -4,6 +4,9 @@
         <nav>
       <ul>
         <li>
+          <nuxt-link :to="'/'">Home</nuxt-link>
+        </li>
+        <li>
           <nuxt-link :to="'/page-1'">Page 1</nuxt-link>
         </li>
         <li>
