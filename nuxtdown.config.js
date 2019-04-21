@@ -16,6 +16,14 @@ module.exports = {
         permalink: "/:slug",
         isPost: false
       }
-    ]
+    ],
+    // [ // FIXME: I don't know what I am doing
+    //   "categories",
+    //   {
+    //     category: "/page/_page",
+    //     permalink: "/:slug",
+    //     isPost: false
+    //   }
+    // ]
   ]
 };
