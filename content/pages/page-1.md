@@ -1,9 +1,7 @@
 ---
-title: ti
-description: khgf
+title: '"My Title"'
+description: artist
 ---
 
-## Test page-1
-lorem
 
 ![asfasfasfasf](/images/uploads/sculpture5.jpg)
