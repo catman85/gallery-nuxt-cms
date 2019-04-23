@@ -8,8 +8,11 @@
       <nuxtdown-body class="body" :body="page.title" />
       <h3>Body:</h3>
       <nuxtdown-body class="body" :body="page.body" />
+      <h4>Category:</h4>
+      <nuxtdown-body class="body" :body="page.category" />
       <br>
     </div>
+    {{categories}}
     <!-- {{pages}} -->
     
     <!-- TODO: 
@@ -36,6 +39,9 @@
         }]
       };
     },
+    mounted(){
+      
+    },
     asyncData: async ({
       app,
       route,
@@ -49,6 +55,13 @@
           .getAll()
       };
     },
+    computed: {
+      categories: function(){
+        this.pages.forEach(page => {
+          console.log(page.category);
+        });
+      }
+    }
   };
 
 </script>

@@ -33,7 +33,7 @@
 
 <style scoped>
   .images{
-    max-width: 1em;
+    /* max-width: 1em; */
   }
 </style>
 

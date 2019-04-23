@@ -19,10 +19,10 @@
       <!-- {{categories}} -->
       <!-- {{pages}} -->
       <ul>
-        <li v-for="category in categories" :key="category.title">
+        <!-- <li v-for="category in categories" :key="category.title">
           <nuxtdown-body class="body" :body="category.title" />
           {{category.title}}
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>
@@ -36,24 +36,24 @@
     //     categories: ''
     //   }
     // },
-    asyncData: async ({
-      app,
-      route,
-      payload
-    }) => {
-      return {
-        categories: await app.$content('/categories')
-          .query({
-            // exclude: ['attributes', 'body']
-          })
-          .getAll(),
-          // pages: await app.$content('/pages')
-          // .query({
-          //   // exclude: ['attributes', 'body']
-          // })
-          // .getAll()
-      };
-    },
+    // asyncData: async ({
+    //   app,
+    //   route,
+    //   payload
+    // }) => {
+    //   return {
+    //     categories: await app.$content('/categories')
+    //       .query({
+    //         // exclude: ['attributes', 'body']
+    //       })
+    //       .getAll(),
+    //       // pages: await app.$content('/pages')
+    //       // .query({
+    //       //   // exclude: ['attributes', 'body']
+    //       // })
+    //       // .getAll()
+    //   };
+    // },
     methods: {
       show(){
         console.log(categories)
