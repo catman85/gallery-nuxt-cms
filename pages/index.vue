@@ -6,7 +6,7 @@
     <br>
     <div v-for="page in pages" :key="page.title">
       <nuxt-link :to="'/'+ page.title">
-      <!-- TODO: format page.title the right way (remove spaces add '-') -->
+      <!-- TODO: format page.title the right way (remove spaces add '-' to lowercase) -->
       <h3>Title:</h3>
       <nuxtdown-body class="body" :body="page.title" />
       <h3>Body:</h3>
