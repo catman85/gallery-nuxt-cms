@@ -1,5 +1,5 @@
 ---
-title: new file1
+title: My First Peace
 description: asd
 category: My cool category!
 ---
