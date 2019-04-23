@@ -1,6 +1,7 @@
 ---
 title: '"My Title"'
-description: artist
+description: I am an artist.
+category: fun
 ---
 
 
