@@ -15,7 +15,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/axios": "^5.4.1",
     "nuxt": "~2.2.0",
     "nuxtdown": "^2.0.3"
   },

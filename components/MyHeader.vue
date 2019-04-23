@@ -16,13 +16,14 @@
           <nuxt-link :to="'/about'">About</nuxt-link>
         </li>
       </ul>
-      <!-- {{categories}} -->
-      <!-- {{pages}} -->
+      <!-- {{categories}} to trigger the computed -->
+      <br>
       <ul>
-        <!-- <li v-for="category in categories" :key="category.title">
-          <nuxtdown-body class="body" :body="category.title" />
-          {{category.title}}
-        </li> -->
+        <li v-for="entry in categories" :key="entry.title">
+          <!-- <nuxtdown-body class="body" :body="" /> -->
+          {{entry.category}}
+        </li>
+        <!-- TODO: handle exhibitions and duplicates in categories -->
       </ul>
     </nav>
   </header>
@@ -31,32 +32,28 @@
 <script>
   export default {
     name: "MyHeader",
-    // data: function () {
-    //   return {
-    //     categories: ''
-    //   }
-    // },
-    // asyncData: async ({
-    //   app,
-    //   route,
-    //   payload
-    // }) => {
-    //   return {
-    //     categories: await app.$content('/categories')
-    //       .query({
-    //         // exclude: ['attributes', 'body']
-    //       })
-    //       .getAll(),
-    //       // pages: await app.$content('/pages')
-    //       // .query({
-    //       //   // exclude: ['attributes', 'body']
-    //       // })
-    //       // .getAll()
-    //   };
-    // },
+    props: {
+      data: Object
+    },
+    mounted(){ 
+
+    },
+    data: function () {
+      return {
+        // categories: Object
+      }
+    },
     methods: {
-      show(){
-        console.log(categories)
+      show() {
+        // console.log(categories)
+      }
+    },
+    computed: {
+      categories: function(){
+        // this.data.forEach(page => {
+        //   console.debug(page.category);
+        // });
+        return this.data;
       }
     }
   }

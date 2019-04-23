@@ -1,17 +1,16 @@
 <template>
   <div>
-    <MyHeader/>
+    <!-- ATTENTION asyncData only works in pages, not components or layout -->
+    <!-- so I have to rewrite MyHeader.vue multiple times -->
     <nuxt/>
     <MyFooter/>
   </div>
 </template>
 
 <script>
-import MyHeader from "@/components/MyHeader";
 import MyFooter from "@/components/MyFooter";
 export default {
   components: {
-    MyHeader,
     MyFooter
   }
 }

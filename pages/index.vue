@@ -1,20 +1,25 @@
 <template>
   <div class="container">
-    <h2>WelcomeF</h2>
+    <MyHeader :data="this.pages"/>
+    <h2>Welcome</h2>
     <h2>All Posts</h2>
     <br>
     <div v-for="page in pages" :key="page.title">
+      <nuxt-link :to="'/'+ page.title">
+      <!-- TODO: format page.title the right way (remove spaces add '-') -->
       <h3>Title:</h3>
       <nuxtdown-body class="body" :body="page.title" />
       <h3>Body:</h3>
       <nuxtdown-body class="body" :body="page.body" />
       <h4>Category:</h4>
       <nuxtdown-body class="body" :body="page.category" />
+      </nuxt-link>
       <br>
     </div>
-    {{categories}}
     <!-- {{pages}} -->
     
+    <!-- ATTENTION asyncData only works in pages, not components or layout -->
+    <!-- // https://nuxtjs.org/faq/async-data-components/ -->
     <!-- TODO: 
     mint_setup vue_nuxt_nuxtdown nuxtent
     meta_content header footer mansory_layout slideshow filters iterate_markdown 
@@ -28,7 +33,11 @@
 </template>
 
 <script>
+import MyHeader from "@/components/MyHeader";
   export default {
+    components: {
+      MyHeader
+    },
     head: function () {
       return {
         title: "Home",
@@ -40,7 +49,7 @@
       };
     },
     mounted(){
-      
+      console.debug(this.pages);
     },
     asyncData: async ({
       app,
@@ -54,13 +63,6 @@
           })
           .getAll()
       };
-    },
-    computed: {
-      categories: function(){
-        this.pages.forEach(page => {
-          console.log(page.category);
-        });
-      }
     }
   };
 
