@@ -1,23 +1,28 @@
 <template>
   <div>
     <!-- ATTENTION asyncData only works in pages, not components or layout -->
-    <!-- so I have to rewrite MyHeader.vue multiple times -->
+    <!-- to send data from any component to any component in mounted.... this.$nuxt.$emit('index', this.pages);-->
+    <!-- instead of Parent -> Child props.....   :data="this.pages" -->
+    <MyHeader />
     <nuxt/>
     <MyFooter/>
   </div>
 </template>
 
 <script>
+import MyHeader from "@/components/MyHeader";
 import MyFooter from "@/components/MyFooter";
 export default {
   components: {
+    MyHeader,
     MyFooter
   }
 }
 </script>
 
 
-<style>
+<style lang="scss">
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;

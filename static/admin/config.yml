@@ -26,17 +26,18 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
         - {label: Title, name: title, widget: string, required: true}
-        - {label: Description, name: description, widget: text, required: true}
-        - {label: Content, name: body, widget: markdown}
-        - {label: Category, name: category, widget: string, default: "My cool category!", required: true}
+        - {label: Category, name: category, widget: string, default: "Category Name", required: true}
+        - {label: FeaturedImage, name: featuredImage, widget: image}
+        - {label: Description, name: description, widget: text}
+        - {label: Content, name: body, widget: markdown}        
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"
         #   field: {label: Image, name: image, widget: image}
-  - label: "Categories" # Used in the UI
-    name: "categories" # Used in routes, e.g., /admin/collections/blog
-    folder: "content/categories" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: Title, name: title, widget: string, required: true}
+  # - label: "Categories" # Used in the UI
+  #   name: "categories" # Used in routes, e.g., /admin/collections/blog
+  #   folder: "content/categories" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: Title, name: title, widget: string, required: true}

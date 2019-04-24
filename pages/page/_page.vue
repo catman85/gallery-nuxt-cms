@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- TODO: add header -->
     <div class="images">
     <nuxtdown-body class="body" :body="page.body" />
     </div>

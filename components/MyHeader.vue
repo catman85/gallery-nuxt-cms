@@ -6,25 +6,22 @@
         <li>
           <nuxt-link :to="'/'">Home</nuxt-link>
         </li>
-        <li>
+        <!-- <li>
           <nuxt-link :to="'/page-1'">Page 1</nuxt-link>
         </li>
         <li>
           <nuxt-link :to="'/page-2'">Page 2</nuxt-link>
-        </li>
+        </li> -->
         <li>
           <nuxt-link :to="'/about'">About</nuxt-link>
         </li>
       </ul>
-      <!-- {{categories}} to trigger the computed -->
       <br>
       <ul>
-        <li v-for="entry in categories" :key="entry.title">
-          <!-- <nuxtdown-body class="body" :body="" /> -->
-          {{entry.category}}
-        </li>
-        <!-- TODO: handle exhibitions and duplicates in categories -->
+        <li @click="en">EN</li>
+        <li @click="gr">GR</li>
       </ul>
+      <!-- {{categories}} to trigger the computed -->
     </nav>
   </header>
 </template>
@@ -33,29 +30,39 @@
   export default {
     name: "MyHeader",
     props: {
-      data: Object
+      // data: Object
     },
-    mounted(){ 
-
+    mounted() {
+      this.$nuxt.$on('index', (data) => {
+        // console.debug(data);
+      })
     },
     data: function () {
       return {
         // categories: Object
+        english: true
       }
     },
     methods: {
       show() {
         // console.log(categories)
+      },
+      en() {
+        console.log("english");
+        this.english = true;
+        this.$nuxt.$emit('en', this.english);
+      },
+      gr() {
+        console.log("greek");
+        this.english = false;
+        this.$nuxt.$emit('gr', this.english);
       }
+
     },
-    computed: {
-      categories: function(){
-        // this.data.forEach(page => {
-        //   console.debug(page.category);
-        // });
-        return this.data;
-      }
-    }
+    beforeDestroy() {
+      // $off method turns off the event listner
+      this.$nuxt.$off('index');
+    },
   }
 
 </script>
