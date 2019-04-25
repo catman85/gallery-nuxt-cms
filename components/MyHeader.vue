@@ -34,7 +34,7 @@
     },
     mounted() {
       this.$nuxt.$on('index', (data) => {
-        console.debug(data); // runs only when index is loaded
+        // console.debug(data); // runs only when this component is loaded on top of index
       })
     },
     data: function () {

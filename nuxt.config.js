@@ -1,5 +1,6 @@
 module.exports = {
   modules: ["nuxtdown"],
+  plugins: ["~/plugins/uniq"],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -57,3 +58,7 @@ module.exports = {
     }
   }
 };
+
+// export default{
+//   plugins: ["~/plugins/uniq"]
+// }

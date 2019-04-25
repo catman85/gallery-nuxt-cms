@@ -3,11 +3,10 @@
     <h2>Welcome</h2><br>
     <h2>Categories</h2>
     <ul>
-      <li v-for="entry in categories" :key="entry.title">
+      <li v-for="entry in categories" :key="entry">
         <!-- <nuxtdown-body class="body" :body="" /> -->
-        {{entry.category}}
+        {{entry}}
       </li>
-      <!-- TODO: handle exhibitions and duplicates in categories -->
     </ul>
     <br>
     <h2>All Posts</h2>
@@ -57,6 +56,7 @@
       };
     },
     mounted() {
+      // this.uniq({});
       // $emit method will propagate data to receiver components
       this.$nuxt.$emit('index', this.pages); // receiver is MyHeader
 
@@ -91,10 +91,13 @@
     },
     computed: {
       categories: function () {
-        // this.pages.forEach(page => {
-        //   console.debug(page.category);
-        // });
-        return this.pages;
+        let cats = [];
+        this.pages.forEach(page => {
+          cats.push(page.category);
+        });
+        // cats = [...new Set(cats)]; // removes duplicates from cats array
+        cats = this.uniq(cats); // removes duplicates from cats array (plugin mixin)
+        return cats;
       }
     },
     beforeDestroy() {
