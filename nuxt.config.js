@@ -1,6 +1,6 @@
 module.exports = {
   modules: ["nuxtdown"],
-  plugins: ["~/plugins/uniq"],
+  plugins: [{ src: "~/plugins/uniq"}, {src: "~/plugins/lightgallery.client.js", ssr:false}],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },

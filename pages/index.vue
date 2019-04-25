@@ -26,15 +26,18 @@
     <!-- ATTENTION asyncData only works in pages, not components or layout -->
     <!-- // https://nuxtjs.org/faq/async-data-components/ -->
     <!-- TODO: 
-    photoswipe.js lightgallery.js
-    i18n_multi_languages
-    meta_content header_burger_responsive footer mansory_layout slideshow filters
-    categories_nuxtdown_cms_header
+    configure_scss
+    photoswipe.js_lightgallery.js_slideshow mansory_layout
+    i18n_multi_languages_translate_btn
+    header_burger_responsive footer   
+    categories_nuxtdown_cms_header_filters
     style_markdown_content google_fonts
-    img_descriptions git_lfs form search translate_btn
-    compress_images font-awesome vuetify
+    img_descriptions git_lfs form search 
+    font-awesome vuetify
 
-    deploy_minifications analytics domain_link 
+    clear_package.json
+    meta_content
+    deploy_minifications_compress_images analytics domain_link 
     robots.txt sitemap.xml ggl_search_console -->
   </div>
 </template>
