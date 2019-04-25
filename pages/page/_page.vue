@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- TODO: add header -->
     <div class="images">
     <nuxtdown-body class="body" :body="page.body" />
     </div>
@@ -27,6 +26,9 @@
       return {
         page: (await app.$content("/pages").get(route.path)) || payload
       };
+    },
+    mounted(){
+      console.debug(this.page.body);
     }
   };
 

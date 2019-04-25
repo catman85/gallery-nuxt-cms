@@ -13,9 +13,7 @@
     <h2>All Posts</h2>
     <div v-for="page in pages" :key="page.title">
       <!-- TODO: order of posts is alphabetical? -->
-      <!-- <nuxt-link :to="'/'+ page.title"> -->
-      <nuxt-link :to="'/title-two'">
-        <!-- TODO: format page.title the right way (remove spaces add '-' to lowercase remove weird characters) -->
+      <nuxt-link :to="page.title | formatLink">
         <h3>Title:</h3>
         <nuxtdown-body class="body" :body="page.title" />
         <h3>Body:</h3>
@@ -25,7 +23,6 @@
       </nuxt-link>
       <br>
     </div>
-    <!-- {{pages}} -->
 
     <!-- ATTENTION asyncData only works in pages, not components or layout -->
     <!-- // https://nuxtjs.org/faq/async-data-components/ -->
@@ -61,7 +58,7 @@
     },
     mounted() {
       // $emit method will propagate data to receiver components
-      this.$nuxt.$emit('index', this.pages);// receiver is MyHeader
+      this.$nuxt.$emit('index', this.pages); // receiver is MyHeader
 
       // $on method will receive the data from the sender component
       this.$nuxt.$on('en', (english) => { // sender is MyHeader
@@ -82,6 +79,16 @@
           .getAll()
       };
     },
+    filters: {
+      formatLink: function (link) {
+        if (!link) return ''
+        link = link.toString();
+        link = link.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');// remove all special characters
+        link = link.trim(); // remove spaces from beginning and end.
+        link = link.replace(/ /g,"-"); //   / /g is a global replacement of the space character with dash
+        return link.toLowerCase();
+      }
+    },
     computed: {
       categories: function () {
         // this.pages.forEach(page => {
@@ -90,7 +97,7 @@
         return this.pages;
       }
     },
-    beforeDestroy(){
+    beforeDestroy() {
       // $off method turns off the event listner
       this.$nuxt.$off('en');
     }

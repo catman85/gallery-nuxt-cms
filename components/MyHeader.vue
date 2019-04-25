@@ -34,7 +34,7 @@
     },
     mounted() {
       this.$nuxt.$on('index', (data) => {
-        // console.debug(data);
+        console.debug(data); // runs only when index is loaded
       })
     },
     data: function () {
