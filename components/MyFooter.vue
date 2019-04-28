@@ -1,10 +1,15 @@
 <template>
-    <footer>my footer</footer>
+    <footer>footer | © {{this.getCurrentYear()}}</footer>
 </template>
 
 <script>
 export default {
-    name: "MyFooter"
+    name: "MyFooter",
+    methods: {
+        getCurrentYear(){
+            return new Date().getFullYear();
+        }
+    }
 }
 </script>
 

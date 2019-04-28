@@ -1,8 +1,27 @@
+<!-- ATTENTION asyncData only works in pages, not components or layout -->
+<!-- // https://nuxtjs.org/faq/async-data-components/ -->
+<!-- TODO: 
+photoswipe.js_lightgallery.js_slideshow 
+img_descriptions
+form_search 
+contact_form
+mansory_layout
+i18n_multi_languages_translate_btn
+header_burger_responsive 
+configure_scss
+style_markdown_content 
+google_fonts
+font-awesome
+meta_content
+deploy_minifications_compress_images 
+analytics 
+domain_link 
+robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
     <h2>Categories</h2>
     <ul>
-      <li v-for="entry in categories" :key="entry">
+      <li @click="pickCategory" v-for="entry in categories" :key="entry">
         <!-- <nuxtdown-body class="body" :body="" /> -->
         {{entry}}
       </li>
@@ -10,12 +29,12 @@
     <br>
     <h2>Exhibitions</h2>
     <ul>
-      <li>Solo-Exhibitions</li>
-      <li>Group-Exhibitions</li>
+      <li @click="pickCategory">Solo-Exhibitions</li>
+      <li @click="pickCategory">Group-Exhibitions</li>
     </ul>
     <br>
     <h2>All Posts</h2>
-    <div v-for="page in pages" :key="page.title">
+    <div v-for="page in filteredContent" :key="page.title">
       <!-- TODO: order of posts is alphabetical? -->
       <nuxt-link :to="page.title | formatLink">
         <h3>Title:</h3>
@@ -26,32 +45,8 @@
         <h4>Category:</h4>
         <nuxtdown-body class="body" :body="page.category" />
       </nuxt-link>
-      <br>
+      <br><br><br>
     </div>
-
-    <!-- ATTENTION asyncData only works in pages, not components or layout -->
-    <!-- // https://nuxtjs.org/faq/async-data-components/ -->
-    <!-- TODO: 
-    configure_scss
-    photoswipe.js_lightgallery.js_slideshow 
-    mansory_layout
-    i18n_multi_languages_translate_btn
-    header_burger_responsive 
-    footer   
-    categories_nuxtdown_cms_header_filters
-    style_markdown_content 
-    google_fonts
-    img_descriptions 
-    form 
-    search 
-    font-awesome
-
-    clear_package.json
-    meta_content
-    deploy_minifications_compress_images 
-    analytics 
-    domain_link 
-    robots.txt sitemap.xml ggl_search_console -->
   </div>
 </template>
 
@@ -95,6 +90,11 @@
           .getAll()
       };
     },
+    data: function(){
+      return {
+        selectedCat: ""
+      }
+    },
     filters: {
       formatLink: function (link) {
         if (!link) return ''
@@ -117,6 +117,22 @@
         // cats = [...new Set(cats)]; // removes duplicates from cats array
         cats = this.uniq(cats); // removes duplicates from cats array (plugin mixin)
         return cats;
+      },
+      filteredContent: function () {
+        var filteredContent = this.pages.filter(page => {
+          return page.category.toLowerCase().includes(this.selectedCat.toLowerCase());
+        });
+        return filteredContent;
+      }
+    },
+    methods: {
+      pickCategory(event) {
+        let option = event.target.firstChild.data.trim();
+        if(option == this.selectedCat){ // show all posts when unchecking a category
+          this.selectedCat = "";
+        }else{
+          this.selectedCat = option;
+        }
       }
     },
     beforeDestroy() {

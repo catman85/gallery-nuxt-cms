@@ -18,10 +18,7 @@
     "@nuxtjs/axios": "^5.4.1",
     "lightgallery.js": "^1.1.3",
     "nuxt": "~2.2.0",
-    "nuxtdown": "^2.0.3",
-    "vue-light-gallery": "^1.0.1",
-    "vue-photoswipe": "^1.0.3",
-    "vue-picture-swipe": "^1.1.0"
+    "nuxtdown": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

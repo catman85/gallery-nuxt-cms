@@ -13,6 +13,7 @@
       <h3>Body:</h3>
       <nuxtdown-body class="body" :body="page.body" />
     </div>
+    {{this.page.body}}
     <!-- <no-ssr>
   <LightGallery ... />
 </no-ssr> -->
