@@ -6,6 +6,8 @@
     <nuxtdown-body class="body" :body="page.category" /><br>
     <h4>Description:</h4>
     <nuxtdown-body class="body" :body="page.description" /><br>
+    <h4>Featured Image: </h4>
+    <img :src="page.featuredImage" alt=""/><br>
 
     <div class="images">
       <h3>Body:</h3>

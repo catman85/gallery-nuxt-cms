@@ -20,8 +20,9 @@
       <nuxt-link :to="page.title | formatLink">
         <h3>Title:</h3>
         <nuxtdown-body class="body" :body="page.title" />
-        <h3>Body:</h3>
-        <nuxtdown-body class="body" :body="page.body" />
+        <h3>Featured Image:</h3>
+        <img :src="page.featuredImage" alt="">
+        <nuxtdown-body class="body" :body="page.featuredImage" />
         <h4>Category:</h4>
         <nuxtdown-body class="body" :body="page.category" />
       </nuxt-link>
@@ -32,17 +33,24 @@
     <!-- // https://nuxtjs.org/faq/async-data-components/ -->
     <!-- TODO: 
     configure_scss
-    photoswipe.js_lightgallery.js_slideshow mansory_layout
+    photoswipe.js_lightgallery.js_slideshow 
+    mansory_layout
     i18n_multi_languages_translate_btn
-    header_burger_responsive footer   
+    header_burger_responsive 
+    footer   
     categories_nuxtdown_cms_header_filters
-    style_markdown_content google_fonts
-    img_descriptions git_lfs form search 
-    font-awesome vuetify
+    style_markdown_content 
+    google_fonts
+    img_descriptions 
+    form 
+    search 
+    font-awesome
 
     clear_package.json
     meta_content
-    deploy_minifications_compress_images analytics domain_link 
+    deploy_minifications_compress_images 
+    analytics 
+    domain_link 
     robots.txt sitemap.xml ggl_search_console -->
   </div>
 </template>
