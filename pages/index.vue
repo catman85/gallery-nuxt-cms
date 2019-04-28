@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h2>Welcome</h2><br>
     <h2>Categories</h2>
     <ul>
       <li v-for="entry in categories" :key="entry">
@@ -9,6 +8,7 @@
       </li>
     </ul>
     <br>
+    <h2>Exhibitions</h2>
     <ul>
       <li>Solo-Exhibitions</li>
       <li>Group-Exhibitions</li>

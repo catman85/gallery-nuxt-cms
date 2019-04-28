@@ -5,7 +5,7 @@
 Visit: https://epic-bhaskara-02f420.netlify.com/
 
 - If the live deploy fails, go to : netlify -> deploys -> trigger deploy -> clear cache and deploy site
-- after publishing something from the gui you need to run "git pull" to get the changes
+- after publishing something from the gui you need to run "git pull" and "npm run serve" to get the changes
 
 ## Build Setup
 
