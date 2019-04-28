@@ -9,6 +9,11 @@
       </li>
     </ul>
     <br>
+    <ul>
+      <li>Solo-Exhibitions</li>
+      <li>Group-Exhibitions</li>
+    </ul>
+    <br>
     <h2>All Posts</h2>
     <div v-for="page in pages" :key="page.title">
       <!-- TODO: order of posts is alphabetical? -->
@@ -86,9 +91,9 @@
       formatLink: function (link) {
         if (!link) return ''
         link = link.toString();
-        link = link.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');// remove all special characters
+        link = link.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
         link = link.trim(); // remove spaces from beginning and end.
-        link = link.replace(/ /g,"-"); //   / /g is a global replacement of the space character with dash
+        link = link.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
         return link.toLowerCase();
       }
     },
@@ -96,7 +101,10 @@
       categories: function () {
         let cats = [];
         this.pages.forEach(page => {
-          cats.push(page.category);
+          let cat = page.category;
+          if (cat.toLowerCase() != 'solo-exhibitions' && cat.toLowerCase() != 'group-exhibitions') {
+            cats.push(cat);
+          }
         });
         // cats = [...new Set(cats)]; // removes duplicates from cats array
         cats = this.uniq(cats); // removes duplicates from cats array (plugin mixin)

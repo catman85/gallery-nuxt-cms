@@ -49,7 +49,7 @@
     },
     mounted(){
       console.debug(this.page.body);
-          const el = document.getElementById('lightgallery')
+    const el = document.getElementById('lightgallery')
     window.lightGallery(el)
     }
   };
