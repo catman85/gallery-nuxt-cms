@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: git-gateway # Git Gateway is a Netlify open source project that allows you to add editors to your site CMS without giving them direct write access to your GitHub or GitLab repository.
   branch: master # Branch to update (optional; defaults to master)
-  # accept_roles: 
-  #   - admin
-  #   - editor
+  accept_roles: 
+    - admin
+    - editor
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
