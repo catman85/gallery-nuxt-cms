@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- ATTENTION asyncData only works in pages, not components or layout -->
+    <!-- ATTENTION asyncData only works in pages, not components nor layout -->
     <!-- to send data from any component to any component in mounted.... this.$nuxt.$emit('index', this.pages);-->
     <!-- instead of Parent -> Child props.....   :data="this.pages" -->
     <MyHeader />

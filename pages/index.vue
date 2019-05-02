@@ -5,13 +5,15 @@ photoswipe.js_lightgallery.js_slideshow
 img_descriptions
 form_search 
 contact_form
-mansory_layout
 i18n_multi_languages_translate_btn
+
+mansory_layout
 header_burger_responsive 
-configure_scss
 style_markdown_content 
 google_fonts
 font-awesome
+
+lazy_load
 meta_content
 deploy_minifications_compress_images 
 analytics 
