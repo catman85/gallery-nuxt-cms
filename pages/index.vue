@@ -1,8 +1,6 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-photoswipe.js_lightgallery.js_slideshow 
-img_descriptions
 form_search 
 contact_form
 i18n_multi_languages_translate_btn

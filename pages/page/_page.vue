@@ -15,10 +15,13 @@
       <!-- <no-ssr>  not needed </no-ssr> -->
       <div class="app-container">
         <div id="lightgallery">
-          <a v-for="image in imagesArray" :key="image.src" :href="image.src" data-sub-html=".caption" >
+          <a v-for="image in imagesArray" :key="image.src" :href="image.src" :data-sub-html="'.caption' + format(image.title)">
             <img :src="image.src" :title="image.title" :alt="image.alt">
-            <div class="caption">
-              <h5>{{image.title}}</h5>
+
+            <!-- this must match with data-sub-html but there might be duplicates -->
+            <!-- ATTENTION for some reason filters don't work -->
+            <div :class="'description '+'caption'+ format(image.title)">
+              <h5 class="current">{{image.title}}</h5>
               <!-- <p>{{image.alt}}</p> -->
             </div>
           </a>
@@ -79,7 +82,16 @@
           // subHtmlSelectorRelative:true,
           // selector: '.current',
         })
+      },
+      format(title){
+        title = title.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
+        title = title.trim(); // remove spaces from beginning and end.
+        title = title.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
+        return title;
       }
+    },
+    filters: {
+
     }
   };
 
