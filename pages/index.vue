@@ -3,6 +3,7 @@
 <!-- TODO: 
 form_search 
 contact_form
+order_of_posts
 i18n_multi_languages_translate_btn
 
 mansory_layout
@@ -32,6 +33,13 @@ robots.txt sitemap.xml ggl_search_console -->
       <li @click="pickCategory">Solo-Exhibitions</li>
       <li @click="pickCategory">Group-Exhibitions</li>
     </ul>
+    <!-- Search -->
+    
+    <!-- you can put a function between the "" -->
+    <form v-on:submit.prevent="">
+      <!--referenced by this.$route.query 2-way data binding with v-model -->
+      <input type="text" v-model="query" id="search" placeholder="Search For ...">
+    </form>
     <br>
     <h2>All Posts</h2>
     <div v-for="page in filteredContent" :key="page.title">
@@ -67,7 +75,6 @@ robots.txt sitemap.xml ggl_search_console -->
       };
     },
     mounted() {
-      // this.uniq({});
       // $emit method will propagate data to receiver components
       this.$nuxt.$emit('index', this.pages); // receiver is MyHeader
 
@@ -92,7 +99,8 @@ robots.txt sitemap.xml ggl_search_console -->
     },
     data: function(){
       return {
-        selectedCat: ""
+        selectedCat: "",
+        query: ""
       }
     },
     filters: {
@@ -119,8 +127,13 @@ robots.txt sitemap.xml ggl_search_console -->
         return cats;
       },
       filteredContent: function () {
+        //Toggle Categories
         var filteredContent = this.pages.filter(page => {
           return page.category.toLowerCase().includes(this.selectedCat.toLowerCase());
+        });
+        //Search
+        filteredContent = filteredContent.filter(post => {
+          return post.title.toLowerCase().includes(this.query.toLowerCase());
         });
         return filteredContent;
       }
