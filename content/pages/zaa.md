@@ -1,6 +1,7 @@
 ---
 title: zaa
 category: group-exhibitions
+date: '2018-09-01'
 featuredImage: /images/uploads/sculpture5.jpg
 description: testing menu....
 ---
