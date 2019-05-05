@@ -1,7 +1,6 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-order_of_posts
 i18n_multi_languages_translate_btn
 
 mansory_layout
@@ -140,6 +139,9 @@ robots.txt sitemap.xml ggl_search_console -->
         //Search
         filteredContent = filteredContent.filter(post => {
           return post.title.toLowerCase().includes(this.query.toLowerCase());
+        });
+        filteredContent = filteredContent.sort(function (a, b) {
+          return b.creationDate.replace(/-/g, "") - a.creationDate.replace(/-/g, "");
         });
         return filteredContent;
       }

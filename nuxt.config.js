@@ -1,7 +1,7 @@
 module.exports = {
   modules: ["nuxtdown"],
   plugins: [{
-    src: "~/plugins/uniq"
+    src: "~/plugins/mixins"
   }, {
     src: "~/plugins/lightgallery.client.js",
     ssr: false

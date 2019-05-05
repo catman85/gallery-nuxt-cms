@@ -12,6 +12,9 @@ Vue.mixin({
             else
                 return objs.indexOf(item) >= 0 ? false : objs.push(item);
         });
+    },
+    rmDash(str){ // not used
+      return str.replace(/-/g, "");
     }
   }
 })
