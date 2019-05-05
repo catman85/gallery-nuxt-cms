@@ -34,7 +34,7 @@ robots.txt sitemap.xml ggl_search_console -->
       <li @click="pickCategory">Group-Exhibitions</li>
     </ul>
     <!-- Search -->
-    
+
     <!-- you can put a function between the "" -->
     <form v-on:submit.prevent="">
       <!--referenced by this.$route.query 2-way data binding with v-model -->
@@ -97,7 +97,7 @@ robots.txt sitemap.xml ggl_search_console -->
           .getAll()
       };
     },
-    data: function(){
+    data: function () {
       return {
         selectedCat: "",
         query: ""
@@ -141,9 +141,9 @@ robots.txt sitemap.xml ggl_search_console -->
     methods: {
       pickCategory(event) {
         let option = event.target.firstChild.data.trim();
-        if(option == this.selectedCat){ // show all posts when unchecking a category
+        if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
-        }else{
+        } else {
           this.selectedCat = option;
         }
       }
