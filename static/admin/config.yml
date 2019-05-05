@@ -27,6 +27,7 @@ collections:
     fields:
         - {label: Title, name: title, widget: string, required: true}
         - {label: Category, name: category, widget: string, default: "Category Name", required: true}
+        - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true}
         - {label: FeaturedImage, name: featuredImage, widget: image}
         - {label: Description, name: description, widget: text}
         - {label: Content, name: body, widget: markdown}        

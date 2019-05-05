@@ -1,8 +1,6 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-form_search 
-contact_form
 order_of_posts
 i18n_multi_languages_translate_btn
 
@@ -27,31 +25,39 @@ robots.txt sitemap.xml ggl_search_console -->
         {{entry}}
       </li>
     </ul>
-    <br>
     <h2>Exhibitions</h2>
     <ul>
       <li @click="pickCategory">Solo-Exhibitions</li>
       <li @click="pickCategory">Group-Exhibitions</li>
     </ul>
+    <br>
     <!-- Search -->
-
     <!-- you can put a function between the "" -->
     <form v-on:submit.prevent="">
       <!--referenced by this.$route.query 2-way data binding with v-model -->
       <input type="text" v-model="query" id="search" placeholder="Search For ...">
     </form>
     <br>
+
+
     <h2>All Posts</h2>
     <div v-for="page in filteredContent" :key="page.title">
       <!-- TODO: order of posts is alphabetical? -->
       <nuxt-link :to="page.title | formatLink">
         <h3>Title:</h3>
         <nuxtdown-body class="body" :body="page.title" />
+
         <h3>Featured Image:</h3>
         <img :src="page.featuredImage" alt="">
-        <nuxtdown-body class="body" :body="page.featuredImage" />
+        <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
+
         <h4>Category:</h4>
         <nuxtdown-body class="body" :body="page.category" />
+
+        <h4>Date:</h4>
+        <!-- <nuxtdown-body class="body" :body="page.creationDate" /> -->
+        {{page.creationDate}}
+
       </nuxt-link>
       <br><br><br>
     </div>
