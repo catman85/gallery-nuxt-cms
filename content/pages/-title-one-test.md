@@ -1,6 +1,7 @@
 ---
 title: '"Title One Test"'
 category: cat1
+date: '2019-05-03'
 featuredImage: /images/uploads/sculpture5.jpg
 description: A wonderful gallery of images....
 ---
