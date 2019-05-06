@@ -3,7 +3,7 @@ title: '"Title One Test"'
 category: cat1
 creationDate: '2019-05-03'
 featuredImage: /images/uploads/sculpture5.jpg
-description: A wonderful gallery of images....
+description: A wonderful gallery of images.....
 ---
 ![Imgur](https://i.imgur.com/9v3Zz1h.jpg "blah blah")
 
