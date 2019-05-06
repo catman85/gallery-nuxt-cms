@@ -18,18 +18,18 @@ domain_link
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
-    <h1>{{ $t('hello') }}</h1> 
-    <h2>Categories</h2>
+    <h1>{{ $t('welcome') }}</h1> 
+    <h2>{{ $t('categories') }}</h2>
     <ul>
       <li @click="pickCategory" v-for="entry in categories" :key="entry">
         <!-- <nuxtdown-body class="body" :body="" /> -->
         {{entry}}
       </li>
     </ul>
-    <h2>Exhibitions</h2>
+    <h2>{{ $t('exhibitions') }}</h2>
     <ul>
-      <li @click="pickCategory">Solo-Exhibitions</li>
-      <li @click="pickCategory">Group-Exhibitions</li>
+      <li @click="pickCategory">Solo-{{ $t('exhibitions') }}</li>
+      <li @click="pickCategory">Group-{{ $t('exhibitions') }}</li>
     </ul>
     <br>
     <!-- Search -->
@@ -41,11 +41,10 @@ robots.txt sitemap.xml ggl_search_console -->
     <br>
 
 
-    <h2>All Posts</h2>
     <div v-for="page in filteredContent" :key="page.title">
       <!-- TODO: order of posts is alphabetical? -->
       <nuxt-link :to="page.title | formatLink">
-        <h3>Title:</h3>
+        <h3>{{ $t('title') }}:</h3>
         <nuxtdown-body class="body" :body="page.title" />
 
         <h3>Featured Image:</h3>
@@ -88,7 +87,6 @@ robots.txt sitemap.xml ggl_search_console -->
       // $on method will receive the data from the sender component
       this.$nuxt.$on('en', (english) => { // sender is MyHeader
         // your code goes here
-        console.debug("english selected" + english);
       })
     },
     asyncData: async ({

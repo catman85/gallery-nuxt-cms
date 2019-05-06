@@ -1,7 +1,14 @@
 export default {
-    hello: 'Hellasfo World',
+    welcome: 'Hellasfo World',
+    home: 'Kentrikh',
+    about: 'sxetika me',
+    contact: 'epikoinwnia',
+    legal: 'nomika',
+    categories: 'kathgories',
+    exhibitions: 'ek8eseis',
+    title: 'titlos',
     pages: {
       home: 'Kentrikh',
-      contacts: 'Contacts'
+      contacts: 'epafes'
     },
   }

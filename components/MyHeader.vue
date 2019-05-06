@@ -4,24 +4,22 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link :to="'/'">Home</nuxt-link>
+          <nuxt-link :to="'/'">{{ $t('home')}}</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/about'">About</nuxt-link>
+          <nuxt-link :to="'/about'">{{ $t('about')}}</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/contact'">Contact</nuxt-link>
+          <nuxt-link :to="'/contact'">{{ $t('contact')}}</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/legal'">Legal</nuxt-link>
+          <nuxt-link :to="'/legal'">{{ $t('legal')}}</nuxt-link>
         </li>
       </ul>
       <br>
       <ul>
-        <!-- <li @click="en">EN</li> -->
-        <!-- <li @click="gr">GR</li> -->
-      <nuxt-link @click="en" :to="switchLocalePath('gr')">GR</nuxt-link>
-      <nuxt-link @click="gr" :to="switchLocalePath('en')">EN</nuxt-link>
+      <nuxt-link v-on:click.native="gr" :to="switchLocalePath('gr')">GR</nuxt-link>
+      <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link>
       </ul>
       <!-- {{categories}} to trigger the computed -->
     </nav>
@@ -50,12 +48,12 @@
         // console.log(categories)
       },
       en() {
-        console.log("english");
+        console.debug("english");
         this.english = true;
         this.$nuxt.$emit('en', this.english);
       },
       gr() {
-        console.log("greek");
+        console.debug("greek");
         this.english = false;
         this.$nuxt.$emit('gr', this.english);
       }
