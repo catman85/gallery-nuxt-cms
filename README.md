@@ -45,13 +45,11 @@ Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
         * https://www.netlify.com/docs/cli/#authentication
     * https://www.netlify.com/docs/large-media/#large-media-file-tracking-configuration
 
-- To see your config  run "cat .gitattributes"
+- To see your config run "cat .gitattributes"
 - netlify cli stores your auth token localy here: "~/.netlify/config.json"
 
 
-
-
-### Ignore Folders:
+### Folders to Ignore:
 (They are auto generated)
 - node_modules/
 - dist/

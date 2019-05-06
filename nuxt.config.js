@@ -1,5 +1,26 @@
 module.exports = {
-  modules: ["nuxtdown"],
+  modules: [
+    'nuxtdown',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          name: 'Greek',
+          code: 'gr',
+          iso: 'gr-GR',
+          file: 'gr-GR.js'
+        },
+        {
+          name: 'English',
+          code: 'en',
+          iso: 'en-US',
+          file: 'en-US.js'
+        },
+      ],
+      lazy: true, //[vue-i18n] Cannot translate the value of keypath 'hello'. Use the value of keypath as default.
+      langDir: 'lang/',
+      defaultLocale: 'en',
+    }]
+  ],
   plugins: [{
     src: "~/plugins/mixins"
   }, {

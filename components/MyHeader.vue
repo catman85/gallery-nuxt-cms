@@ -18,8 +18,10 @@
       </ul>
       <br>
       <ul>
-        <li @click="en">EN</li>
-        <li @click="gr">GR</li>
+        <!-- <li @click="en">EN</li> -->
+        <!-- <li @click="gr">GR</li> -->
+      <nuxt-link @click="en" :to="switchLocalePath('gr')">GR</nuxt-link>
+      <nuxt-link @click="gr" :to="switchLocalePath('en')">EN</nuxt-link>
       </ul>
       <!-- {{categories}} to trigger the computed -->
     </nav>

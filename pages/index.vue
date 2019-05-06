@@ -3,6 +3,7 @@
 <!-- TODO: 
 i18n_multi_languages_translate_btn
 
+structure scss
 mansory_layout
 header_burger_responsive 
 style_markdown_content 
@@ -17,6 +18,7 @@ domain_link
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
+    <h1>{{ $t('hello') }}</h1> 
     <h2>Categories</h2>
     <ul>
       <li @click="pickCategory" v-for="entry in categories" :key="entry">
@@ -105,7 +107,8 @@ robots.txt sitemap.xml ggl_search_console -->
     data: function () {
       return {
         selectedCat: "",
-        query: ""
+        query: "",
+        hello:""
       }
     },
     filters: {
