@@ -3,7 +3,7 @@ title: zaa
 category: group-exhibitions
 creationDate: '2018-09-01'
 featuredImage: /images/uploads/sculpture5.jpg
-description: testing menu....
+description: testing menu.....
 ---
 ![Imgur](https://i.imgur.com/tBUKIU1.jpg "eye1")
 
