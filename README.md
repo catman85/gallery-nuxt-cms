@@ -8,7 +8,7 @@ Visit: https://epic-bhaskara-02f420.netlify.com/
 
 - after publishing something from the gui you need to run "git pull" and "npm run serve" to get the changes
 
-- after tweaking nuxt.config.js you need to restart your live server
+- after tweaking nuxt.config.js you need to restart your live server, or wait a bit longer
 
 ## Build Setup
 

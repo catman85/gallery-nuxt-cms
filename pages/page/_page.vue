@@ -36,6 +36,12 @@
 
 <script>
   export default {
+    // nuxtI18n: false,
+    // nuxtI18n: {
+    // paths: {
+      // it: '/chi-siamo',
+      // en: '/about'
+    // }},
     head: function () {
       return {
         title: `${this.page.title}`,

@@ -18,18 +18,18 @@ domain_link
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
-    <h1>{{ $t('welcome') }}</h1> 
-    <h2>{{ $t('categories') }}</h2>
+    <h1>{{ t('welcome') }}</h1> 
+    <h2>{{ t('categories') }}</h2>
     <ul>
       <li @click="pickCategory" v-for="entry in categories" :key="entry">
         <!-- <nuxtdown-body class="body" :body="" /> -->
         {{entry}}
       </li>
     </ul>
-    <h2>{{ $t('exhibitions') }}</h2>
+    <h2>{{ t('exhibitions') }}</h2>
     <ul>
-      <li @click="pickCategory">Solo-{{ $t('exhibitions') }}</li>
-      <li @click="pickCategory">Group-{{ $t('exhibitions') }}</li>
+      <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
+      <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
     </ul>
     <br>
     <!-- Search -->
@@ -42,9 +42,9 @@ robots.txt sitemap.xml ggl_search_console -->
 
 
     <div v-for="page in filteredContent" :key="page.title">
-      <!-- TODO: order of posts is alphabetical? -->
       <nuxt-link :to="page.title | formatLink">
-        <h3>{{ $t('title') }}:</h3>
+        <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
+        <!-- <h3>{{ $t('title') }}:</h3> -->
         <nuxtdown-body class="body" :body="page.title" />
 
         <h3>Featured Image:</h3>

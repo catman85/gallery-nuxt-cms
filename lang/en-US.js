@@ -11,4 +11,6 @@ export default {
       home: 'Home',
       contacts: 'Contacts'
     },
-  }
+  };
+
+// export 'english';

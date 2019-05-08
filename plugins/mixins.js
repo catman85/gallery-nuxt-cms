@@ -1,4 +1,7 @@
 import Vue from 'vue';
+import {default as english} from '@/lang/en-US';
+import {default as greek} from '@/lang/gr-GR';
+
 
 Vue.mixin({
   methods: {
@@ -15,6 +18,14 @@ Vue.mixin({
     },
     rmDash(str){ // not used
       return str.replace(/-/g, "");
+    },
+    t(key){ // translate method (look at (store/index.js) and (lang/*))
+      let lang = this.$store.state.lang;
+      if(lang == 'en'){
+        return english[key];
+      }else{
+        return greek[key];
+      }
     }
   }
 })

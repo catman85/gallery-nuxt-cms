@@ -1,25 +1,33 @@
 module.exports = {
   modules: [
-    'nuxtdown',
-    ['nuxt-i18n', {
-      locales: [
-        {
-          name: 'Greek',
-          code: 'gr',
-          iso: 'gr-GR',
-          file: 'gr-GR.js'
-        },
-        {
-          name: 'English',
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.js'
-        },
-      ],
-      lazy: true, //[vue-i18n] Cannot translate the value of keypath 'hello'. Use the value of keypath as default.
-      langDir: 'lang/',
-      defaultLocale: 'en',
-    }]
+    // ['nuxt-i18n', { // this is responsible for the routing crash
+    //   // nuxt-i18n overrides Nuxt default routes to add locale prefixes to every URL.
+    //   locales: [
+    //     {
+    //       name: 'Greek',
+    //       code: 'gr',
+    //       iso: 'gr-GR',
+    //       file: 'gr-GR.js'
+    //     },
+    //     {
+    //       name: 'English',
+    //       code: 'en',
+    //       iso: 'en-US',
+    //       file: 'en-US.js'
+    //     },
+    //   ],
+    //   lazy: true, //[vue-i18n] Cannot translate the value of keypath 'hello'. Use the value of keypath as default.
+    //   langDir: 'lang/',
+    //   parsePages: false,
+    //   pages: {
+    //     'page/_page': false, // disabled i18n for this dynamic route
+    //     'index':{
+    //       gr: '/'
+    //     }
+    //   },
+    //   defaultLocale: 'en'
+    // }],
+    ['nuxtdown',{}]
   ],
   plugins: [{
     src: "~/plugins/mixins"
@@ -84,7 +92,3 @@ module.exports = {
     }
   }
 };
-
-// export default{
-//   plugins: ["~/plugins/uniq"]
-// }

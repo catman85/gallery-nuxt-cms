@@ -1,6 +1,6 @@
 //Global vars
 export const state = () => ({
-  lang: null,
+  lang: 'en', // default language
 })
 
 export const mutations = {
