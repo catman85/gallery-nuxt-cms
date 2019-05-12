@@ -35,7 +35,7 @@ See [starter template documentation in the README on GitHub](https://github.com/
 Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
 
 
-## Enabling Netlify CMS lm "git lfs"
+## Enabling Netlify CMS Large Media "git lfs"
 * https://git-lfs.github.com/
 * https://www.netlifycms.org/docs/netlify-large-media/
     * https://www.netlifycms.org/docs/update-the-cms-version/
@@ -45,9 +45,14 @@ Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
         * https://www.netlify.com/docs/cli/#authentication
     * https://www.netlify.com/docs/large-media/#large-media-file-tracking-configuration
 
-- sudo npm install netlify-cli -g
-- netlify plugins:install netlify-lm-plugin
-- netlify lm:setup
+``` bash
+sudo npm install netlify-cli -g
+metlify login
+netlify plugins:install netlify-lm-plugin
+netlify lm:setup
+# the last command produces an output command which you should run
+```
+
 - To see your config run "cat .gitattributes"
 - netlify cli stores your auth token localy here: "~/.netlify/config.json"
 
