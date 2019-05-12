@@ -5,7 +5,8 @@
     <h4>Category:</h4>
     <nuxtdown-body class="body" :body="page.category" /><br>
     <h4>Description:</h4>
-    <nuxtdown-body class="body" :body="page.description" /><br>
+    <!-- <nuxtdown-body class="body" :body="page.description" /><br> -->
+    {{ this.description }}
     <h4>Featured Image: </h4>
     <img :src="page.featuredImage" alt="" /><br>
 
@@ -71,6 +72,17 @@
       await this.stringToHTML(this.page.body);
       await this.imagesToArray();
       this.startLightGallery('lightgallery');
+    },
+    computed: {
+      description: function(){
+        if(this.$store.state.lang == "en" || this.page.descriptionGr==null){
+          return this.page.descriptionEn;
+        }else{
+          return this.page.descriptionGr;
+          
+        }
+        
+      }
     },
     methods: {
       stringToHTML(s) {

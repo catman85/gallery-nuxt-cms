@@ -3,7 +3,8 @@ title: test
 category: cat1
 creationDate: '2019-05-07'
 featuredImage: /images/uploads/af92bb818e40f3894b66f4fcd43ba263.jpg
-description: 'hello '
+descriptionEn: 'hello '
+descriptionGr: 'Γεια '
 ---
 asdasdasdasdasdasdasdasd
 

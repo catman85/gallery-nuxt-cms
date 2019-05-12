@@ -1,14 +1,15 @@
 export default {
-    welcome: 'Hellasfo World',
-    home: 'Kentrikh',
-    about: 'sxetika me',
-    contact: 'epikoinwnia',
-    legal: 'nomika',
-    categories: 'kathgories',
-    exhibitions: 'ek8eseis',
-    title: 'titlos',
-    pages: {
-      home: 'Kentrikh',
-      contacts: 'epafes'
-    },
+    welcome: 'Γειά',
+    home: 'Κεντρική',
+    about: 'Σχετικά Με',
+    contact: 'Επικοινωνία',
+    legal: 'Νομικά',
+    categories: 'Κατηγορίες',
+    exhibitions: 'Εκθέσεις',
+    title: 'Τίτλος',
+    search: 'Αναζήτηση για...'
+    // pages: {
+    //   home: 'Kentrikh',
+    //   contacts: 'epafes'
+    // },
   }

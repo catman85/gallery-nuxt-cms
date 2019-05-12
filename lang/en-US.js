@@ -7,10 +7,9 @@ export default {
     categories: 'Categories',
     exhibitions: 'Exhbitions',
     title: 'Title',
-    pages: {
-      home: 'Home',
-      contacts: 'Contacts'
-    },
+    search: 'Search for...'
+    // pages: {
+    //   home: 'Home',
+    //   contacts: 'Contacts'
+    // },
   };
-
-// export 'english';

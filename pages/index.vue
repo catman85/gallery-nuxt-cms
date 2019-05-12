@@ -19,6 +19,7 @@ robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
     <h1>{{ t('welcome') }}</h1> 
+    <!-- <h1>TEST</h1> -->
     <h2>{{ t('categories') }}</h2>
     <ul>
       <li @click="pickCategory" v-for="entry in categories" :key="entry">
@@ -36,7 +37,7 @@ robots.txt sitemap.xml ggl_search_console -->
     <!-- you can put a function between the "" -->
     <form v-on:submit.prevent="">
       <!--referenced by this.$route.query 2-way data binding with v-model -->
-      <input type="text" v-model="query" id="search" placeholder="Search For ...">
+      <input type="text" v-model="query" id="search" :placeholder="t('search')">
     </form>
     <br>
 
