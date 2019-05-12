@@ -8,7 +8,7 @@ export default {
     exhibitions: 'Exhbitions',
     title: 'Title',
     search: 'Search for...'
-    // pages: {
+    // pages: { 
     //   home: 'Home',
     //   contacts: 'Contacts'
     // },

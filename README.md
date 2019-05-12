@@ -45,6 +45,9 @@ Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
         * https://www.netlify.com/docs/cli/#authentication
     * https://www.netlify.com/docs/large-media/#large-media-file-tracking-configuration
 
+- sudo npm install netlify-cli -g
+- netlify plugins:install netlify-lm-plugin
+- netlify lm:setup
 - To see your config run "cat .gitattributes"
 - netlify cli stores your auth token localy here: "~/.netlify/config.json"
 
