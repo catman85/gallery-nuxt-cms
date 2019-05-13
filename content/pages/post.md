@@ -4,7 +4,7 @@ category: new
 creationDate: '2019-05-13'
 featuredImage: /images/uploads/sculpture5.jpg
 descriptionEn: English Description
-descriptionGr: Perigrafh
+descriptionGr: ''
 ---
 
 ![Imgur](https://i.imgur.com/gjlUG9z.jpg)
