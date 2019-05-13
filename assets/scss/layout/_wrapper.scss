@@ -1,0 +1,37 @@
+
+
+/* Wrapper */
+
+	#wrapper{
+		width: 100%;
+		// ATTENTION had to add that extra div because of the slot
+		div > * {
+			> .inner {
+				$gutter: _size(gutter);
+
+				
+				// width: 100%;
+				max-width: _size(inner);
+				margin: 0 auto;
+				// padding: 0 $gutter;
+
+				@include breakpoint('<=medium') {
+					$gutter: _size(gutter) * 0.8;
+
+					padding: 0 $gutter;
+				}
+
+				@include breakpoint('<=small') {
+					$gutter: _size(gutter) * 0.6;
+
+					padding: 0 $gutter;
+				}
+
+				@include breakpoint('<=xsmall') {
+					$gutter: _size(gutter) * 0.4;
+
+					padding: 0 $gutter;
+				}
+			}
+		}
+	}

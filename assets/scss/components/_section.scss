@@ -1,0 +1,23 @@
+
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		// ATTENTION Aligning main mesage in the center
+		text-align: center;
+		p {
+			margin-top: _size(element-margin) * -0.7;
+		}
+
+		@include breakpoint('<=small') {
+			p {
+				margin-top: 0;
+			}
+		}
+	}

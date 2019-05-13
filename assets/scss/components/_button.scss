@@ -1,0 +1,176 @@
+/* Button */
+// Fonts
+// -----------
+// ATTENTION not needed
+// @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+// Base Styles
+// -----------
+.pushy-btn {
+	// makes the mouse to a little hand when you hover to let the user know he can click
+	cursor: pointer;
+	border: none;
+	border-radius: .3em;
+	box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .1),
+		inset 0 -.25em 0 hsla(0, 0%, 0%, .25),
+		0 .25em .25em hsla(0, 0%, 0%, .05);
+	color: _palette(fg);
+	background-color: yellow;
+	letter-spacing: 1px;
+	padding: .5em .6em .75em .6em;
+	text-shadow: 0 2px 2px hsla(0, 0%, 100%, .25);
+
+	// ATTENTION Golden Code (0 top bottom spacing, auto for left and right)
+	margin: 0 auto;
+	//if you add margin-top the pushy effect will be lost
+	margin-bottom: .5em;
+
+	&:active {
+		box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .2),
+			inset 0 2px 0 hsla(0, 0%, 100%, .1),
+			inset 0 .25em .5em hsla(0, 0%, 0%, .05);
+		margin-top: .25em;
+		padding-bottom: .5em;
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
+	font-size: _size(pushy-buy);
+}
+
+// ATTENTION toggles text size
+.vue-js-switch {
+	font-size: 16px !important;
+  }
+
+// ATTENTION nav btns config
+.customNav {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	// padding-top: 1em;
+	// height: 100%;
+
+	// .next, .prev{
+	// 	display:inline-block;
+	// }
+	span {
+		font-size: 20px;
+		height: 2em;
+		width: 3.5em;
+		text-align: center;
+		border-radius: _size(border-radius);
+	}
+
+	button,
+	span {
+		// same thing is in sticky menu top right
+		background-color: _palette(burger-white);
+		z-index: 1;//Doesn;t do anything
+	}
+
+	.next {
+		margin-left: 4%;
+	}
+
+	.prev,
+	.last {
+		margin-left: 1.5%
+	}
+}
+
+/* COOL:  */
+/* .owl-dots {
+    counter-reset: dots;
+}
+.owl-dot:before {
+    counter-increment:dots;
+    content: counter(dots);
+} */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+// button,
+.button {
+	@include vendor('appearance', 'none');
+	@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out',
+	'color #{_duration(transition)} ease-in-out',
+	'box-shadow #{_duration(transition)} ease-in-out'
+	));
+	background-color: transparent;
+	border-radius: _size(border-radius);
+	border: 0;
+	// ATTENTION Getting rid of that ugly button border
+	// box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette(fg);
+	color: _palette(fg) !important;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: _font(weight-bold);
+	height: 3.5em;
+	letter-spacing: _font(letter-spacing);
+	line-height: 3.45em;
+	overflow: hidden;
+	padding: 0 1.25em 0 #{1.25em + _font(letter-spacing)};
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+
+
+	&.icon {
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+
+	&.fit {
+		width: 100%;
+	}
+
+	&:hover {
+		color: _palette(accent1) !important;
+		box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette(accent1);
+	}
+
+	&:active {
+		background-color: transparentize(_palette(accent1), 0.9);
+	}
+
+	&.small {
+		font-size: 0.6em;
+	}
+
+	&.large {
+		font-size: 1em;
+	}
+
+	&.primary {
+		box-shadow: none;
+		background-color: _palette(fg);
+		color: _palette(bg) !important;
+
+		&:hover {
+			background-color: _palette(accent1);
+		}
+
+		&:active {
+			background-color: darken(_palette(accent1), 8);
+		}
+	}
+
+	&.disabled,
+	&:disabled {
+		@include vendor('pointer-events', 'none');
+		opacity: 0.25;
+	}
+}

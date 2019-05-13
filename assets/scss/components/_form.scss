@@ -1,0 +1,378 @@
+/* Form */
+
+form {
+	// margin: 0 0 _size(element-margin) 0;
+	// ATTENTION causes problem with dropdown
+	// overflow-x: hidden;
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	>.fields {
+		$gutter: (_size(element-margin) * 0.75);
+
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		width: calc(100% + #{$gutter * 2});
+		margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+
+		>.field {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			padding: $gutter 0 0 $gutter;
+			width: calc(100% - #{$gutter * 1});
+
+			&.half {
+				width: calc(50% - #{$gutter * 0.5});
+			}
+
+			&.third {
+				width: calc(#{100% / 3} - #{$gutter * (1 / 3)});
+			}
+
+			&.quarter {
+				width: calc(25% - #{$gutter * 0.25});
+			}
+		}
+	}
+
+	@include breakpoint('<=xsmall') {
+		>.fields {
+			$gutter: (_size(element-margin) * 0.75);
+
+			width: calc(100% + #{$gutter * 2});
+			margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+
+			>.field {
+				padding: $gutter 0 0 $gutter;
+				width: calc(100% - #{$gutter * 1});
+
+				&.half {
+					width: calc(100% - #{$gutter * 1});
+				}
+
+				&.third {
+					width: calc(100% - #{$gutter * 1});
+				}
+
+				&.quarter {
+					width: calc(100% - #{$gutter * 1});
+				}
+			}
+		}
+	}
+}
+
+label {
+	display: block;
+	// font-size: 0.9em;
+	font-weight: _font(weight-bold);
+	// ATTENTION rises first v-toggle
+	// margin: 0 0 (_size(element-margin) * 0.5) 0;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	@include vendor('appearance', 'none');
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	border-bottom: solid _size(border-width) _palette(border);
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0;
+	text-decoration: none;
+	width: 100%;
+
+	&:invalid {
+		box-shadow: none;
+	}
+
+	&:focus {
+		border-bottom-color: _palette(accent1);
+		box-shadow: inset 0 -1px 0 0 _palette(accent1);
+	}
+}
+
+select {
+	background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{_palette(border)}' /></svg>");
+	background-size: 1.25rem;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1rem) center;
+	height: _size(element-height);
+	padding-right: _size(element-height);
+	text-overflow: ellipsis;
+
+	option {
+		color: _palette(fg-bold);
+		background: _palette(bg);
+	}
+
+	&:focus {
+		&::-ms-value {
+			background-color: transparent;
+		}
+	}
+
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+#togglesContainer {
+	// ATTENTION this line does nothing we can't grab all the toggles at once for some reason
+	// probably due to v-for
+	// padding-bottom: 1em;
+}
+
+#toggle {
+	float: left;
+	opacity: 0.8;
+	padding: 1em 0 1em 1em;
+	animation-duration: 4s;
+	animation-delay: 700ms;
+
+	@include breakpoint('<=small') {
+		// width: _size(element-width)*0.8;
+		// margin:30px 0 0 5px;
+		// padding: 5px;
+		// width:auto;
+		// margin-right:0.6em;
+		margin-left: auto;
+		margin-right: auto;
+
+		// ATTENTION enabling float squeezes them together
+		// float: none;
+	}
+
+}
+
+// Search Query
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+	height: _size(element-height);
+	width: _size(element-width);
+	margin-right: 2em;
+	float: right;
+
+	@include breakpoint('<=small') {
+		width: _size(element-width)*0.8;
+		// width:auto;
+		// margin-right:0.6em;
+		margin-left: auto;
+		margin-right: auto;
+		// ATTENTION on small devices go above the toggles
+		float: none;
+	}
+}
+
+
+.barsGroup {
+	min-height: 3em;
+	margin: 1em 0 1em 0;
+	@include breakpoint('<=small') {
+		// this hack aligns the dropdowns
+		max-width: 18em;
+
+		// width:auto;
+		// margin-right:0.6em;
+		margin-left: auto;
+		margin-right: auto;
+
+		// ATTENTION on small devices go above the toggles
+		// float: none;
+		.btn-group:nth-child(1) {
+			padding-left: 0;
+		}
+	}
+
+}
+
+// dropdown
+.btn-group {
+
+	padding-left: 1.2em;
+
+	> li{
+		// ATTENTION this hack aligns the dropdown words with the search words
+		padding-top: 0.4em;
+	}
+
+	position: relative;
+
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.dropdown-toggle {
+	min-width: 8em;
+	min-height: _size(element-height);
+	bottom: 0px;
+	text-transform: none;
+
+	border: 0;
+	border-radius: 0;
+	border-bottom: solid _size(border-width) _palette(border);
+
+	background-repeat: no-repeat;
+
+	background-color: transparent;
+	transition: background 0s ease-out;
+
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.dropdown-toggle:hover {
+	//   background: #e1e1e1;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	// if its sorter than 10 the order arrows go to the next line
+	min-width: 10em;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	// font-size: 14px;
+	text-align: left;
+	background-color: rgba(_palette(burger-white), 0.8);
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	background-clip: padding-box;
+}
+
+.dropdown-menu>li>a {
+	padding: 10px 30px;
+	display: block;
+	clear: both;
+	//   color: #409FCB;
+	//   z-index: 1000;
+	//   font-weight: normal;
+	//   line-height: 1.6;
+	//   color: #333333;
+	//   white-space: nowrap;
+	//   text-decoration: none;
+}
+
+.dropdown-menu>li>a:hover {
+	//   background: #efefef;
+	color: #409FCB;
+}
+
+.dropdown-menu>li {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0;
+}
+
+.caret {
+	display: relative;
+	width: 0;
+	position: relative;
+	top: 10px;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-top: 4px solid \9;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	float: right;
+}
+
+li {
+	list-style: none;
+}
+
+
+textarea {
+	padding: 0;
+	min-height: (_size(element-height) * 1.25);
+}
+
+input[type="checkbox"],
+input[type="radio"]
+	{
+	@include vendor('appearance', 'none');
+	display: block;
+	float: left;
+	margin-right: -2em;
+	opacity: 0;
+	width: 1em;
+	z-index: -1;
+
+	&+label {
+		@include icon;
+		color: _palette(fg);
+		cursor: pointer;
+		display: inline-block;
+		// font-size: 1em;
+		font-weight: _font(weight);
+		padding-left: (_size(element-height) * 0.6) + 0.75em;
+		padding-right: 0.75em;
+		position: relative;
+
+		&:before {
+			border-radius: _size(border-radius);
+			border: solid _size(border-width) _palette(border);
+			content: '';
+			display: inline-block;
+			height: (_size(element-height) * 0.6);
+			left: 0;
+			line-height: (_size(element-height) * 0.575);
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: (_size(element-height) * 0.6);
+		}
+	}
+
+	&:checked+label {
+		&:before {
+			background: _palette(fg);
+			border-color: _palette(fg);
+			color: _palette(bg);
+			content: '\f00c';
+		}
+	}
+
+	&:focus+label {
+		&:before {
+			border-color: _palette(accent1);
+			box-shadow: 0 0 0 _size(border-width) _palette(accent1);
+		}
+	}
+}
+
+input[type="checkbox"] {
+	&+label {
+		&:before {
+			border-radius: _size(border-radius);
+		}
+	}
+}
+
+input[type="radio"] {
+	&+label {
+		&:before {
+			border-radius: 100%;
+		}
+	}
+}

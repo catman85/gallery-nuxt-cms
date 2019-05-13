@@ -1,0 +1,49 @@
+
+
+/* Main */
+
+	#main {
+		@include padding(5em, 0, (-5em, 0, 3em, 0));
+
+		@include breakpoint('<=small') {
+			@include padding(3em, 0, (-3em, 0, 3em, 0));
+		}
+	}
+
+	.canvas-interactive-wrapper {
+		position: relative;
+
+		canvas {
+			//pins both canvases on the background
+			position: fixed;
+			// position: absolute;
+
+			display: block;
+			width: 100%;
+			// ATTENTION makes granim,particles fullscreen
+			// performance still sucks on old devices with the heigth turned off
+			// ATTENTION 120% fixes that bug with he sticky url input on mobile browsers like chrome (you get a small blank canvas on the bottom of the screen)
+			height: 120%;
+			
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.cta-wrapper {
+			position: relative;
+			display: inline-block;
+			// padding: 3px 7px;
+			// border: solid 1px transparent;
+			// margin-right: 50px;
+			z-index: 1;
+			text-decoration: none;
+			// color: #222;
+			transition: border .3s;
+
+			// a.active {
+			// 	 border-color: #222;
+			// }
+		}
+	}

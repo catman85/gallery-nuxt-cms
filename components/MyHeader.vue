@@ -59,13 +59,13 @@
         // console.log(categories)
       },
       en() {
-        console.debug("english");
+        // console.debug("english");
         this.english = true;
         this.$nuxt.$emit('en', this.english);
         this.$store.commit('SET_LANG', 'en')
       },
       gr() {
-        console.debug("greek");
+        // console.debug("greek");
         this.english = false;
         this.$nuxt.$emit('gr', this.english);
         this.$store.commit('SET_LANG', 'gr')

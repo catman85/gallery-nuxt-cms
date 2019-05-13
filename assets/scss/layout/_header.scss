@@ -1,0 +1,254 @@
+
+
+/* Header */
+
+
+	#header {
+		@include padding(5em, 0, (3em, 0, -5em, 0));
+
+		header{
+			
+			h1,p,div{
+				animation-duration: 4s;
+				animation-delay: 1100ms;
+			}
+			
+		}
+
+		.showup {
+			display: none;
+		}
+
+		.logo{
+			display: block;
+			border-bottom: 0;
+			color: inherit;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing);
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			// ATTENTION unsticks logo from the left
+			// display: inline-block;
+
+			> * {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			svg{
+				// ATTENTION centers guitar logo image
+				display: block;
+				margin: 3em auto;
+
+				// ATTENTION responsive image 
+				max-width: 100%;
+				width: 38em;
+
+				// ATTNETION animate.css duration
+				animation-duration: 4s;
+				// this delay is added to give time to vue to hydrate, and not get an ugly logo flash.
+				// trying to bypass the problem
+				animation-delay: 1000ms;
+
+				// ATTENTION logo colors
+				.symbol{
+					fill: _palette(burger-white);
+				}
+
+				.text{
+					
+					fill: _palette(fg);
+				}
+			}
+			
+		}
+
+		nav {
+			position: fixed;
+			right: 2em;
+			top: 2em;
+			z-index: _misc(z-index-base);
+
+			ul {
+				@include vendor('display', 'flex');
+				@include vendor('align-items', 'center');
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: block;
+					padding: 0;
+
+					a {
+						display: block;
+						position: relative;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 1.5em;
+						background-color: transparentize(_palette(bg), 0.5);
+						border-radius: _size(border-radius);
+						border: 0;
+						font-size: 0.8em;
+						font-weight: _font(weight-bold);
+						letter-spacing: _font(letter-spacing);
+						text-transform: uppercase;
+					}
+
+					a[href="#menu"] {
+						-webkit-tap-highlight-color: transparent;
+						width: 4em;
+						text-indent: 4em;
+						font-size: 1em;
+						overflow: hidden;
+						padding: 0;
+						white-space: nowrap;
+
+						&:before, &:after {
+							@include vendor('transition', 'opacity #{_duration(transition)} ease');
+							content: '';
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: 2em 2em;
+						}
+
+						&:before {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 8px; stroke: #{_palette(accent1)}; }</style><line x1="0" y1="25" x2="100" y2="25" /><line x1="0" y1="50" x2="100" y2="50" /><line x1="0" y1="75" x2="100" y2="75" /></svg>');
+							opacity: 0;
+						}
+
+						&:after {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 8px; stroke: #{_palette(fg)}; }</style><line x1="0" y1="25" x2="100" y2="25" /><line x1="0" y1="50" x2="100" y2="50" /><line x1="0" y1="75" x2="100" y2="75" /></svg>');
+							opacity: 1;
+						}
+
+						&:hover {
+							&:before {
+								opacity: 1;
+							}
+
+							&:after {
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(3em, 0, (1em, 0, -3em, 0));
+
+			nav {
+				right: 0.5em;
+				top: 0.5em;
+
+				ul {
+					li {
+						a[href="#menu"] {
+							&:before, &:after {
+								background-size: 1.5em 1.5em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.arrow {
+		// a { color: white; text-decoration: none; }
+		// text-align: center;
+			max-height: 1em;
+			fill:_palette(fg);
+			width: 100%;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-align-content: center;
+			align-content: center;
+			svg{
+				// margin: 0 auto;	
+			}
+	
+		// margin: 8% 0;
+	  }
+	  .bounce {
+		-moz-animation: bounce 4s infinite;
+		-webkit-animation: bounce 4s infinite;
+		animation: bounce 4s infinite;
+	  }
+	  
+	  @keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+		  transform: translateY(0);
+		}
+		40% {
+		  transform: translateY(-30px);
+		}
+		60% {
+		  transform: translateY(-15px);
+		}
+	  }
+
+	.smallHeader{
+		header{
+			margin-top: 1.5em;
+		}
+		svg{
+			// ATTENTION logo colors
+			.symbol{
+				fill: _palette(burger-white);
+			}
+			.text{	
+				fill: _palette(fg);
+			}
+		}
+	}
+
+	#headerSmall{
+		// background-color: _palette(burger-white);
+		// text-align: center;
+		// border-radius: _size(border-radius);
+		// border-left: 0.2em solid rgba(255, 255, 255, .75);
+		// border-right: 0.2em solid rgba(255, 255, 255, .75);
+		position: fixed;
+		// padding: 0 0.3em 0 0.3em;
+		// line-height:1.2em;
+		max-width: 10em;
+		max-height: 5em;
+	
+		//for the text logo
+		// left: 0.667em;
+		// top: 0.667em;
+
+		//for the svg logo
+		left: 2em;
+		top:1.4em;
+	
+		// z-index: 10000;
+	
+		white-space: nowrap;
+		overflow: hidden;
+
+		@include breakpoint('<=medium') {//these values are stolen from the burger menu not sure how the ycame up
+			// left: 0.68em;
+			// top:0.68em;
+			top: 1.2em;
+		}
+	
+		@include breakpoint('<=small') {
+			// top:0.52em;
+			// left: 0.52em;
+			left: 0.5em;
+			top: 0em;
+		}
+	}
