@@ -1,3 +1,3 @@
 <template>
-    <h1>Legal</h1>
+    <h1>{{t('legal')}}</h1>
 </template>

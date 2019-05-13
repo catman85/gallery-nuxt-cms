@@ -1,8 +1,6 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-i18n_multi_languages_translate_btn
-
 structure scss
 mansory_layout
 header_burger_responsive 
@@ -18,7 +16,7 @@ domain_link
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
-    <h1>{{ t('welcome') }}</h1> 
+    <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
     <h2>{{ t('categories') }}</h2>
     <ul>

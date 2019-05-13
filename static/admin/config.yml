@@ -29,8 +29,8 @@ collections:
         - {label: Category, name: category, widget: string, default: "Category Name", required: true}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true}
         - {label: Featured Image, name: featuredImage, widget: image}
-        - {label: Description English, name: descriptionEn, widget: text}
-        - {label: Description Greek, name: descriptionGr, widget: text}
+        - {label: Description English, name: descriptionEn, widget: text,required: false}
+        - {label: Description Greek, name: descriptionGr, widget: text,required: false}
         - {label: Content, name: body, widget: markdown}        
         # - label: "Gallery"
         #   name: "galleryImages"

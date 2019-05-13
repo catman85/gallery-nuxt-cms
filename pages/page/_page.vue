@@ -16,7 +16,8 @@
       <!-- <no-ssr>  not needed </no-ssr> -->
       <div class="app-container">
         <div id="lightgallery">
-          <a v-for="image in imagesArray" :key="image.src" :href="image.src" :data-sub-html="'.caption' + format(image.title)">
+          <a v-for="image in imagesArray" :key="image.src" :href="image.src"
+            :data-sub-html="'.caption' + format(image.title)">
             <img :src="image.src" :title="image.title" :alt="image.alt">
 
             <!-- this must match with data-sub-html but there might be duplicates -->
@@ -40,8 +41,8 @@
     // nuxtI18n: false,
     // nuxtI18n: {
     // paths: {
-      // it: '/chi-siamo',
-      // en: '/about'
+    // it: '/chi-siamo',
+    // en: '/about'
     // }},
     head: function () {
       return {
@@ -74,14 +75,12 @@
       this.startLightGallery('lightgallery');
     },
     computed: {
-      description: function(){
-        if(this.$store.state.lang == "en" || this.page.descriptionGr==null){
+      description: function () {
+        if (this.$store.state.lang == "en" || this.page.descriptionGr == "") {
           return this.page.descriptionEn;
-        }else{
+        } else {
           return this.page.descriptionGr;
-          
         }
-        
       }
     },
     methods: {
@@ -101,7 +100,7 @@
           // selector: '.current',
         })
       },
-      format(title){
+      format(title) {
         title = title.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
         title = title.trim(); // remove spaces from beginning and end.
         title = title.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash

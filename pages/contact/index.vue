@@ -1,19 +1,30 @@
 <template>
   <div>
-    <h1>Contact</h1><br>
+    <h1>{{t('contact')}}</h1><br>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/success/">
       <!-- honeypot bot trap (needs to be hidden)-->
       <!-- ATTENTION The hidden input field should have a name attribute called "form-name" and a value matching the name of the form, which in this case is "contact" -->
       <input type="hidden" name="form-name" value="contact" />
       <p>
-        <label>Email: <input type="text" name="email" required /></label>
+        <label>E-mail: <input type="text" name="email" required /></label>
       </p>
       <p>
-        <label>Message: <textarea name="message" required></textarea></label>
+        <label>{{t('message')}}: <textarea name="message" required></textarea></label>
       </p>
       <p>
-        <button type=”submit” class="pushy-btn">Send Message</button>
+        <button type=”submit” class="pushy-btn">{{t('sndMsg')}}</button>
       </p>
     </form>
+    <br>
+    <h2 id="mcetoc_1d8pbn8510">{{t('clinks')}}:</h2>
+    <ul>
+      <li><a href="https://www.facebook.com/VisualArtistAnthiaMegaChavre/">facebook</a></li>
+      <li><a
+          href="https://www.facebook.com/Become-An-Artist-%CE%93%CE%AF%CE%BD%CE%B5-%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-237040896974199/">Become
+          An Artist</a></li>
+      <li><a href="https://www.facebook.com/AnthiaMegaChavreAggelosGavriil/">Jazz Duet</a></li>
+      <li><a href="https://www.youtube.com/channel/UCd_3qTM7zzxkl_I-3JDPKKg">youtube</a></li>
+      <li><a href="https://myspace.com/anthiamega/mixes/706273/photo/373754354">myspace</a></li>
+    </ul>
   </div>
 </template>

@@ -8,8 +8,12 @@
           <!-- <nuxt-link :to="'/'">home</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/about'">{{ t('about')}}</nuxt-link>
+          <nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link>
           <!-- <nuxt-link :to="'/about'">about</nuxt-link> -->
+        </li>
+        <li>
+          <nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link>
+          <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
         <li>
           <nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link>
@@ -22,11 +26,11 @@
       </ul>
       <br>
       <ul>
-      <!-- <nuxt-link v-on:click.native="gr" :to="switchLocalePath('gr')">GR</nuxt-link> -->
-      <!-- <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link> -->
-      
-      <li v-on:click="gr">GR</li>
-      <li v-on:click="en">EN</li>
+        <!-- <nuxt-link v-on:click.native="gr" :to="switchLocalePath('gr')">GR</nuxt-link> -->
+        <!-- <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link> -->
+
+        <li v-on:click="gr">GR</li>
+        <li v-on:click="en">EN</li>
       </ul>
       <!-- {{categories}} to trigger the computed -->
     </nav>
