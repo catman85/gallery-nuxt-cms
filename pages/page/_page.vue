@@ -95,7 +95,12 @@
         const el = document.getElementById(id)
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
-          getCaptionFromTitleOrAlt: true, //FIXME:
+          // getCaptionFromTitleOrAlt: true, //FIXME:
+          hideBarsDelay: 700,
+          // height: "70%",
+          // width: "60%",
+          // controls: false,
+          // pullCaptionUp: false,
           // subHtmlSelectorRelative:true,
           // selector: '.current',
         })
@@ -114,5 +119,23 @@
 
 </script>
 
-<style scoped>
+<style lang="scss">
+  .lg-sub-html {
+    // width: 30%;
+    height: 20%;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+
+    &:hover {
+      //show the caption on hover
+      opacity: 1;
+    }
+
+    .current {
+      //TODO: change text styl
+    }
+  }
+
 </style>
