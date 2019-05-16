@@ -17,14 +17,15 @@
       <div class="app-container">
         <div id="lightgallery">
           <a v-for="image in imagesArray" :key="image.src" :href="image.src"
-            :data-sub-html="'.caption' + format(image.title)">
+            :data-sub-html="'.caption' + cleanString(image.title)">
             <img :src="image.src" :title="image.title" :alt="image.alt">
 
             <!-- this must match with data-sub-html but there might be duplicates -->
-            <!-- ATTENTION for some reason filters don't work -->
-            <div :class="'description '+'caption'+ format(image.title)">
-              <h5 class="current">{{image.title}}</h5>
-              <!-- <p>{{image.alt}}</p> -->
+            <!-- ATTENTION for some reason filters don't work (format)-->
+            <div :class="'description '+'caption'+ cleanString(image.title)">
+              <h4>{{image.title | firstPart}}</h4>
+              <p>{{image.title | secondPart}}</p>
+              <p>{{image.title | thirdPart}}</p>
             </div>
           </a>
         </div>
@@ -95,8 +96,10 @@
         const el = document.getElementById(id)
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
-          // getCaptionFromTitleOrAlt: true, //FIXME:
+          getCaptionFromTitleOrAlt: true, //FIXME:
           hideBarsDelay: 700,
+          hideControlOnEnd: true,
+          // download: false,
           // height: "70%",
           // width: "60%",
           // controls: false,
@@ -104,16 +107,35 @@
           // subHtmlSelectorRelative:true,
           // selector: '.current',
         })
-      },
-      format(title) {
-        title = title.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
-        title = title.trim(); // remove spaces from beginning and end.
-        title = title.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
-        return title;
       }
     },
     filters: {
-
+      firstPart(s) {
+        // if(s.includes(",")){
+        // (s.split(',').length - 1) // how many times "," appears inside a string
+        if ((s.split(',').length - 1) >= 1) {
+          // from start to first index
+          return s.substring(0, s.indexOf(',')); //one comma , two parts
+        } else {
+          return s; // no comma
+        }
+      },
+      secondPart(s) {
+        if ((s.split(',').length - 1) == 1) { //one comma, two parts
+          //from last index to end
+          //in this case last index and first index are the same
+          return s.substring(s.lastIndexOf(',') + 1);
+        } else if ((s.split(',').length - 1) > 1) { // two commas
+          //from first index to last index
+          return s.substring(s.indexOf(',') + 1, s.lastIndexOf(',')); //two commas
+        }
+      },
+      thirdPart(s) {
+        if ((s.split(',').length - 1) >= 2) {
+          //from last index to end
+          return s.substring(s.lastIndexOf(',') + 1);
+        }
+      }
     }
   };
 
@@ -123,6 +145,7 @@
   .lg-sub-html {
     // width: 30%;
     height: 20%;
+    
     opacity: 0;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -133,8 +156,8 @@
       opacity: 1;
     }
 
-    .current {
-      //TODO: change text styl
+    > h4,p {
+      font-size: 20px;
     }
   }
 

@@ -26,6 +26,21 @@ Vue.mixin({
       }else{
         return greek[key];
       }
+    },
+    nthIndex(str, pat, n) { // not used
+      var L = str.length,
+        i = -1;
+      while (n-- && i++ < L) {
+        i = str.indexOf(pat, i);
+        if (i < 0) break;
+      }
+      return i;
+    },
+    cleanString(title){
+      title = title.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
+      title = title.trim(); // remove spaces from beginning and end.
+      title = title.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
+      return title;
     }
   }
 })

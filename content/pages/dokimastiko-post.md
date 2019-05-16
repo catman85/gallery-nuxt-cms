@@ -12,7 +12,7 @@ descriptionGr: τεχνη
 
 ![Imgur](https://i.imgur.com/klqbHzc.jpg)
 
-![Imgur](https://i.imgur.com/37LBnMS.jpg)
+![Imgur](https://i.imgur.com/37LBnMS.jpg "Name, description")
 
 ![](https://i.imgur.com/ab5Vhxs.jpg "\"Explosion\", Acrylics & ink on wood, 35 cm. x 50 cm., December 2018")
 
