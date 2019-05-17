@@ -143,9 +143,14 @@
 </script>
 
 <style lang="scss">
+
+.lg-backdrop{
+  background-color: white;
+}
   .lg {
     position: absolute;
     .lg-toolbar{
+      opacity: 0;
       background-color: rgba(0, 0, 0, 0.3);
     }
     .lg-inner { //restricting the image's height
@@ -182,6 +187,7 @@
         // top: 50%;
         font-size: 2.5vh;
         margin-top: 0px;
+        color: black;
       }
     }
   }
