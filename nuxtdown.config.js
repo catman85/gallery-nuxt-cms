@@ -16,6 +16,15 @@ module.exports = {
         permalink: "/:slug",
         isPost: false
       }
+    ],
+    [
+      "videos",
+      {
+        // makes videos.vue work? I don't know how...
+        page: "/video/_video",
+        permalink: "/:slug",
+        isPost: false
+      }
     ]
   ]
 };

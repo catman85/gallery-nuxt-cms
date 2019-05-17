@@ -55,6 +55,7 @@ netlify lm:setup
 
 - To see your config run "cat .gitattributes"
 - netlify cli stores your auth token localy here: "~/.netlify/config.json"
+- to download the images handled by git lfs locally, remove them from /static/images/uploads/*, and then "git checkout ."
 
 
 ### Folders to Ignore:

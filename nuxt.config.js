@@ -34,6 +34,9 @@ module.exports = {
   }, {
     src: "~/plugins/lightgallery.client.js",
     ssr: false
+  },{
+    src: "~/plugins/youtube.js",
+    ssr: false
   }],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'

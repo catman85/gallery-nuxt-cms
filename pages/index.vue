@@ -71,9 +71,9 @@ robots.txt sitemap.xml ggl_search_console -->
 <script>
   // import MyHeader from "@/components/MyHeader";
   export default {
-    components: {
+    // components: {
       // MyHeader
-    },
+    // },
     head: function () {
       return {
         title: "Home",
