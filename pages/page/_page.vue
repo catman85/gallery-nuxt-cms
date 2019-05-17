@@ -97,12 +97,13 @@
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
           getCaptionFromTitleOrAlt: true, //FIXME:
-          hideBarsDelay: 700,
+          hideBarsDelay: 300,
           hideControlOnEnd: true,
+          controls: false,
           // download: false,
           // height: "70%",
           // width: "60%",
-          // controls: false,
+          
           // pullCaptionUp: false,
           // subHtmlSelectorRelative:true,
           // selector: '.current',
@@ -142,22 +143,44 @@
 </script>
 
 <style lang="scss">
-  .lg-sub-html {
-    // width: 30%;
-    height: 20%;
-    
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+  .lg {
+    position: absolute;
 
-    &:hover {
-      //show the caption on hover
-      opacity: 1;
+    .lg-inner { //restricting the image's height
+      height: 90%;
+      bottom: 10%;
     }
 
-    > h4,p {
-      font-size: 20px;
+    .lg-sub-html {
+      // width: 30%;
+      // FIXME:// are all tehse restrictions necessary?
+      // position: fixed;
+      // bottom: 0;
+      top: 90%;
+      height: 10%;
+
+      padding: 2px 0px;
+
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+
+      background-color: rgba(0, 0, 0, 0); //black full opacity overrite default
+
+      &:hover {
+        //hide the caption on hover
+        opacity: 0;
+      }
+
+      >h4,
+      p {
+        // font-size: 15px;
+        // position: absolute;
+        // top: 50%;
+        font-size: 2.7vh;
+        margin-top: 0px;
+      }
     }
   }
 
