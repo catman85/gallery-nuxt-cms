@@ -97,10 +97,10 @@
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
           getCaptionFromTitleOrAlt: true, //FIXME:
-          hideBarsDelay: 300,
+          hideBarsDelay: 1000,
           hideControlOnEnd: true,
           controls: false,
-          // download: false,
+          download: false,
           // height: "70%",
           // width: "60%",
           
@@ -149,9 +149,12 @@
 }
   .lg {
     position: absolute;
+    .lg-close{
+      color: black;
+    }
     .lg-toolbar{
-      opacity: 0;
-      background-color: rgba(0, 0, 0, 0.3);
+      // opacity: 0; //remove that shit
+      background-color: rgba(0, 0, 0, 0.0); // opacity full but dont kill children
     }
     .lg-inner { //restricting the image's height
       height: 90%;
