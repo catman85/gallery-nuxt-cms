@@ -8,12 +8,16 @@
           <!-- <nuxt-link :to="'/'">home</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link>
-          <!-- <nuxt-link :to="'/about'">about</nuxt-link> -->
-        </li>
-        <li>
           <nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
+        </li>
+        <li>
+          <nuxt-link :to="'/videos'">{{ t('videos')}}</nuxt-link>
+          <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
+        </li>
+        <li>
+          <nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link>
+          <!-- <nuxt-link :to="'/about'">about</nuxt-link> -->
         </li>
         <li>
           <nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link>

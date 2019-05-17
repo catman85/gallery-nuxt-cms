@@ -7,6 +7,7 @@ export default {
     features: 'Παραπομπές',
     links: 'Σύνδεσμοι',
     contact: 'Επικοινωνία',
+    videos: 'Βίντεο',
     message: 'Μήνυμα',
     clinks: 'Σύνδεσμοι Επικοινωνίας',
     sndMsg: 'Αποστολή Μηνύματος',

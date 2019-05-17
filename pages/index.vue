@@ -1,7 +1,12 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-structure scss
+videos
+wait on imgut uploader
+order of photos
+local pics
+
+
 mansory_layout
 header_burger_responsive 
 style_markdown_content 

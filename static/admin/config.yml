@@ -9,16 +9,15 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
-  #   label: "Blog" # Used in the UI
-  #   folder: "content/blog/posts" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   fields: # The fields for each document, usually in front matter
-  #     - {label: Title, name: title, widget: string, required: true}
-  #     - {label: Description, name: description, widget: text, required: true}
-  #     - {label: Publish date, name: date, widget: "datetime"}
-  #     - {label: Content, name: body, widget: "markdown"}
+  - name: "videos" # Used in routes, e.g., /admin/collections/blog
+    label: "Video" # Used in the UI
+    folder: "content/videos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: Title, name: title, widget: string, required: false}
+      - {label: Description, name: description, widget: text, required: false}
+      - {label: Youtube URL, name: ytLink, widget: text, required: true}
   - label: "Pages"
     name: "pages"
     folder: "content/pages"
@@ -31,7 +30,7 @@ collections:
         - {label: Featured Image, name: featuredImage, widget: image}
         - {label: Description English, name: descriptionEn, widget: text,required: false}
         - {label: Description Greek, name: descriptionGr, widget: text,required: false}
-        - {label: Content, name: body, widget: markdown}        
+        - {label: Images, name: body, widget: markdown}        
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"

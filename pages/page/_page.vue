@@ -145,7 +145,9 @@
 <style lang="scss">
   .lg {
     position: absolute;
-
+    .lg-toolbar{
+      background-color: rgba(0, 0, 0, 0.3);
+    }
     .lg-inner { //restricting the image's height
       height: 90%;
       bottom: 10%;

@@ -6,6 +6,7 @@ export default {
     acts: 'Acts',
     features: 'Features',
     links: 'Links',
+    videos: 'Videos',
     contact: 'Contact',
     message: 'Message',
     clinks: 'Contact Links',
