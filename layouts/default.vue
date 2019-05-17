@@ -24,8 +24,9 @@ export default {
 <style lang="scss" src="@/assets/scss/main.scss">
 // ATTENTION these don't do anything if you use src
 // html {
-//   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-//     Roboto, "Helvetica Neue", Arial, sans-serif;
+//   // font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+//   //   Roboto, "Helvetica Neue", Arial, sans-serif;
+//   // font-family: Roboto;
 //   font-size: 16px;
 //   word-spacing: 1px;
 //   -ms-text-size-adjust: 100%;

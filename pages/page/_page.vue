@@ -180,7 +180,7 @@
         // font-size: 15px;
         // position: absolute;
         // top: 50%;
-        font-size: 2.7vh;
+        font-size: 2.5vh;
         margin-top: 0px;
       }
     }

@@ -1,17 +1,16 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-videos
 wait on imgut uploader
 order of photos
-local pics
-
 
 mansory_layout
 header_burger_responsive 
 style_markdown_content 
 google_fonts
 font-awesome
+
+data-entry
 
 lazy_load
 meta_content
