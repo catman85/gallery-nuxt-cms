@@ -1,138 +1,16 @@
-/* Basic */
-
-// MSIE: Required for IEMobile.
-@-ms-viewport {
-	width: device-width;
+img{
+	max-width: 14em;
 }
 
-// MSIE: Prevents scrollbar from overlapping content.
-body {
-	-ms-overflow-style: scrollbar;
-	// overflow-x: hidden; // Attempt to fix the mobile scroll bug. It doesn't work
-}
+html{
+	font-family: sans-serif;
 
-// Ensures page width is always >=320px.
-@include breakpoint('<=xsmall') {
-
-	html,
-	body {
-		min-width: 320px;
-	}
-}
-
-// Set box model to border-box.
-// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	//commented for cards but caused width problem
-	box-sizing: inherit;
-}
-
-body {
-	// ATTENTION we don't want a white background before granim loads up
-	background: linear-gradient(to right, _palette(bg-granim-left), _palette(bg-granim-right));
-
-	// ATTENTION Stops initial animations until page loads.
-	// https://css-tricks.com/transitions-only-after-page-load/
-	// https://stackoverflow.com/questions/10148660/javascript-hide-a-div-at-startup-load
-	&.is-preload {
-
-		*,
-		*:before,
-		*:after {
-			display: none;
-			@include vendor('animation', 'none !important');
-			@include vendor('transition', 'none !important');
-		}
-	}
 
 }
 
-// useless?
-[v-cloak] {
-	display: none;
-
-	>* {
-		display: none;
-	}
-}
-
-/* ATTNETION v-vpshow classes (check main.js) */
-.before-enter {
-	opacity: 0;
-}
-
-.enter {
-	transition: opacity 2s ease;
-}
-
-/* ---------------- */
-
-.center-preset {
-	// ATTENTION golden code
-	width: 100%;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-align-content: center;
-	align-content: center;
-	
-
-	iframe,
-	img,a {
-		// centers youtube and soundcloud
-		// ATTENTION golden code
-		margin: 0 auto;
-		margin-bottom: 3em;
-		// margin-top: 1em;
-		max-width: 90%;
-		max-height: 28em;
-		border-radius: _size(border-radius)*0.4;
-
-		// for the image, The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. 
-		// The object will be clipped to fit
-		object-fit: cover;
-
-		@include breakpoint('<=medium') {
-			max-height: 22em;
-		}
-
-		@include breakpoint('<=small') {
-			max-height: 17em;
-			// margin-top:1em;
-		}
-	}
-
-	>* {
-		-webkit-box-shadow: 0px 15px 50px 5px #000;
-		box-shadow: 0px 15px 50px 5px #000;
-	}
-
-	form{
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		margin: 0 auto;
-		width: 30%;
-
-		input{
-			height: 1.4em;
-			width:50%;
-			margin:0;
-			float: right;
-
-		}
-		
-		@include breakpoint('<=medium') {
-			width: 50%
-		}
-		@include breakpoint('<=small') {
-			width: 80%;
-		}
-	}
+.container{
+  // position: relative;
+  // margin-top:5%;
+  // height: 83%;
+  // bottom:0;
 }

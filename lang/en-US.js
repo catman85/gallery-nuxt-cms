@@ -1,5 +1,6 @@
 export default {
     welcome: 'Hello World',
+    artwork: 'Artwork',
     home: 'Home',
     about: 'About',
     bio: 'Bio',

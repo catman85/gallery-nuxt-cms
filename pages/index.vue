@@ -22,7 +22,7 @@ robots.txt sitemap.xml ggl_search_console -->
   <div class="container">
     <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
-    <h2>{{ t('categories') }}</h2>
+    <h2>{{ t('artwork') }}</h2>
     <ul>
       <li @click="pickCategory" v-for="entry in categories" :key="entry">
         <!-- <nuxtdown-body class="body" :body="" /> -->

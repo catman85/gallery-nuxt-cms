@@ -1,31 +1,17 @@
-// @import 'libs/vars';
-// @import 'libs/functions';
-// @import 'libs/mixins';
-// @import 'libs/vendor';
-// @import 'libs/breakpoints';
-// @import 'libs/html-grid';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/breakpoints';
 
 // vue asks for these big ass /fonts/*.eot files
 // @import '../css/font-awesome.min.css';
 // @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
 
 
-
-// Breakpoints.
-
-	// @include breakpoints((
-	// 	xlarge:   ( 1281px,  1680px ),
-	// 	large:    ( 981px,   1280px ),
-	// 	medium:   ( 737px,   980px  ),
-	// 	small:    ( 481px,   736px  ),
-	// 	xsmall:   ( 361px,   480px  ),
-	// 	xxsmall:  ( null,    360px  )
-	// ));
-
 // Base.
 
 	// @import 'base/reset';
-	// @import 'base/page';
+	@import 'base/page';
 	// @import 'base/typography';
 
 // Component.
@@ -45,7 +31,7 @@
 
 // Layout.
 
-	// @import 'layout/header';
+	@import 'layout/header';
 	// @import 'layout/menu';
 	// @import 'layout/main';
 	// @import 'layout/footer';
@@ -55,10 +41,3 @@
 	// @import '../css/animate.min';
 	// @import '../css/owl.carousel.min.css'; //not needed? loaded by the script
 	// @import '../css/owl.theme.default.min.css'; //not needed?
-	img{
-		max-width: 14em;
-	  }
-
-	  html{
-		font-family: sans-serif;
-	  }

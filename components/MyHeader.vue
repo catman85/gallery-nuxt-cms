@@ -1,7 +1,8 @@
 <template>
   <header>
-    <h1 @click="show">ANTHIA ART</h1>
+    <nuxt-link :to="'/'" id="logo"><Logo></Logo></nuxt-link>
     <nav>
+      <a href="#" id="menu-icon"><Burger/></a>
       <ul>
         <li>
           <nuxt-link :to="'/'">{{ t('home')}}</nuxt-link>
@@ -28,8 +29,7 @@
           <!-- <nuxt-link :to="'/legal'">legal</nuxt-link> -->
         </li>
       </ul>
-      <br>
-      <ul>
+      <ul class="languages">
         <!-- <nuxt-link v-on:click.native="gr" :to="switchLocalePath('gr')">GR</nuxt-link> -->
         <!-- <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link> -->
 
@@ -42,10 +42,16 @@
 </template>
 
 <script>
+  import Logo from "@/components/Logo.vue";
+  import Burger from "@/components/Burger.vue";
   export default {
     name: "MyHeader",
     props: {
       // data: Object
+    },
+    components: {
+      Logo,
+      Burger
     },
     mounted() {
       this.$nuxt.$on('index', (data) => {
