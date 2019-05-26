@@ -72,18 +72,11 @@ header {
     ul {
       display: inline-block; //side by side
 
-      &.languages {
-        margin-right: 1em;
-      }
-
       li {
         display: inline-block; // makes li elements appear side by side
-        padding: 20px;
-
+        padding: 15px;
       }
     }
-
-
   }
 
   #menu-icon {
@@ -91,49 +84,33 @@ header {
     //   background: #4C8FEC url(../img/menu-icon.png) center;
   }
 
-  a:hover#menu-icon {
-    // background-color: #444;
-    border-radius: 4px 4px 0 0;
-  }
-
   // @media only screen and (max-width : 640px) {
   @include for-tablet-landscape-down {
-
     // separates the logo from the burger when scrolling
     // position: absolute;
     // but is not needed since parent uses overflow:hidden
 
-    nav {
+    nav { //menu
       background: rgba(255, 255, 255, 0.850);
       position: fixed;
-      top: 4em;
-      right: 2em;
+      top: 3em;
+      right: 1em;
       border-radius: 2em;
+      // you cant set the width here because you get a line
+      // width: 9em;
 
-      #menu-icon {
+      #menu-icon { //burger
         // make it appear
         // show burger
         display: inline-block;
-
-        // &:hover{
-        // 	//FIXME: replace with js
-        // 		  ~ ul { // + references all #menu-icons's siblings ul
-        // 			// display: initial;
-        // 		  }
-        // 		  :parent{
-        // 			//   width: 40%;
-        // 		  }
-        // }
         svg {
-          //burger menu
-          position: fixed;// is needed
-          top: 0;
-          right: 0;
-          margin: 2em 2em;
+          //burger icon
+          position: fixed; // is needed
+          top: 1.8em;
+          right: 2em;
+          width: 2.2em;
         }
       }
-
-
 
       ul {
         float: none;
@@ -141,25 +118,32 @@ header {
         padding: 0 0;
 
         li {
-          // text-align: center;
-          // margin: 0 auto;
-          width: 100%; // forces them to go beneath each other
-
+          display: block;
+          text-align: center;
+          // width: 100%; // forces them to go beneath each other
         }
 
       }
 
       .languages {
-        li {
-          width: 20%;
+        :nth-child(2) {
+          // EN
+          float: left;
+          margin-left: 1em;
+        }
+
+        :nth-child(1) {
+          // GR
+          float: right;
+          margin-right: 1em;
         }
       }
 
     }
-
-    nav:hover {
-      width: 9em;
-
+//FIXME: replace with js
+    // nav:hover {
+    .open{
+      width: 10em;
       ul {
         display: initial;
       }

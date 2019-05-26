@@ -1,8 +1,12 @@
 <template>
   <header>
-    <nuxt-link :to="'/'" id="logo"><Logo></Logo></nuxt-link>
-    <nav>
-      <a href="#" id="menu-icon"><Burger/></a>
+    <nuxt-link :to="'/'" id="logo">
+      <Logo></Logo>
+    </nuxt-link>
+    <!-- @blur.native is only for input elements -->
+    <nav ref="nav" v-click-outside="closeMenu">
+      <a @click="toggleMenu" id="menu-icon">
+        <Burger /></a>
       <ul>
         <li>
           <nuxt-link :to="'/'">{{ t('home')}}</nuxt-link>
@@ -34,6 +38,7 @@
         <!-- <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link> -->
 
         <li v-on:click="gr">GR</li>
+        <!-- <div id="separator">|</div> -->
         <li v-on:click="en">EN</li>
       </ul>
       <!-- {{categories}} to trigger the computed -->
@@ -44,6 +49,7 @@
 <script>
   import Logo from "@/components/Logo.vue";
   import Burger from "@/components/Burger.vue";
+  import vClickOutside from 'v-click-outside';
   export default {
     name: "MyHeader",
     props: {
@@ -52,6 +58,11 @@
     components: {
       Logo,
       Burger
+    },
+    watch: {
+      $route(to, from) {
+        this.closeMenu();
+      }
     },
     mounted() {
       this.$nuxt.$on('index', (data) => {
@@ -79,8 +90,21 @@
         this.english = false;
         this.$nuxt.$emit('gr', this.english);
         this.$store.commit('SET_LANG', 'gr')
+      },
+      toggleMenu() {
+        let nav = this.$refs.nav;
+        // let nav = document.querySelector("nav");
+        if (nav.classList.contains("open")) {
+          nav.classList.remove("open");
+        } else {
+          nav.classList.add("open");
+        }
+      },
+      closeMenu() {
+        console.debug("closing")
+        let nav = this.$refs.nav;
+        nav.classList.remove("open");
       }
-
     },
     beforeDestroy() {
       // $off method turns off the event listner
