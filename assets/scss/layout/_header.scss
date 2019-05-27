@@ -40,13 +40,13 @@ header {
   }
 
   a {
-    // color: _palette(fg);//FIXME: wtf happened?
-    color:grey;
+    color: _palette(fg);//FIXME: wtf happened?
+    // color:grey;
     text-decoration: none;
     font-weight: bold;
 
     &:hover {
-      // color: _palette(accent1);
+      color: _palette(accent1);
     }
   }
 

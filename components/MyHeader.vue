@@ -79,13 +79,15 @@
         // console.debug("english");
         this.english = true;
         this.$nuxt.$emit('en', this.english);
-        this.$store.commit('SET_LANG', 'en')
+        this.$store.commit('SET_LANG', 'en');
+        this.closeMenu();
       },
       gr() {
         // console.debug("greek");
         this.english = false;
         this.$nuxt.$emit('gr', this.english);
-        this.$store.commit('SET_LANG', 'gr')
+        this.$store.commit('SET_LANG', 'gr');
+        this.closeMenu();
       },
       toggleMenu() {
         let nav = this.$refs.nav;
