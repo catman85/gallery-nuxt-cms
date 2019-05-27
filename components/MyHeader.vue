@@ -9,23 +9,23 @@
         <Burger /></a>
       <ul>
         <li>
-          <nuxt-link :to="'/'">{{ t('home')}}</nuxt-link>
+          <span><nuxt-link :to="'/'">{{ t('home')}}</nuxt-link></span>
           <!-- <nuxt-link :to="'/'">home</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link>
+          <span><nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link></span>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/videos'">{{ t('videos')}}</nuxt-link>
+          <span><nuxt-link :to="'/videos'">{{ t('videos')}}</nuxt-link></span>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link>
+          <span><nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link></span>
           <!-- <nuxt-link :to="'/about'">about</nuxt-link> -->
         </li>
         <li>
-          <nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link>
+          <span><nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link></span>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
       </ul>

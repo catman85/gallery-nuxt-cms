@@ -41,7 +41,7 @@ header {
 
   a {
     // color: _palette(fg);//FIXME: wtf happened?
-    color: map-get($palette, link);
+    color: map-get($palette, grey4);
     // color:$color;
     text-decoration: none;// removes underlines on links
     font-weight: bold;

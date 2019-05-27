@@ -1,52 +1,119 @@
+// https://cssfx.dev/
+nav{
+span {
+	position: relative;
+  }
+  
+  span::before, span::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: #fc2f70;
+	transform: scaleY(0);
+	transition: transform 0.5s ease;
+  }
+  
+  span::before {
+	left: -8px;
+	transform-origin: center top;
+  }
+  
+  span:hover::before {
+	transform-origin: center bottom;
+	transform: scaleY(1);
+  }
+  
+  span::after {
+	right: -8px;
+	transform-origin: center bottom;
+  }
+  
+  span:hover::after {
+	transform-origin: center top;
+	transform: scaleY(1);
+  }
 
-
-/* List */
-
-	ol {
-		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1.25em;
-
-		li {
-			padding-left: 0.25em;
+  .languages{
+	li {
+		position: relative;
+		&:hover{
+			color: map-get($palette , kanarini );
 		}
-	}
+	  }
+	  
+	  li::before, li::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: map-get($palette , kanarini );
+		transform: scaleX(0);
+		transition: transform 0.5s ease;
+	  }
+	  
+	  li::before {
+		top: 0;
+		transform-origin: center right;
+	  }
+	  
+	  li:hover::before {
+		transform-origin: center left;
+		transform: scaleX(1);
+	  }
+	  
+	  li::after {
+		bottom: 0;
+		transform-origin: center left;
+	  }
+	  
+	  li:hover::after {
+		transform-origin: center right;
+		transform: scaleX(1);
+	  }
+	  
+  }
+}
 
-	ul {
-		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
-
-		li {
-			padding-left: 0.5em;
-		}
-
-		&.alt {
-			list-style: none;
-			padding-left: 0;
-
-			li {
-				border-top: solid _size(border-width) _palette(border);
-				padding: 0.5em 0;
-
-				&:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-			}
-		}
-	}
-
-	dl {
-		margin: 0 0 _size(element-margin) 0;
-
-		dt {
-			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-		}
-
-		dd {
-			margin-left: _size(element-margin);
-		}
-	}
+  .filters{
+  li {
+	z-index: 1;
+	position: relative;
+	font-size: inherit;
+	font-family: inherit;
+	// color: white;
+	padding: 0.5em 1em;
+	outline: none;
+	border: none;
+	// background-color: hsl(236, 32%, 26%);
+	overflow: hidden;
+	transition: color 0.4s ease-in-out;
+  }
+  
+  li::before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	background-color: rgba(aqua,0.05);
+	transform-origin: center;
+	transform: translate(-50%, -50%) scale(0);
+	transition: transform 1s ease-in-out;
+  }
+  
+  li:hover {
+	cursor: pointer;
+	color: #161616;
+  }
+  
+  li:hover::before {
+	transform: translate(-50%, -50%) scale(15);
+  }}
+  
+  
