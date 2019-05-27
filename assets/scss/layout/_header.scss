@@ -1,10 +1,10 @@
 header {
-  // for some reason the headers height is 0 if we don't do this and
+  // for some reason the headers height is 0 if we don't do this
   overflow: hidden;
   // background: #fff;
   width: 100%;
-  //   height: 85px;
-  // border-bottom: 4px solid #4C9CF1;
+  // height: 5em;
+  // border-bottom: 4px solid map-get($palette,helix );
   //   z-index: 100;
 
   ol,
@@ -40,13 +40,14 @@ header {
   }
 
   a {
-    color: _palette(fg);//FIXME: wtf happened?
-    // color:grey;
-    text-decoration: none;
+    // color: _palette(fg);//FIXME: wtf happened?
+    color: map-get($palette, link);
+    // color:$color;
+    text-decoration: none;// removes underlines on links
     font-weight: bold;
 
     &:hover {
-      color: _palette(accent1);
+      color: map-get($palette, a_hover );
     }
   }
 
@@ -56,11 +57,11 @@ header {
     width: 250px;
     height: 80px;
     // background: url(/assets/images/anthiamegachavre_sign_small_single_svg.svg) no-repeat center;
-    fill: grey;
+    fill: map-get($palette , grey1 );
   }
 
   #menu-icon svg {
-    fill: grey;
+    fill: map-get($palette , grey1 );
   }
 
   nav {

@@ -5,7 +5,6 @@ wait on imgut uploader
 order of photos
 
 mansory_layout
-header_burger_responsive 
 style_markdown_content 
 google_fonts
 font-awesome

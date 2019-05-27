@@ -5,7 +5,9 @@
     <div v-for="video in videos" :key="video.ytLink">
         <h3>{{video.title}}</h3>
         <p>{{video.description}}</p>
+        <div class="vcontainer">
         <youtube :video-id=' getYoutubeId(video.ytLink) '></youtube>
+        </div>
         <br><br>
     </div>
   </div>

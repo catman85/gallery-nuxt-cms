@@ -1,8 +1,7 @@
-@import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/breakpoints';
-
+@import 'libs/vars';
 // vue asks for these big ass /fonts/*.eot files
 // @import '../css/font-awesome.min.css';
 // @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
@@ -12,7 +11,7 @@
 
 	// @import 'base/reset';
 	@import 'base/page';
-	// @import 'base/typography';
+	@import 'base/typography';
 
 // Component.
 
@@ -33,8 +32,8 @@
 
 	@import 'layout/header';
 	// @import 'layout/menu';
-	// @import 'layout/main';
-	// @import 'layout/footer';
+	// @import 'layout/index';
+	@import 'layout/footer';
 	// @import 'layout/wrapper';
 
 // External css ATTENTION

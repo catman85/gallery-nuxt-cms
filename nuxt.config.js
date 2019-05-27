@@ -70,11 +70,9 @@ module.exports = {
       href: "/favicon.ico"
     }]
   },
-  /*
-   ** Customize the progress bar color
-   */
+  //Customize the progress bar color
   loading: {
-    color: "#FFBB43"
+    color: "#66ff99"
   },
   /*
    ** Build configuration

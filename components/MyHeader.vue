@@ -45,7 +45,7 @@
 <script>
   import Logo from "@/components/Logo.vue";
   import Burger from "@/components/Burger.vue";
-  import vClickOutside from 'v-click-outside';
+  // import vClickOutside from 'v-click-outside';
   export default {
     name: "MyHeader",
     props: {
