@@ -4,17 +4,16 @@
 wait on imgut uploader
 order of photos
 
-style_markdown_content 
-google_fonts
-font-awesome
+styling
+google_fonts font-awesome
 
 data-entry
-
 lazy_load
-meta_content
-deploy_minifications_compress_images 
-analytics 
+meta_content 
 domain_link 
+
+analytics 
+deploy_minifications_compress_images
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
@@ -168,6 +167,7 @@ robots.txt sitemap.xml ggl_search_console -->
         let option = event.target.firstChild.data.trim();
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
+        //FIXME: bubble effect
         this.clearSelectionColors(); 
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
