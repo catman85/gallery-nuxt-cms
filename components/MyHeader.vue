@@ -28,10 +28,6 @@
           <nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
-        <li>
-          <nuxt-link :to="'/legal'">{{ t('legal')}}</nuxt-link>
-          <!-- <nuxt-link :to="'/legal'">legal</nuxt-link> -->
-        </li>
       </ul>
       <ul class="languages">
         <!-- <nuxt-link v-on:click.native="gr" :to="switchLocalePath('gr')">GR</nuxt-link> -->
@@ -101,7 +97,6 @@
         }
       },
       closeMenu() {
-        console.debug("closing")
         let nav = this.$refs.nav;
         nav.classList.remove("open");
       }
@@ -109,11 +104,6 @@
     beforeDestroy() {
       // $off method turns off the event listner
       this.$nuxt.$off('index');
-    },
+    }
   }
-
 </script>
-
-<style>
-
-</style>

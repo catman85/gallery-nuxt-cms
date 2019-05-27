@@ -1,5 +1,5 @@
 <template>
-    <footer>footer | © {{this.getCurrentYear()}}</footer>
+    <footer>footer | <nuxt-link :to="'/legal'">{{ t('legal')}}</nuxt-link> | © {{this.getCurrentYear()}}</footer>
 </template>
 
 <script>

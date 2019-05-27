@@ -34,3 +34,9 @@
     @content;
   }
 }
+
+@mixin for-desktop-down {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

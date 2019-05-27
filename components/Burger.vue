@@ -30,19 +30,17 @@
       showCross() {
         this.$refs.burger.classList.add("hidden");
         this.$refs.cross.classList.remove("hidden");
+        this.$refs.burger.classList.remove("visible");
+        this.$refs.cross.classList.add("visible");
       },
       showBurger() {
         this.$refs.cross.classList.add("hidden");
         this.$refs.burger.classList.remove("hidden");
+        this.$refs.burger.classList.add("visible");
+        this.$refs.cross.classList.remove("visible");
+
       }
     }
   }
 
 </script>
-
-<style lang="scss" scoped>
-  .hidden {
-    display: none;
-  }
-
-</style>
