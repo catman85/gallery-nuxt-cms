@@ -60,6 +60,10 @@ header {
     fill: map-get($palette , grey1 );
   }
 
+  .languages{
+    color: map-get($palette , grey2 );
+  }
+
   #menu-icon svg {
     fill: map-get($palette , grey1 );
   }
@@ -106,6 +110,7 @@ header {
       top: 3em;
       right: 1em;
       border-radius: 1.5em;
+      z-index: 10;
       // you cant set the width here because you get a line
       // width: 9em;
 
@@ -137,14 +142,18 @@ header {
       }
 
       .languages {
-        :nth-child(2) {
-          // EN
-          float: left;
-          margin-left: 1em;
-        }
-
+        // text-align: center;
+        // display: inline-block;
         :nth-child(1) {
-          // GR
+            // GR
+            float: left;
+            margin-left: 1em;
+        }
+        :nth-child(2){ // #seperator{
+          display: none;
+        }
+        :nth-child(3) {
+          // EN
           float: right;
           margin-right: 1em;
         }

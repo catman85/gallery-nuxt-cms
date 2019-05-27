@@ -1,49 +1,58 @@
+.filters {
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 50%;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      // margin: 0 auto;
+      // float:center;
+      text-align: center;
+    }
+  }
 
 
-/* Main */
 
-	#main {
-		@include padding(5em, 0, (-5em, 0, 3em, 0));
+  @include for-tablet-landscape-down {
+    width: 65%;
+  }
 
-		@include breakpoint('<=small') {
-			@include padding(3em, 0, (-3em, 0, 3em, 0));
-		}
-	}
+  @include for-phone-only {
+    width: 100%;
+  }
 
-	.canvas-interactive-wrapper {
-		position: relative;
+  @mixin center {
+    float: none;
+    display: table; // width: wrap-content
+    margin: 0 auto;
+  }
 
-		canvas {
-			//pins both canvases on the background
-			position: fixed;
-			// position: absolute;
+  .artwork {
+    float: left;
 
-			display: block;
-			width: 100%;
-			// ATTENTION makes granim,particles fullscreen
-			// performance still sucks on old devices with the heigth turned off
-			// ATTENTION 120% fixes that bug with he sticky url input on mobile browsers like chrome (you get a small blank canvas on the bottom of the screen)
-			height: 120%;
-			
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
+    @include for-phone-only {
+      @include center();
+    }
+  }
 
-		.cta-wrapper {
-			position: relative;
-			display: inline-block;
-			// padding: 3px 7px;
-			// border: solid 1px transparent;
-			// margin-right: 50px;
-			z-index: 1;
-			text-decoration: none;
-			// color: #222;
-			transition: border .3s;
+  .exhibit {
+    float: right;
 
-			// a.active {
-			// 	 border-color: #222;
-			// }
-		}
-	}
+    @include for-phone-only {
+      @include center();
+    }
+  }
+}
+
+form{
+	text-align: center;
+}

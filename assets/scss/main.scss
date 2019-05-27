@@ -10,7 +10,7 @@
 // Base.
 
 	// @import 'base/reset';
-	@import 'base/page';
+	@import 'base/general';
 	@import 'base/typography';
 
 // Component.
@@ -32,7 +32,8 @@
 
 	@import 'layout/header';
 	// @import 'layout/menu';
-	// @import 'layout/index';
+	@import 'layout/index';
+	@import 'layout/page';
 	@import 'layout/footer';
 	// @import 'layout/wrapper';
 

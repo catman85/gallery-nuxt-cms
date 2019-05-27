@@ -21,18 +21,28 @@ robots.txt sitemap.xml ggl_search_console -->
   <div class="container">
     <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
-    <h2>{{ t('artwork') }}</h2>
-    <ul>
-      <li @click="pickCategory" v-for="entry in categories" :key="entry">
-        <!-- <nuxtdown-body class="body" :body="" /> -->
-        {{entry}}
-      </li>
-    </ul>
-    <h2>{{ t('exhibitions') }}</h2>
-    <ul>
-      <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
-      <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
-    </ul>
+    <div class="filters">
+    <div class="artwork">
+      <h2>{{ t('artwork') }}</h2>
+      <ul>
+        <li @click="pickCategory" v-for="entry in categories" :key="entry">
+          <!-- <nuxtdown-body class="body" :body="" /> -->
+          {{entry}}
+        </li>
+        <li>1</li>
+        <li>on-wood</li>
+      </ul>
+    </div>
+
+    <div class="exhibit">
+      <h2>{{ t('exhibitions') }}</h2>
+      <ul>
+        <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
+        <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
+      </ul>
+    </div>
+    </div>
+
     <br>
     <!-- Search -->
     <!-- you can put a function between the "" -->
@@ -70,7 +80,7 @@ robots.txt sitemap.xml ggl_search_console -->
   // import MyHeader from "@/components/MyHeader";
   export default {
     // components: {
-      // MyHeader
+    // MyHeader
     // },
     head: function () {
       return {
@@ -108,7 +118,7 @@ robots.txt sitemap.xml ggl_search_console -->
       return {
         selectedCat: "",
         query: "",
-        hello:""
+        hello: ""
       }
     },
     filters: {

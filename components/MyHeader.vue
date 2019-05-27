@@ -34,8 +34,9 @@
         <!-- <nuxt-link v-on:click.native="en" :to="switchLocalePath('en')">EN</nuxt-link> -->
 
         <li v-on:click="gr">GR</li>
-        <!-- <div id="separator">|</div> -->
+        <li id="seperator">|</li>
         <li v-on:click="en">EN</li>
+        
       </ul>
       <!-- {{categories}} to trigger the computed -->
     </nav>
