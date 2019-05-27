@@ -29,8 +29,6 @@ robots.txt sitemap.xml ggl_search_console -->
           <!-- <nuxtdown-body class="body" :body="" /> -->
           {{entry}}
         </li>
-        <li>1</li>
-        <li>on-wood</li>
       </ul>
     </div>
 
@@ -43,7 +41,7 @@ robots.txt sitemap.xml ggl_search_console -->
     </div>
     </div>
 
-    <br>
+    <!-- <br> -->
     <!-- Search -->
     <!-- you can put a function between the "" -->
     <form v-on:submit.prevent="">
@@ -162,11 +160,23 @@ robots.txt sitemap.xml ggl_search_console -->
     methods: {
       pickCategory(event) {
         let option = event.target.firstChild.data.trim();
+        // event.target.parent.classList.remove("selected");
+        // let siblings = event.target.parentNode.children;
+        this.clearSelectionColors(); 
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
         } else {
           this.selectedCat = option;
+          event.target.classList.add("selected");
         }
+      },
+      clearSelectionColors(){ // gets all li elements and removes the selected class
+          let lis = document.querySelectorAll("li");
+          // console.debug(lis);
+          for(let i=0; i<lis.length; i++){
+            lis.item(i).classList.remove("selected");
+            // li.classList.remove("selected");
+          }
       }
     },
     beforeDestroy() {
