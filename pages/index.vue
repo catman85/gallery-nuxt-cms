@@ -23,7 +23,7 @@ robots.txt sitemap.xml ggl_search_console -->
     <!-- <h1>TEST</h1> -->
     <div class="filters">
     <div class="artwork">
-      <h2>{{ t('artwork') }}</h2>
+      <h2>{{ t('artworks') }}</h2>
       <ul>
         <li @click="pickCategory" v-for="entry in categories" :key="entry">
           <!-- <nuxtdown-body class="body" :body="" /> -->
@@ -50,7 +50,10 @@ robots.txt sitemap.xml ggl_search_console -->
     </form>
     <br>
 
-
+<masonry
+  :cols="3"
+  :gutter="30"
+  >
     <div v-for="page in filteredContent" :key="page.title">
       <nuxt-link :to="page.title | formatLink">
         <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
@@ -71,6 +74,7 @@ robots.txt sitemap.xml ggl_search_console -->
       </nuxt-link>
       <br><br><br>
     </div>
+    </masonry>
   </div>
 </template>
 

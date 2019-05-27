@@ -39,6 +39,9 @@ module.exports = {
     ssr: false
   },{
     src: "~/plugins/click.outside.js"
+  },{
+    src: "~/plugins/masonry.js",
+    ssr: false
   }],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'

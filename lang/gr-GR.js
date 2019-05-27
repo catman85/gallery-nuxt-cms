@@ -1,6 +1,6 @@
 export default {
     welcome: 'Γειά',
-    artwork: 'Έργα Τέχνης',
+    artworks: 'Έργα Τέχνης',
     home: 'Κεντρική',
     about: 'Σχετικά Με',
     bio: 'Βιογραφικό',
