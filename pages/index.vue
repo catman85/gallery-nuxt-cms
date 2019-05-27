@@ -4,7 +4,6 @@
 wait on imgut uploader
 order of photos
 
-mansory_layout
 style_markdown_content 
 google_fonts
 font-awesome
@@ -51,25 +50,28 @@ robots.txt sitemap.xml ggl_search_console -->
     <br>
 
 <masonry
-  :cols="3"
-  :gutter="30"
+  :cols="{default: 3,700: 2}"
+  :gutter="10"
   >
     <div v-for="page in filteredContent" :key="page.title">
       <nuxt-link :to="page.title | formatLink">
         <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
         <!-- <h3>{{ $t('title') }}:</h3> -->
-        <nuxtdown-body class="body" :body="page.title" />
+        <!-- <nuxtdown-body class="body" :body="page.title" /> -->
 
-        <h3>Featured Image:</h3>
+        <!-- <h3>Featured Image:</h3> -->
         <img :src="page.featuredImage" alt="">
         <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
 
-        <h4>Category:</h4>
-        <nuxtdown-body class="body" :body="page.category" />
+        <!-- <h4>Category:</h4> -->
+        <!-- <nuxtdown-body class="body" :body="page.title" /> -->
+        <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
+        <div class="cat">
+        {{ page.title}} | {{page.category}}</div>
 
-        <h4>Date:</h4>
+        <!-- <h4>Date:</h4> -->
         <!-- <nuxtdown-body class="body" :body="page.creationDate" /> -->
-        {{page.creationDate}}
+        <!-- {{page.creationDate}} -->
 
       </nuxt-link>
       <br><br><br>

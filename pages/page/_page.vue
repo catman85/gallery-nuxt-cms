@@ -1,12 +1,14 @@
 <template>
   <div>
     <h3>Title:</h3>
-    <nuxtdown-body class="body" :body="page.title" /><br>
+    <nuxtdown-body class="body" :body="page.title" />
     <h4>Category:</h4>
-    <nuxtdown-body class="body" :body="page.category" /><br>
+    <nuxtdown-body class="body" :body="page.category" />
     <h4>Description:</h4>
     <!-- <nuxtdown-body class="body" :body="page.description" /><br> -->
     {{ this.description }}
+    <h4>Date:</h4>
+    <nuxtdown-body class="body" :body="page.creationDate" />
     <h4>Featured Image: </h4>
     <img :src="page.featuredImage" alt="" /><br>
 
@@ -15,20 +17,23 @@
       <!-- <nuxtdown-body class="body" :body="page.body" /> -->
       <!-- <no-ssr>  not needed </no-ssr> -->
       <div class="app-container">
-        <div id="lightgallery">
-          <a v-for="image in imagesArray" :key="image.src" :href="image.src"
-            :data-sub-html="'.caption' + cleanString(image.title)">
-            <img :src="image.src" :title="image.title" :alt="image.alt">
+        
+          <div id="lightgallery">
+            <masonry  :cols="{default: 5,1000: 3,700: 2}" :gutter="10">
+            <a v-for="image in imagesArray" :key="image.src" :href="image.src"
+              :data-sub-html="'.caption' + cleanString(image.title)" class="current">
+              <img :src="image.src" :title="image.title" :alt="image.alt">
 
-            <!-- this must match with data-sub-html but there might be duplicates -->
-            <!-- ATTENTION for some reason filters don't work (format)-->
-            <div :class="'description '+'caption'+ cleanString(image.title)">
-              <h4>{{image.title | firstPart}}</h4>
-              <p>{{image.title | secondPart}}</p>
-              <p>{{image.title | thirdPart}}</p>
-            </div>
-          </a>
-        </div>
+              <!-- this must match with data-sub-html but there might be duplicates -->
+              <!-- ATTENTION for some reason filters don't work (format)-->
+              <div :class="'description '+'caption'+ cleanString(image.title)">
+                <h4>{{image.title | firstPart}}</h4>
+                <p>{{image.title | secondPart}}</p>
+                <p>{{image.title | thirdPart}}</p>
+              </div>
+            </a>
+            </masonry>
+          </div>
       </div>
 
     </div>
@@ -97,16 +102,15 @@
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
           getCaptionFromTitleOrAlt: true, //FIXME:
-          hideBarsDelay: 1000,
+          hideBarsDelay: 500,
           hideControlOnEnd: true,
           controls: false,
           download: false,
+          selector: ".current", // linking the click and the element that pops
           // height: "70%",
           // width: "60%",
-          
           // pullCaptionUp: false,
           // subHtmlSelectorRelative:true,
-          // selector: '.current',
         })
       }
     },
@@ -143,20 +147,24 @@
 </script>
 
 <style lang="scss">
+  .lg-backdrop {
+    background-color: white;
+  }
 
-.lg-backdrop{
-  background-color: white;
-}
   .lg {
     position: absolute;
-    .lg-close{
+
+    .lg-close {
       color: black;
     }
-    .lg-toolbar{
+
+    .lg-toolbar {
       // opacity: 0; //remove that shit
       background-color: rgba(0, 0, 0, 0.0); // opacity full but dont kill children
     }
-    .lg-inner { //restricting the image's height
+
+    .lg-inner {
+      //restricting the image's height
       height: 90%;
       bottom: 10%;
     }
