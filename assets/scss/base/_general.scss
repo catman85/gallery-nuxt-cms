@@ -1,6 +1,10 @@
 img {
   max-width: 100%;
 }
+*{font-family: "Playfair Display",serif;}
+button{
+  @include button
+}
 
 h1{
   color: map-get($palette , grey5 );

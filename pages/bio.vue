@@ -2,8 +2,10 @@
   <div>
     <h1>{{ t('bio') }}</h1>
     <!-- this.$refs.bioText.innerHTML -->
+    <div class="row">
     <div ref="bioText">
       {{lang}}
+    </div>
     </div>
   </div>
 </template>

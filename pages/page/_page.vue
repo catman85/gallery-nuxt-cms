@@ -1,26 +1,31 @@
 <template>
   <div>
-    <h3>Title:</h3>
-    <nuxtdown-body class="body" :body="page.title" />
-    <h4>Category:</h4>
-    <nuxtdown-body class="body" :body="page.category" />
-    <h4>Description:</h4>
-    <!-- <nuxtdown-body class="body" :body="page.description" /><br> -->
-    {{ this.description }}
-    <h4>Date:</h4>
-    <nuxtdown-body class="body" :body="page.creationDate" />
-    <h4>Featured Image: </h4>
-    <img :src="page.featuredImage" alt="" /><br>
+    <h2>
+      <nuxtdown-body class="title" :body="page.title" />
+    </h2>
+    <hr>
+    <br>
+    <div class="row">
+      <p class="pageDescription">{{ this.description }}</p>
+    </div>
+    <br>
+    <div class="featured">
+      <img :src="page.featuredImage" alt="" /></div>
+    <br>
+    <div class="row">
+      <nuxtdown-body class="category" :body="page.category" />
+      <nuxtdown-body class="date" :body="page.creationDate" />
+    </div>
+    <br>
 
     <div class="images">
-      <h3>Body:</h3>
       <!-- <nuxtdown-body class="body" :body="page.body" /> -->
       <!-- <no-ssr>  not needed </no-ssr> -->
       <div class="app-container">
-        
-          <div id="lightgallery">
-            <!-- needs a refresh to see changes -->
-            <masonry  :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
+
+        <div id="lightgallery">
+          <!-- needs a refresh to see changes -->
+          <masonry :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
             <a v-for="image in imagesArray" :key="image.src" :href="image.src"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <img :src="image.src" :title="image.title" :alt="image.alt">
@@ -33,8 +38,8 @@
                 <p>{{image.title | thirdPart}}</p>
               </div>
             </a>
-            </masonry>
-          </div>
+          </masonry>
+        </div>
       </div>
 
     </div>
@@ -102,7 +107,7 @@
         const el = document.getElementById(id)
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
-         
+
           hideBarsDelay: 700,
           hideControlOnEnd: false,
           controls: false,
@@ -147,6 +152,7 @@
 </script>
 
 <style lang="scss">
-// it doesn't apply if you import this at main.scss
-@import 'assets/scss/components/lightgallery';
+  // it doesn't apply if you import this at main.scss
+  @import 'assets/scss/components/lightgallery';
+
 </style>
