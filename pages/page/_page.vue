@@ -19,7 +19,8 @@
       <div class="app-container">
         
           <div id="lightgallery">
-            <masonry  :cols="{default: 5,1000: 3,700: 2}" :gutter="10">
+            <!-- needs a refresh to see changes -->
+            <masonry  :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
             <a v-for="image in imagesArray" :key="image.src" :href="image.src"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <img :src="image.src" :title="image.title" :alt="image.alt">
@@ -101,16 +102,15 @@
         const el = document.getElementById(id)
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
-          getCaptionFromTitleOrAlt: true, //FIXME:
-          hideBarsDelay: 500,
-          hideControlOnEnd: true,
+         
+          hideBarsDelay: 700,
+          hideControlOnEnd: false,
           controls: false,
           download: false,
           selector: ".current", // linking the click and the element that pops
-          // height: "70%",
-          // width: "60%",
-          // pullCaptionUp: false,
-          // subHtmlSelectorRelative:true,
+          // counter: false,
+          // appendCounterTo: '.lg-sub-html'
+          // getCaptionFromTitleOrAlt: false,
         })
       }
     },
@@ -147,60 +147,6 @@
 </script>
 
 <style lang="scss">
-  .lg-backdrop {
-    background-color: white;
-  }
-
-  .lg {
-    position: absolute;
-
-    .lg-close {
-      color: black;
-    }
-
-    .lg-toolbar {
-      // opacity: 0; //remove that shit
-      background-color: rgba(0, 0, 0, 0.0); // opacity full but dont kill children
-    }
-
-    .lg-inner {
-      //restricting the image's height
-      height: 90%;
-      bottom: 10%;
-    }
-
-    .lg-sub-html {
-      // width: 30%;
-      // FIXME:// are all tehse restrictions necessary?
-      // position: fixed;
-      // bottom: 0;
-      top: 90%;
-      height: 10%;
-
-      padding: 2px 0px;
-
-      opacity: 1;
-      transition: opacity .25s ease-in-out;
-      -moz-transition: opacity .25s ease-in-out;
-      -webkit-transition: opacity .25s ease-in-out;
-
-      background-color: rgba(0, 0, 0, 0); //black full opacity overrite default
-
-      &:hover {
-        //hide the caption on hover
-        opacity: 0;
-      }
-
-      >h4,
-      p {
-        // font-size: 15px;
-        // position: absolute;
-        // top: 50%;
-        font-size: 2.5vh;
-        margin-top: 0px;
-        color: black;
-      }
-    }
-  }
-
+// it doesn't apply if you import this at main.scss
+@import 'assets/scss/components/lightgallery';
 </style>

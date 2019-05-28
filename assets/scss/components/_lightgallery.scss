@@ -1,0 +1,59 @@
+.lg-backdrop {
+  // background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.lg {
+  position: absolute;
+
+  .lg-close {
+    color: grey;
+    // position: fixed;
+    // top:90%;
+  }
+
+  .lg-toolbar {
+    // opacity: 0; //remove that shit
+    background-color: rgba(0, 0, 0, 0.0); // opacity full but dont kill children
+  }
+
+  .lg-inner {
+    //restricting the image's height
+    height: 90%;
+    bottom: 10%;
+  }
+
+  .lg-sub-html {
+    //description
+    // width: 30%;
+    // FIXME:// are all tehse restrictions necessary?
+    // position: fixed;
+    // bottom: 0;
+    top: 90%;
+    height: 10%;
+
+    padding: 2px 0px;
+
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+
+    background-color: rgba(0, 0, 0, 0); //black full opacity overrite default
+
+    &:hover {
+      //hide the caption on hover
+      opacity: 0;
+    }
+
+    >h4,
+    p {
+      // font-size: 15px;
+      // position: absolute;
+      // top: 50%;
+      font-size: 2.5vh;
+      margin-top: 0px;
+      color: grey;
+    }
+  }
+}

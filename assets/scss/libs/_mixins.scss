@@ -256,6 +256,22 @@
   }
 }
 
+@mixin center {
+  width: 100%;
+  float: none;
+  display: table; // width: wrap-content
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin border {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  border-color: map-get($palette , grey2 );
+  color: map-get($palette , grey4 );
+}
+
 // @include breakpoint(large) { width: 60%; }
 // @mixin breakpoint($point) {
 //   @if $point==large {

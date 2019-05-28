@@ -7,25 +7,25 @@
     <nav ref="nav" v-click-outside="closeMenu">
       <a @click="toggleMenu" id="menu-icon">
         <Burger /></a>
-      <ul>
+      <ul class="routes">
         <li>
-          <span><nuxt-link :to="'/'">{{ t('home')}}</nuxt-link></span>
+          <nuxt-link :to="'/'">{{ t('home')}}</nuxt-link>
           <!-- <nuxt-link :to="'/'">home</nuxt-link> -->
         </li>
         <li>
-          <span><nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link></span>
+          <nuxt-link :to="'/acts'">{{ t('acts')}}</nuxt-link>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
         <li>
-          <span><nuxt-link :to="'/videos'">{{ t('videos')}}</nuxt-link></span>
+          <nuxt-link :to="'/videos'">{{ t('videos')}}</nuxt-link>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
         <li>
-          <span><nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link></span>
+          <nuxt-link :to="'/bio'">{{ t('bio')}}</nuxt-link>
           <!-- <nuxt-link :to="'/about'">about</nuxt-link> -->
         </li>
         <li>
-          <span><nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link></span>
+          <nuxt-link :to="'/contact'">{{ t('contact')}}</nuxt-link>
           <!-- <nuxt-link :to="'/contact'">contact</nuxt-link> -->
         </li>
       </ul>

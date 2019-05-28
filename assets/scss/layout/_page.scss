@@ -1,0 +1,9 @@
+.description{
+    padding-bottom: map-get($size , distance );
+    text-align: center;
+    h4,p{
+        padding: 0;
+        margin: 0;
+        
+    }
+}

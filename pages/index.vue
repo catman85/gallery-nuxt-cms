@@ -50,7 +50,7 @@ robots.txt sitemap.xml ggl_search_console -->
 
 <masonry
   :cols="{default: 3,700: 2}"
-  :gutter="10"
+  :gutter="15"
   >
     <div v-for="page in filteredContent" :key="page.title">
       <nuxt-link :to="page.title | formatLink">
@@ -73,7 +73,6 @@ robots.txt sitemap.xml ggl_search_console -->
         <!-- {{page.creationDate}} -->
 
       </nuxt-link>
-      <br><br><br>
     </div>
     </masonry>
   </div>

@@ -2,6 +2,27 @@ img {
   max-width: 100%;
 }
 
+h1{
+  color: map-get($palette , grey5 );
+  text-align: center;
+}
+h2,p{
+  color: map-get($palette , grey4 );
+}
+h3{
+  color: map-get($palette , grey3 );
+}
+h4{
+  color: map-get($palette , grey2 );
+}
+h5{
+  color: map-get($palette , grey1 );
+}
+
+a{
+  text-decoration: none;
+}
+
 // iframe{
 //   // width: auto;
 //   max-width: 100%;
@@ -30,9 +51,15 @@ li{
   cursor: pointer; 
 }
 
-.container {
-  // position: relative;
-  // margin-top:5%;
-  // height: 83%;
-  // bottom:0;
+form{
+  text-align: center;
+  
+  input,textarea{
+    @include border();
+    padding-left: 0.5em;
+  }
+  textarea{
+    border-radius: 0.5em;
+    padding-top: 0.5em;
+  }
 }

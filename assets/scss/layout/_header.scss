@@ -42,13 +42,8 @@ header {
   a {
     // color: _palette(fg);//FIXME: wtf happened?
     color: map-get($palette, grey4);
-    // color:$color;
-    text-decoration: none;// removes underlines on links
+    text-decoration: none; // removes underlines on links
     font-weight: bold;
-
-    &:hover {
-      color: map-get($palette, a_hover );
-    }
   }
 
   #logo svg {
@@ -57,15 +52,15 @@ header {
     width: 250px;
     height: 80px;
     // background: url(/assets/images/anthiamegachavre_sign_small_single_svg.svg) no-repeat center;
-    fill: map-get($palette , grey1 );
+    fill: map-get($palette, grey1);
   }
 
-  .languages{
-    color: map-get($palette , grey2 );
+  .languages {
+    color: map-get($palette, grey2);
   }
 
   #menu-icon svg {
-    fill: map-get($palette , grey1 );
+    fill: map-get($palette, grey1);
   }
 
   nav {
@@ -91,6 +86,7 @@ header {
     opacity: 1;
     transition: opacity 2s linear;
   }
+
   .hidden {
     visibility: hidden;
     opacity: 0;
@@ -108,22 +104,21 @@ header {
       background: rgba(255, 255, 255, 0.9);
       position: fixed;
       top: 3em;
-      right: 1em;
-      border-radius: 1.5em;
+      right: 3em;
       z-index: 10;
-      // you cant set the width here because you get a line
-      // width: 9em;
+      // you cant set the width and border stuff here because you get a line
 
       #menu-icon {
         //burger
         // make it appear
         // show burger
         display: inline-block;
+        z-index: 20; // put on top of nav
 
         svg {
           //burger icon
           position: fixed; // is needed
-          top: 1.8em;
+          top: 1.6em;
           right: 2em;
           width: 2.2em;
         }
@@ -142,16 +137,17 @@ header {
       }
 
       .languages {
-        // text-align: center;
-        // display: inline-block;
         :nth-child(1) {
-            // GR
-            float: left;
-            margin-left: 1em;
+          // GR
+          float: left;
+          margin-left: 1em;
         }
-        :nth-child(2){ // #seperator{
+
+        :nth-child(2) {
+          // #seperator{
           display: none;
         }
+
         :nth-child(3) {
           // EN
           float: right;
@@ -163,7 +159,8 @@ header {
 
     .open {
       width: 10em;
-      // @include fade(show);
+      @include border();
+
       @include keyframes(slide-down) {
         0% {
           opacity: 0;
