@@ -35,6 +35,7 @@ hr{
 }
 .featured{
     display: flex;
+    background-size: contain;
     img{
         margin: 0 auto;
         max-width: 40%;

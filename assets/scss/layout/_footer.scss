@@ -1,5 +1,10 @@
-footer{
+hr{
+	// max-width: 100%; //overrite
+	// width: 25%;
 	margin-top: 3em;
+}
+
+footer{
 	text-align: center;
 	color: map-get($palette, grey2 );
 	a {
