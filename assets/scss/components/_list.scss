@@ -46,15 +46,15 @@ header {
   li {
     z-index: 1;
     position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    // color: white;
     padding: 0.5em 1em;
-    outline: none;
-    border: none;
-    // background-color: hsl(236, 32%, 26%);
+    // outline: none;
+    // border: none;
     overflow: hidden;
-    transition: color 0.4s ease-in-out;
+    // transition: color 0.4s ease-in-out;
+
+    &.selected{
+      // transform: translate(-50%, -50%) scale(15);
+    }
   }
 
   li::before {
@@ -66,18 +66,20 @@ header {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    background-color: rgba(aqua, 0.05);
+    background-color: rgba(aqua, 0.1);
     transform-origin: center;
     transform: translate(-50%, -50%) scale(0);
     transition: transform 1s ease-in-out;
   }
 
   li:hover {
-    cursor: pointer;
-    color: #161616;
+    // cursor: pointer;
+    // color: #161616;
   }
 
-  li:hover::before {
+  :hover::before {
     transform: translate(-50%, -50%) scale(15);
   }
+
+
 }

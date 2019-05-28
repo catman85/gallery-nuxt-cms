@@ -44,6 +44,7 @@ header {
     color: map-get($palette, grey4);
     text-decoration: none; // removes underlines on links
     font-weight: bold;
+    padding: 15px 0;
   }
 
   #logo svg {

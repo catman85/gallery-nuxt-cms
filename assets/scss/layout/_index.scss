@@ -32,11 +32,12 @@
       @include border();
 
       &:hover{
-        color: map-get($palette , aqua);
+        // color: map-get($palette , aqua);
       }
 
       &.selected{
-        color: map-get($palette , lblue);
+        color: map-get($palette , aqua);
+        border-color: map-get($palette , aqua);
       }
     }
   }
