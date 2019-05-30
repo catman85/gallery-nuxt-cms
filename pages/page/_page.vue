@@ -108,7 +108,7 @@
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
 
-          hideBarsDelay: 700,
+          hideBarsDelay: 1100,
           hideControlOnEnd: false,
           controls: false,
           download: false,

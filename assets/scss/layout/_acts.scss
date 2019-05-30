@@ -1,0 +1,41 @@
+.column {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    
+    a{
+        // color: red;
+        // text-decoration: none;
+        color: map-get($palette, grey4);
+        &:hover{
+            color: map-get($palette, a_hover);
+        }
+    }
+    
+  }
+
+.acts{
+    .row{
+        display: block;
+        margin: 0;
+    }
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

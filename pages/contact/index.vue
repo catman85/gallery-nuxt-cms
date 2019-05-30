@@ -16,8 +16,8 @@
       </p>
     </form>
     <br>
-    <h2 id="mcetoc_1d8pbn8510">{{t('clinks')}}:</h2>
-    <ul>
+    <h2>{{t('clinks')}}:</h2>
+    <ul id="clinks">
       <li><a href="https://www.facebook.com/VisualArtistAnthiaMegaChavre/">facebook</a></li>
       <li><a
           href="https://www.facebook.com/Become-An-Artist-%CE%93%CE%AF%CE%BD%CE%B5-%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-237040896974199/">Become

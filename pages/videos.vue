@@ -2,7 +2,7 @@
   <div>
     <h1>{{t('videos')}}</h1>
     <!-- {{videos}} -->
-    <div v-for="video in videos" :key="video.ytLink">
+    <div class="vid" v-for="video in videos" :key="video.ytLink">
         <h3>{{video.title}}</h3>
         <p>{{video.description}}</p>
         <div class="vcontainer">

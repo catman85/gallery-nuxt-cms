@@ -37,9 +37,12 @@ hr{
     display: flex;
     background-size: contain;
     img{
+        display: block;
         margin: 0 auto;
         max-width: 40%;
         max-height: 28em;
+        width: auto;
+        height: auto;
         @include for-tablet-landscape-down(){
             max-width: 60%;
             max-height: 22em;

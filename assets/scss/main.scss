@@ -14,19 +14,17 @@
 	@import 'base/typography';
 
 // Component.
-
-	// @import 'components/lightgallery';
-	@import 'components/list';
+	@import 'components/cssfx';
 	@import 'components/image';
 
 // Layout.
 
 	@import 'layout/header';
-	// @import 'layout/menu';
+	@import 'layout/acts';
 	@import 'layout/index';
 	@import 'layout/page';
 	@import 'layout/footer';
-	// @import 'layout/wrapper';
+	@import 'layout/videos';
 
 // External css ATTENTION
 	// @import '../css/animate.min';
