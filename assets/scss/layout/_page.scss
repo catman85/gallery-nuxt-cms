@@ -34,13 +34,15 @@ hr{
     opacity: 0.5;
 }
 .featured{
-    display: flex;
-    background-size: contain;
+    // display: flex;
+    // background-size: contain;
+    object-fit: contain;
     img{
         display: block;
         margin: 0 auto;
         max-width: 40%;
         max-height: 28em;
+        object-fit: contain; //keep images ratio
         width: auto;
         height: auto;
         @include for-tablet-landscape-down(){
