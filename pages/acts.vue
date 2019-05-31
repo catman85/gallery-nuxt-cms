@@ -61,3 +61,19 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    head: function () {
+      return {
+        title: "Acts - Features - Links",
+        meta: [{
+          hid: "description",
+          name: "description",
+          content: "Anthia's Acts"
+        }]
+      };
+    },
+  }
+
+</script>

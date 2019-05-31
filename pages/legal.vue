@@ -10,6 +10,16 @@
 
 <script>
   export default {
+    head: function () {
+      return {
+        title: "Legal",
+        meta: [{
+          hid: "description",
+          name: "description",
+          content: "Legal Info"
+        }]
+      };
+    },
     mounted() {
       // hack
       this.isMounted = true;

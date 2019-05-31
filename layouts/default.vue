@@ -16,7 +16,15 @@ export default {
   components: {
     MyHeader,
     MyFooter
-  }
+  },
+      head: function () {
+      return {
+        meta: [{
+          property: "og:image",
+          content: "https://i.imgur.com/b2nEzrw.png"
+        }]
+      };
+    },
 }
 </script>
 

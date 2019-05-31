@@ -1,17 +1,12 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-wait on imgut uploader
+wait on imgur uploader
+
 order of photos
-
-styling
-google_fonts font-awesome
-
 data-entry
-lazy_load
-meta_content 
-domain_link 
 
+domain_link 
 analytics 
 deploy_minifications_compress_images
 robots.txt sitemap.xml ggl_search_console -->

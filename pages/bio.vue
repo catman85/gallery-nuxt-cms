@@ -3,15 +3,25 @@
     <h1>{{ t('bio') }}</h1>
     <!-- this.$refs.bioText.innerHTML -->
     <div class="row">
-    <div ref="bioText">
-      {{lang}}
-    </div>
+      <div ref="bioText">
+        {{lang}}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   export default {
+    head: function () {
+      return {
+        title: "Bio",
+        meta: [{
+          hid: "description",
+          name: "description",
+          content: "Anthia's Bio Mega Chavre"
+        }]
+      };
+    },
     mounted() {
       // hack
       this.isMounted = true;

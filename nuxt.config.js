@@ -42,6 +42,9 @@ module.exports = {
   },{
     src: "~/plugins/masonry.js",
     ssr: false
+  },{
+    src: "~/plugins/lazyload.js",
+    ssr: false
   }],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'

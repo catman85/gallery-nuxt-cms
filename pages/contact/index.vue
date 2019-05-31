@@ -28,3 +28,19 @@
     </ul>
   </div>
 </template>
+
+<script>
+  export default {
+    head: function () {
+      return {
+        title: "Contact",
+        meta: [{
+          hid: "description",
+          name: "description",
+          content: "Contact Anthia Mega Chavre"
+        }]
+      };
+    },
+  }
+
+</script>
