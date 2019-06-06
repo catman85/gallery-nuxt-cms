@@ -1,6 +1,6 @@
 ---
 title: Nudes
-category: solo-exhibitions
+category: Solo-Exhibitions
 creationDate: '2019-06-06'
 featuredImage: /images/uploads/al1giak.jpg
 ---
