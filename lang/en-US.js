@@ -14,7 +14,7 @@ export default {
     sndMsg: 'Send Message',
     legal: 'Legal',
     categories: 'Categories',
-    exhibitions: 'Exhbitions',
+    exhibitions: 'Exhibitions',
     title: 'Title',
     search: 'Search for...'
     // pages: { 

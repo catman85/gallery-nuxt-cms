@@ -157,7 +157,7 @@ robots.txt sitemap.xml ggl_search_console -->
       }
     },
     methods: {
-      pickCategory(event) {
+      pickCategory(event) { // handles coloring
         let option = event.target.firstChild.data.trim();
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
@@ -166,6 +166,7 @@ robots.txt sitemap.xml ggl_search_console -->
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
         } else {
+          console.debug(option);
           this.selectedCat = option;
           event.target.classList.add("selected");
         }
