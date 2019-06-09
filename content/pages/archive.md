@@ -2,31 +2,11 @@
 title: Archive
 category: archive
 creationDate: '2019-06-09'
-featuredImage: /images/uploads/fewuatm.jpg
+featuredImage: /images/uploads/okj0geo.jpg
 ---
-![Imgur](https://i.imgur.com/kbbgPmG.jpg)
+![Imgur](https://i.imgur.com/l5LIuxU.jpg "start")
 
-![Imgur](https://i.imgur.com/6JhuA9u.jpg)
-
-![Imgur](https://i.imgur.com/chdv7GL.jpg)
-
-![Imgur](https://i.imgur.com/FeWUaTM.jpg "asd")
-
-![Imgur](https://i.imgur.com/dV7Zaco.jpg)
-
-![Imgur](https://i.imgur.com/A5lPe5O.jpg)
-
-![Imgur](https://i.imgur.com/DF61SXs.jpg)
-
-![Imgur](https://i.imgur.com/w9SpjuE.jpg)
-
-![Imgur](https://i.imgur.com/3FOHBrS.jpg)
-
-![Imgur](https://i.imgur.com/23jo9Eu.jpg)
-
-![Imgur](https://i.imgur.com/l5LIuxU.jpg)
-
-![Imgur](https://i.imgur.com/okj0GeO.jpg)
+![Imgur](https://i.imgur.com/okj0GeO.jpg "ex")
 
 ![Imgur](https://i.imgur.com/BnxkLgg.jpg)
 
