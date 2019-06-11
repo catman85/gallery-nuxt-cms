@@ -1,11 +1,11 @@
 .filters {
   overflow: hidden; // porper brake
   margin: 0 auto; // gravity center
-  width: 60%;// for large screens
+  width: 90%;// for large screens
   text-align: center;
 
   > { // children of .filters (.artwork and .exhibit) each take half the space
-    width: 50%; // this is overwriten by 100% center mixin on phones
+    width: 50%; // this is overwriten by 100% center mixin on tablets
   }
 
   @include for-tablet-landscape-down {
@@ -44,14 +44,14 @@
 
   .artwork {
     float: left;
-    @include for-phone-only {
+    @include for-tablet-landscape-down {
       @include center();
     }
   }
 
   .exhibit {
     float: right;
-    @include for-phone-only {
+    @include for-tablet-landscape-down {
       @include center();
     }
   }
