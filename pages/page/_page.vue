@@ -26,7 +26,7 @@
         <div id="lightgallery">
           <!-- needs a refresh to see changes -->
           <masonry :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
-            <a v-for="image in imagesArray" :key="image.src" :href="image.src"
+            <a v-vpshow v-for="image in imagesArray" :key="image.src" :href="image.src"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <!-- :src="image.src" (notice the scroll bar on the right)-->
               <img v-lazy="image.src" :title="image.title" :alt="image.alt">

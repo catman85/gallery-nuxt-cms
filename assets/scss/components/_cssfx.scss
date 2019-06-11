@@ -83,3 +83,12 @@ header {
 
 
 }
+
+/* ATTNETION v-vpshow classes (~/plugins/directives.js) */
+.before-enter {
+	opacity: 0;
+}
+
+.enter {
+	transition: opacity 2s ease;
+}

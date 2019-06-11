@@ -45,18 +45,19 @@ module.exports = {
   },{
     src: "~/plugins/lazyload.js",
     ssr: false
+  },{
+    src: "~/plugins/directives.js",
+    // ssr: false
   }],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
-  /*
-   ** Headers of the page
-   */
+  // header attributes
   head: {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "My Website",
+    title: "Anthia Mega Chavre",
     meta: [{
         charset: "utf-8"
       },
@@ -67,7 +68,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "Welcome to my website."
+        content: "Anthia Mega Chavre."
       }
     ],
     link: [{

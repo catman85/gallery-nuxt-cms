@@ -47,7 +47,7 @@ robots.txt sitemap.xml ggl_search_console -->
   :cols="{default: 3,700: 2}"
   :gutter="15"
   >
-    <div v-for="page in filteredContent" :key="page.title">
+    <div v-vpshow v-for="page in filteredContent" :key="page.title">
       <nuxt-link :to="page.title | formatLink">
         <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
         <!-- <h3>{{ $t('title') }}:</h3> -->
