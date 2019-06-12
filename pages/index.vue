@@ -43,7 +43,7 @@ robots.txt sitemap.xml ggl_search_console -->
     </form>
     <br>
 
-<masonry
+<masonry class="masonry"
   :cols="{default: 3,700: 2}"
   :gutter="15"
   >

@@ -5,7 +5,19 @@
   text-align: center;
 
   > { // children of .filters (.artwork and .exhibit) each take half the space
-    width: 50%; // this is overwriten by 100% center mixin on tablets
+    width: 50%; // this is overwriten by 100% center mixin on tablets    
+  }
+
+  li{
+    @include for-phone-only {
+      font-size: 0.9em;
+    }
+  }
+
+  .artwork h2,.exhibit h2{
+    @include for-phone-only {
+      font-size: 1.4em;
+    }
   }
 
   @include for-tablet-landscape-down {
@@ -62,5 +74,11 @@
       color: map-get($palette , grey4 );
       text-align: center;
       padding-bottom: map-get($size , distance );
+  }
+}
+
+.masonry{
+  > *{
+    margin: 0 auto;
   }
 }
