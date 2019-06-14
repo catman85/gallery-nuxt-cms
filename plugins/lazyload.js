@@ -5,8 +5,8 @@ import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload, {
   preLoad: 1.5,
   // error: 'dist/error.png',
-  // loading: 'dist/loading.gif',
-  // attempt: 4,
+  loading: "assets/images/loading",
+  attempt: 5,
   lazyComponent: true,
 
   // set observer to true
