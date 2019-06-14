@@ -235,9 +235,9 @@
   background-clip: padding-box;
 }
 
-@mixin pageRowCenter($pad) {
+@mixin pageRowCenter($pad,$mt) {
   padding: $pad;
-  margin: 0 auto;
+  margin: $mt auto;
 }
 
 //   @include box-sizing(border-box)
@@ -272,9 +272,16 @@
 @mixin border {
   border-style: solid;
   border-width: 1px;
-  border-radius: 1em;
+  border-radius: 0.7em;
   border-color: map-get($palette, grey2);
   color: map-get($palette, grey4);
+  @include shadow-elegant(0,1px,5px,4px,0.05);
+}
+
+@mixin shadow-elegant($hl,$vl,$blur-radius, $spread-radius, $opacity) {
+  -webkit-box-shadow: $hl $vl $blur-radius $spread-radius rgba(0,0,0,$opacity);
+  -moz-box-shadow: $hl $vl $blur-radius $spread-radius rgba(0,0,0,$opacity);
+  box-shadow: $hl $vl $blur-radius $spread-radius rgba(0,0,0,$opacity);
 }
 
 @mixin button {

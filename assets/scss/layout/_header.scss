@@ -43,8 +43,7 @@ header {
     // color: _palette(fg);//FIXME: wtf happened?
     color: map-get($palette, grey4);
     text-decoration: none; // removes underlines on links
-    font-weight: bold;
-    padding: 15px 0;
+    padding: 15px 15px;
   }
 
   #logo svg {
@@ -58,6 +57,12 @@ header {
 
   .languages {
     color: map-get($palette, grey2);
+    @include for-tablet-landscape-up(){
+      padding: 0 35px;
+      #seperator{
+        padding: 0 4px;
+      }
+    }
   }
 
   #menu-icon svg {
@@ -72,7 +77,10 @@ header {
 
       li {
         display: inline-block; // makes li elements appear side by side
-        padding: 15px;
+        padding: 15px 0;
+        font-size: 20px;
+        // font-weight can also fail to work if the font you are using does not have those weights in existence – you will often hit this when embedding custom fonts.
+        font-style: italic;
       }
     }
   }
@@ -99,6 +107,9 @@ header {
     // separates the logo from the burger when scrolling
     // position: absolute;
     // but is not needed since parent uses overflow:hidden
+    a{
+      padding: 0;
+    }
 
     nav {
       //menu
@@ -133,6 +144,7 @@ header {
         li {
           display: block;
           text-align: center;
+          padding: 15px 15px;
           // width: 100%; // forces them to go beneath each other
         }
       }
@@ -160,6 +172,11 @@ header {
 
     .open {
       width: 10em;
+      a{ // if you put this anywhere else you will get a white block
+        // see MyHeader.vue
+        padding: 10px 40px;
+
+      }
       @include border();
 
       @include keyframes(slide-down) {

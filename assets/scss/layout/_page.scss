@@ -14,12 +14,12 @@
     }
   .date {
     @include border();
-    @include pageRowCenter(0.5em);
+    @include pageRowCenter(0.5em,0.5em);
   }
 
   .category {
     @include border();
-    @include pageRowCenter(0.5em);
+    @include pageRowCenter(0.5em,0.5em);
   }
 }
 

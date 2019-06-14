@@ -26,10 +26,13 @@
         <div id="lightgallery">
           <!-- needs a refresh to see changes -->
           <masonry :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
-            <a v-vpshow v-for="image in imagesArray" :key="image.src" :href="image.src"
+            <a v-for="image in imagesArray" :key="image.src" :href="image.src"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <!-- :src="image.src" (notice the scroll bar on the right)-->
-              <img v-lazy="thumbnail(image.src)" :title="image.title" :alt="image.alt">
+              <!-- :data-srcset -->
+              <lazy-component v-vpshow.native>
+              <img v-if="image" v-lazy="thumbnail(image.src)" :title="image.title" :alt="image.alt">
+              </lazy-component>
 
               <!-- this must match with data-sub-html but there might be duplicates -->
               <!-- ATTENTION for some reason filters don't work (format)-->
@@ -64,7 +67,7 @@
           hid: "description",
           name: "description",
           content: this.page.description
-        },{
+        }, {
           property: "og:image",
           content: this.page.featuredImage
         }]
@@ -112,17 +115,26 @@
         // http://sachinchoolur.github.io/lightGallery/docs/api.html
         window.lightGallery(el, {
 
-          hideBarsDelay: 1100,
+          hideBarsDelay: 900,
           hideControlOnEnd: false,
           controls: false,
           download: false,
           selector: ".current", // linking the click and the element that pops
-          // counter: false,
+          // showAfterLoad: false
+          counter: false,
           // appendCounterTo: '.lg-sub-html'
           // getCaptionFromTitleOrAlt: false,
         })
       },
       thumbnail(s) {
+        // s = Small Square (90×90) as seen in the example above
+        // b = Big Square (160×160)
+        // t = Small Thumbnail (160×160)
+        // m = Medium Thumbnail (320×320)
+        // l = Large Thumbnail (640×640) as seen in the example above
+        // h = Huge Thumbnail (1024×1024)
+        let n = s.lastIndexOf(".");
+        s = s.substring(0, n) + "l" + s.substring(n);
         return s;
       }
     },

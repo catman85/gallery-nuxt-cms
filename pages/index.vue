@@ -2,7 +2,7 @@
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
 wait on imgur uploader
-
+/null error on root conditional rendetring
 order of photos
 data-entry
 
@@ -48,7 +48,7 @@ robots.txt sitemap.xml ggl_search_console -->
   :gutter="15"
   >
     <div v-vpshow v-for="page in filteredContent" :key="page.title">
-      <nuxt-link :to="page.title | formatLink">
+      <nuxt-link v-if="page" :to="page.title | formatLink">
         <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
         <!-- <h3>{{ $t('title') }}:</h3> -->
         <!-- <nuxtdown-body class="body" :body="page.title" /> -->

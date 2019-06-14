@@ -38,7 +38,8 @@ module.exports = {
     src: "~/plugins/youtube.js",
     ssr: false
   },{
-    src: "~/plugins/click.outside.js"
+    src: "~/plugins/click.outside.js",
+    ssr: false
   },{
     src: "~/plugins/masonry.js",
     ssr: false
@@ -47,7 +48,7 @@ module.exports = {
     ssr: false
   },{
     src: "~/plugins/directives.js",
-    // ssr: false
+    ssr: false
   }],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
