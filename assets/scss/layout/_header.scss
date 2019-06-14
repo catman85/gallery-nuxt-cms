@@ -174,7 +174,7 @@ header {
       width: 10em;
       a{ // if you put this anywhere else you will get a white block
         // see MyHeader.vue
-        padding: 10px 40px;
+        padding: 10px 30px;
 
       }
       @include border();

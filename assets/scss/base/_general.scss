@@ -9,6 +9,7 @@ button{
 h1{
   color: map-get($palette , grey5 );
   text-align: center;
+  font-weight: 200;
 }
 h2,p{
   color: map-get($palette , grey4 );
