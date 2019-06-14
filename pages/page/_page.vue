@@ -31,7 +31,7 @@
               <!-- :src="image.src" (notice the scroll bar on the right)-->
               <!-- :data-srcset -->
               <lazy-component v-vpshow.native>
-              <img v-if="image" v-lazy="thumbnail(image.src)" :title="image.title" :alt="image.alt">
+              <img v-if="image" :src="thumbnail(image.src)" :title="image.title" :alt="image.alt">
               </lazy-component>
 
               <!-- this must match with data-sub-html but there might be duplicates -->
