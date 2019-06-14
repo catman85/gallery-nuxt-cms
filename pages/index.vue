@@ -16,23 +16,23 @@ robots.txt sitemap.xml ggl_search_console -->
     <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
     <div class="filters">
-    <div class="artwork">
-      <h2>{{ t('artworks') }}</h2>
-      <ul>
-        <li @click="pickCategory" v-for="entry in categories" :key="entry">
-          <!-- <nuxtdown-body class="body" :body="" /> -->
-          {{entry}}
-        </li>
-      </ul>
-    </div>
+      <div class="artwork">
+        <h2>{{ t('artworks') }}</h2>
+        <ul>
+          <li @click="pickCategory" v-for="entry in categories" :key="entry">
+            <!-- <nuxtdown-body class="body" :body="" /> -->
+            {{entry}}
+          </li>
+        </ul>
+      </div>
 
-    <div class="exhibit">
-      <h2>{{ t('exhibitions') }}</h2>
-      <ul>
-        <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
-        <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
-      </ul>
-    </div>
+      <div class="exhibit">
+        <h2>{{ t('exhibitions') }}</h2>
+        <ul>
+          <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
+          <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
+        </ul>
+      </div>
     </div>
 
     <!-- <br> -->
@@ -44,32 +44,31 @@ robots.txt sitemap.xml ggl_search_console -->
     </form>
     <br>
 
-<masonry class="masonry"
-  :cols="{default: 3,700: 2}"
-  :gutter="15"
-  >
-    <div v-vpshow v-for="page in filteredContent" :key="page.title">
-      <nuxt-link v-if="page" :to="page.title | formatLink">
-        <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
-        <!-- <h3>{{ $t('title') }}:</h3> -->
-        <!-- <nuxtdown-body class="body" :body="page.title" /> -->
+    <masonry class="masonry" :cols="{default: 3,700: 2}" :gutter="15">
+      <div v-vpshow v-for="page in filteredContent" :key="page.title">
+        <nuxt-link v-if="page" :to="page.title | formatLink">
+          <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
+          <!-- <h3>{{ $t('title') }}:</h3> -->
+          <!-- <nuxtdown-body class="body" :body="page.title" /> -->
 
-        <!-- <h3>Featured Image:</h3> -->
-        <img v-lazy="page.featuredImage" alt="">
-        <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
+          <!-- <h3>Featured Image:</h3> -->
+          <img v-lazy="page.featuredImage" alt="">
+          <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
 
-        <!-- <h4>Category:</h4> -->
-        <!-- <nuxtdown-body class="body" :body="page.title" /> -->
-        <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
-        <div class="cat">
-        {{ page.title}} | {{page.category}}</div>
+          <!-- <h4>Category:</h4> -->
+          <!-- <nuxtdown-body class="body" :body="page.title" /> -->
+          <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
+          <div class="cat">
+             <!-- | {{page.category}} -->
+            {{ page.title}}
+          </div>
 
-        <!-- <h4>Date:</h4> -->
-        <!-- <nuxtdown-body class="body" :body="page.creationDate" /> -->
-        <!-- {{page.creationDate}} -->
+          <!-- <h4>Date:</h4> -->
+          <!-- <nuxtdown-body class="body" :body="page.creationDate" /> -->
+          <!-- {{page.creationDate}} -->
 
-      </nuxt-link>
-    </div>
+        </nuxt-link>
+      </div>
     </masonry>
   </div>
 </template>
@@ -163,7 +162,7 @@ robots.txt sitemap.xml ggl_search_console -->
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
         //FIXME: bubble effect
-        this.clearSelectionColors(); 
+        this.clearSelectionColors();
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
         } else {
@@ -172,13 +171,13 @@ robots.txt sitemap.xml ggl_search_console -->
           event.target.classList.add("selected");
         }
       },
-      clearSelectionColors(){ // gets all li elements and removes the selected class
-          let lis = document.querySelectorAll("li");
-          // console.debug(lis);
-          for(let i=0; i<lis.length; i++){
-            lis.item(i).classList.remove("selected");
-            // li.classList.remove("selected");
-          }
+      clearSelectionColors() { // gets all li elements and removes the selected class
+        let lis = document.querySelectorAll("li");
+        // console.debug(lis);
+        for (let i = 0; i < lis.length; i++) {
+          lis.item(i).classList.remove("selected");
+          // li.classList.remove("selected");
+        }
       }
     },
     beforeDestroy() {
