@@ -29,7 +29,7 @@
             <a v-vpshow v-for="image in imagesArray" :key="image.src" :href="image.src"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <!-- :src="image.src" (notice the scroll bar on the right)-->
-              <img v-lazy="image.src" :title="image.title" :alt="image.alt">
+              <img v-lazy="thumbnail(image.src)" :title="image.title" :alt="image.alt">
 
               <!-- this must match with data-sub-html but there might be duplicates -->
               <!-- ATTENTION for some reason filters don't work (format)-->
@@ -121,6 +121,9 @@
           // appendCounterTo: '.lg-sub-html'
           // getCaptionFromTitleOrAlt: false,
         })
+      },
+      thumbnail(s) {
+        return s;
       }
     },
     filters: {
