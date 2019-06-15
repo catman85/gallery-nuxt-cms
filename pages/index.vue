@@ -52,7 +52,9 @@ robots.txt sitemap.xml ggl_search_console -->
           <!-- <nuxtdown-body class="body" :body="page.title" /> -->
 
           <!-- <h3>Featured Image:</h3> -->
-          <img v-lazy="page.featuredImage" alt="">
+          <lazy-component>
+          <img :src="page.featuredImage" alt="">
+          </lazy-component>
           <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
 
           <!-- <h4>Category:</h4> -->

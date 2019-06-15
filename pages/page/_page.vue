@@ -31,7 +31,8 @@
               <!-- :src="image.src" (notice the scroll bar on the right)-->
               <!-- :data-srcset -->
               <lazy-component v-vpshow.native>
-              <img v-if="image" :src="thumbnail(image.src)" :title="image.title" :alt="image.alt">
+              <!-- :alt="image.alt" shows Imgur everywhere-->
+              <img v-if="image" :src="thumbnail(image.src)" :title="image.title">
               </lazy-component>
 
               <!-- this must match with data-sub-html but there might be duplicates -->
