@@ -34,7 +34,7 @@ featuredImage: /images/uploads/okj0geo.jpg
 
 ![Imgur](https://i.imgur.com/UiS4Koz.jpg)
 
-![Imgur](https://i.imgur.com/WT8p0kt.jpg)
+![Imgur](https://i.imgur.com/WT8p0kt.jpg "Working on an Installation, 'We can stop counting II'")
 
 ![Imgur](https://i.imgur.com/oL03fnm.jpg)
 
