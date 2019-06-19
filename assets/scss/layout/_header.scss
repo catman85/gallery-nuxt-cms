@@ -80,7 +80,7 @@ header {
         padding: 15px 0;
         font-size: 20px;
         // font-weight can also fail to work if the font you are using does not have those weights in existence – you will often hit this when embedding custom fonts.
-        font-style: italic;
+        font-style: Lucida Console, Consolas;
       }
     }
   }
@@ -144,7 +144,7 @@ header {
         li {
           display: block;
           text-align: center;
-          padding: 15px 15px;
+          padding: 0.7em auto;
           // width: 100%; // forces them to go beneath each other
         }
       }
@@ -171,10 +171,11 @@ header {
     }
 
     .open {
-      width: 10em;
+      width: 12em;
       a{ // if you put this anywhere else you will get a white block
         // see MyHeader.vue
-        padding: 10px 30px;
+        padding: 0.4em 1.8em;
+        // width:100%;
 
       }
       @include border();
