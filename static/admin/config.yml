@@ -25,7 +25,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
         - {label: Title, name: title, widget: string, required: true}
-        - {label: Category, name: category, widget: string, default: "Category Name", required: true}
+        - {label: Category, name: category, widget: string, default: "group-exhibitions", required: true}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true}
         - {label: Featured Image, name: featuredImage, widget: image}
         - {label: Description English, name: descriptionEn, widget: text,required: false}
