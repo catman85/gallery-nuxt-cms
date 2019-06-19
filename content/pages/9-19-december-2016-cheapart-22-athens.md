@@ -1,11 +1,9 @@
 ---
-title: 9-19-4
+title: 9-19-december-2016-cheapart-22-athens
 category: group-exhibitions
 creationDate: '2019-06-17'
 featuredImage: /images/uploads/0xcnyb8.jpg
 ---
-#
-
 ![Imgur](https://i.imgur.com/QMWEv1o.jpg)
 
 ![Imgur](https://i.imgur.com/6OpoiRK.jpg)

@@ -1,5 +1,5 @@
 ---
-title: 27.5-5.6-6
+title: 13-22nd-of-october-2017
 category: group-exhibitions
 creationDate: '2019-06-18'
 featuredImage: /images/uploads/nobllx5.jpg
