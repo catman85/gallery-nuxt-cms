@@ -34,7 +34,7 @@
               <lazy-component v-vpshow.native>
                 <!-- :alt="image.alt" shows Imgur everywhere-->
                 <!-- :src="thumbnail(image.src)" -->
-                <img v-if="image" :src="(image.src)" :title="image.title">
+                <img v-if="image" v-lazy="(image.src)" :title="image.title">
               </lazy-component>
 
               <!-- this must match with data-sub-html but there might be duplicates -->
