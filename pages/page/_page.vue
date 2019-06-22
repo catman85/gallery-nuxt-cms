@@ -137,8 +137,9 @@
           controls: false,
           download: false,
           selector: ".current", // linking the click and the element that pops
-          // showAfterLoad: false
           counter: false,
+          preload: 3
+          // showAfterLoad: false
           // appendCounterTo: '.lg-sub-html'
           // getCaptionFromTitleOrAlt: false,
         })
