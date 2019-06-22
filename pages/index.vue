@@ -2,8 +2,6 @@
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
 wait on imgur uploader
-/null error on root conditional rendetring
-images not loading
 order of photos
 data-entry
 

@@ -26,13 +26,15 @@
         <div id="lightgallery">
           <!-- needs a refresh to see changes -->
           <masonry :cols="{default: 5,1000: 4,700: 3}" :gutter="15">
-            <a v-for="image in imagesArray" :key="image.src" :href="image.src"
+            <!-- ATTENTION for some reason loading imagesArray first results in downloading both the original an the thumbnail -->
+            <a v-for="image in thumbnailsArray" :key="image.src" :href="original(image.src)"
               :data-sub-html="'.caption' + cleanString(image.title)" class="current">
               <!-- :src="image.src" (notice the scroll bar on the right)-->
               <!-- :data-srcset -->
               <lazy-component v-vpshow.native>
-              <!-- :alt="image.alt" shows Imgur everywhere-->
-              <img v-if="image" :src="thumbnail(image.src)" :title="image.title">
+                <!-- :alt="image.alt" shows Imgur everywhere-->
+                <!-- :src="thumbnail(image.src)" -->
+                <img v-if="image" :src="(image.src)" :title="image.title">
               </lazy-component>
 
               <!-- this must match with data-sub-html but there might be duplicates -->
@@ -86,12 +88,26 @@
     data: function () {
       return {
         imagesHTML: Object,
-        imagesArray: Array
+        imagesArray: Array,
+        thumbnailsArray: [],
+        isMounted: false,
+        compressionLevel: "l"
+        // s = Small Square (90×90) as seen in the example above
+        // b = Big Square (160×160)
+        // t = Small Thumbnail (160×160)
+        // m = Medium Thumbnail (320×320)
+        // l = Large Thumbnail (640×640) as seen in the example above
+        // h = Huge Thumbnail (1024×1024)
       }
     },
     async mounted() {
       await this.stringToHTML(this.page.body);
       await this.imagesToArray();
+      await Array.prototype.forEach.call(this.imagesArray, child => {
+          let img = child;
+          img.src = this.thumbnail(img.src);
+          this.thumbnailsArray.push(img);
+        });
       this.startLightGallery('lightgallery');
     },
     computed: {
@@ -108,7 +124,7 @@
         this.imagesHTML = document.createElement('div');
         this.imagesHTML.innerHTML = s;
       },
-      imagesToArray() {
+      async imagesToArray() {
         this.imagesArray = this.imagesHTML.getElementsByTagName('img');
       },
       startLightGallery(id) {
@@ -128,14 +144,15 @@
         })
       },
       thumbnail(s) {
-        // s = Small Square (90×90) as seen in the example above
-        // b = Big Square (160×160)
-        // t = Small Thumbnail (160×160)
-        // m = Medium Thumbnail (320×320)
-        // l = Large Thumbnail (640×640) as seen in the example above
-        // h = Huge Thumbnail (1024×1024)
         let n = s.lastIndexOf(".");
-        s = s.substring(0, n) + "l" + s.substring(n);
+        s = s.substring(0, n) + this.compressionLevel + s.substring(n);
+        return s;
+      },
+      original(s){
+        let n = s.lastIndexOf(this.compressionLevel);
+        if((s.substring(n)).length == 5){ // already thumbnailed
+          s = s.substring(0,n) + s.substring(n+1);
+        }
         return s;
       }
     },
