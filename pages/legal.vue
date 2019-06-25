@@ -2,8 +2,10 @@
   <div>
     <h1>{{ t('legal') }}</h1>
     <!-- this.$refs.bioText.innerHTML -->
-    <div ref="legalText">
-      {{lang}}
+    <div class="row">
+      <div ref="legalText">
+        {{lang}}
+      </div>
     </div>
   </div>
 </template>
