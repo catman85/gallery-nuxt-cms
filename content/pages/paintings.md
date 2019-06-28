@@ -8,15 +8,15 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/8sefIrM.jpg)
 
-![Imgur](https://i.imgur.com/KsgpsLd.jpg)
+![Imgur](https://i.imgur.com/KsgpsLd.jpg "© Anthia Mega Chavre \"Left arm\", Tempera on aquarelle paper 15 cm. X 25.5 cm. March 1996 • \"Αριστερό Χερι\", Τέμπερα σε χαρτί ακουαρέλλας 15 εκ. Χ 25.5 εκ. Μάρτιος 1996")
 
-![Imgur](https://i.imgur.com/bXT1bML.jpg)
+![Imgur](https://i.imgur.com/bXT1bML.jpg "© Anthia Mega Chavre “Eclipse Explosion”, Tempera on aquarelle paper 18 cm. X 29.8 cm. March 1996 • “Εκρηκτική Έκλειψη”, Τέμπερα σε χαρτί ακουαρέλλας 18 εκ. Χ 29.8 εκ. Μάρτιος 1996")
 
-![Imgur](https://i.imgur.com/wUngwjX.jpg)
+![Imgur](https://i.imgur.com/wUngwjX.jpg "© Anthia Mega Chavre “Red ribbon within a river”, Tempera on aquarelle paper 31 cm. X 19.8 cm. April 1996 • “Kόκκινη κορδέλλα μέσα σ’ενα ποτάμι” Τέμπερα σε χαρτί ακουαρέλλας 31 εκ. Χ 19.8 εκ. Απρίλιος 1996")
 
-![Imgur](https://i.imgur.com/iCJCLRO.jpg)
+![Imgur](https://i.imgur.com/iCJCLRO.jpg "© Anthia Mega Chavre “Italy’s Pisa Tower with color”, Creation of new artworks from the paintings of Nickos Chouliaras, Tempera on aquarelle paper 39.8 cm. X 23 cm., April 1996  • “Ο πύργος της Πίζας της Ιταλίας με χρώμα”, Τέμπερα σε χαρτί ακουαρέλλας 39.8 εκ. Χ 23 εκ., Απρίλιος 1996")
 
-![Imgur](https://i.imgur.com/bTYvkGr.jpg)
+![Imgur](https://i.imgur.com/bTYvkGr.jpg "© Anthia Mega Chavre “Colored Eclipse”, Creation of new artworks from the paintings of Nickos Chouliaras Tempera on aquarelle paper 22.9 cm. X 37 cm., March 1996 • “Χρωματιστή Έκλειψη”, Τέμπερα σε χαρτί ακουαρέλλας 22.9 εκ. Χ 37 εκ., Μάρτιος 1996")
 
 ![Imgur](https://i.imgur.com/zn51yy9.jpg)
 
