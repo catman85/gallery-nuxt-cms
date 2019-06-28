@@ -52,7 +52,7 @@ header {
     width: 250px;
     height: 80px;
     // background: url(/assets/images/anthiamegachavre_sign_small_single_svg.svg) no-repeat center;
-    fill: map-get($palette, grey1);
+    fill: map-get($palette, logo-color);
   }
 
   .languages {
@@ -66,7 +66,7 @@ header {
   }
 
   #menu-icon svg {
-    fill: map-get($palette, grey1);
+    fill: map-get($palette, logo-color);
   }
 
   nav {
