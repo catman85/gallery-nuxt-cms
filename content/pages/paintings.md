@@ -20,7 +20,7 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/zn51yy9.jpg "© Anthia Mega Chavre “Gun shot”, Tempera on aquarelle paper 39.3 cm. X 25 cm., March 1996  • “Πυροβολισμός”, Τέμπερα σε χαρτί ακουαρέλλας 39.3 εκ. Χ 25 εκ., Μάρτιος 1996")
 
-![Imgur](https://i.imgur.com/YqvjCTr.jpg)
+![Imgur](https://i.imgur.com/YqvjCTr.jpg "© Anthia Mega Chavre “The It”, Creation of new artworks from the paintings of Nickos Chouliaras, Tempera on aquarelle paper 32.3 cm. X 17.5 cm., April 1996  • “Tο Αυτό”, Τέμπερα σε χαρτί ακουαρέλλας 32.3 εκ. Χ 17.5 εκ., Απρίλιος 1996")
 
 ![Imgur](https://i.imgur.com/o2XTXQg.jpg)
 
