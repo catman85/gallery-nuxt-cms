@@ -1,7 +1,7 @@
 img {
   max-width: 100%;
 }
-*{font-family: "Playfair Display",serif;}
+
 button{
   @include button
 }
@@ -36,6 +36,7 @@ form{
   
   input,textarea{
     @include border();
+    border-width: 0px;
     padding-left: 0.5em;
   }
   textarea{

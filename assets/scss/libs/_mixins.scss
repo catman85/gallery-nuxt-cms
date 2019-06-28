@@ -270,8 +270,8 @@
 }
 
 @mixin border {
-  border-style: solid;
-  border-width: 1px;
+  // border-style: solid;
+  // border-width: 1px;
   border-radius: 0.7em;
   border-color: map-get($palette, grey2);
   color: map-get($palette, grey4);
