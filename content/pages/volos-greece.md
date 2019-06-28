@@ -10,8 +10,6 @@ featuredImage: /images/uploads/1muzilc.jpg
 
 ![Imgur](https://i.imgur.com/6BNGkNg.jpg)
 
-![Imgur](https://i.imgur.com/1muzilc.jpg "feat")
-
 ![Imgur](https://i.imgur.com/qGYDvg0.jpg)
 
 ![Imgur](https://i.imgur.com/9PL0SUz.jpg)
