@@ -28,8 +28,8 @@
     },
     data: function () {
       return {
-        contentEn: "<h2>Μember of the Chamber of Fine Arts of Greece</h2><p>All works are registered and protected by the Law 2121/1993 copyright, related rights and cultural issues. GG A 25 1993.</p>",
-        contentGr: "<h2>Μέλος του Επιμελητηρίου Εικαστικών Τεχνών Ελλάδας</h2><p>Όλα τα έργα είναι κατοχυρωμένα και προστατεύονται από το Νόμο 2121/1993 περί Πνευματικής ιδιοκτησίας, συγγενικών δικαιώματων και πολιτιστικών θεμάτων. ΦΕΚ Α 25 1993</p>",
+        contentEn: "<h2>Μember of the Chamber of Fine Arts of Greece</h2><p>All works are registered and protected by the Law 4481/2017 copyright, related rights and cultural issues. GG A 25 1993.</p>",
+        contentGr: "<h2>Μέλος του Επιμελητηρίου Εικαστικών Τεχνών Ελλάδας</h2><p>Όλα τα έργα είναι κατοχυρωμένα και προστατεύονται από το Νόμο 4481/2017 περί Πνευματικής ιδιοκτησίας, συγγενικών δικαιώματων και πολιτιστικών θεμάτων. ΦΕΚ Α 25 1993</p>",
         isMounted: false
       }
     },

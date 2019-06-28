@@ -1,7 +1,6 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-wait on imgur uploader
 order of photos
 data-entry
 
