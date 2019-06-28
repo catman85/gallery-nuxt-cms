@@ -24,7 +24,7 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/o2XTXQg.jpg "© Anthia Mega Chavre “Colored cloud in sky”, Tempera on aquarelle paper 41 cm. X 23.7 cm., April 1996  • “Χρωματιστό συννεφο στον ουρανό”, Τέμπερα σε χαρτί ακουαρέλλας 41 εκ. Χ 23.7 εκ., Απρίλιος 1996")
 
-![Imgur](https://i.imgur.com/3UrzTcF.jpg)
+![Imgur](https://i.imgur.com/3UrzTcF.jpg "© Anthia Mega Chavre “The creation of a red wing”, Creation of new artworks from the paintings of Nickos Chouliaras, Tempera on aquarelle paper 38.5 cm. X 25 cm., April 1996  • “Δημιουργία ενός κόκκινου φτερού”, Τέμπερα σε χαρτί ακουαρέλλας 38.5 εκ. Χ 25 εκ., Απρίλιος 1996")
 
 ![Imgur](https://i.imgur.com/qA8ciz3.jpg)
 
