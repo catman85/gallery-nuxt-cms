@@ -18,7 +18,7 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/bTYvkGr.jpg "© Anthia Mega Chavre “Colored Eclipse”, Creation of new artworks from the paintings of Nickos Chouliaras Tempera on aquarelle paper 22.9 cm. X 37 cm., March 1996 • “Χρωματιστή Έκλειψη”, Τέμπερα σε χαρτί ακουαρέλλας 22.9 εκ. Χ 37 εκ., Μάρτιος 1996")
 
-![Imgur](https://i.imgur.com/zn51yy9.jpg)
+![Imgur](https://i.imgur.com/zn51yy9.jpg "© Anthia Mega Chavre “Gun shot”, Tempera on aquarelle paper 39.3 cm. X 25 cm., March 1996  • “Πυροβολισμός”, Τέμπερα σε χαρτί ακουαρέλλας 39.3 εκ. Χ 25 εκ., Μάρτιος 1996")
 
 ![Imgur](https://i.imgur.com/YqvjCTr.jpg)
 
