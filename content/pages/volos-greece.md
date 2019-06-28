@@ -2,7 +2,7 @@
 title: Volos Greece
 category: group-exhibitions
 creationDate: '2019-06-25'
-featuredImage: /images/uploads/sht5lul.jpg
+featuredImage: /images/uploads/1muzilc.jpg
 ---
 ![Imgur](https://i.imgur.com/WI4QAKA.jpg)
 
@@ -10,7 +10,7 @@ featuredImage: /images/uploads/sht5lul.jpg
 
 ![Imgur](https://i.imgur.com/6BNGkNg.jpg)
 
-![Imgur](https://i.imgur.com/1muzilc.jpg)
+![Imgur](https://i.imgur.com/1muzilc.jpg "feat")
 
 ![Imgur](https://i.imgur.com/qGYDvg0.jpg)
 
