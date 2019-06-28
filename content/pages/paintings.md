@@ -2,7 +2,7 @@
 title: Paintings
 category: paintings
 creationDate: '2019-06-11'
-featuredImage: /images/uploads/sitqsxr.jpg
+featuredImage: /images/uploads/yellowheart_c.jpg
 ---
 ![Imgur](https://i.imgur.com/IO1iOBf.jpg)
 
