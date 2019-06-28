@@ -22,7 +22,7 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/YqvjCTr.jpg "© Anthia Mega Chavre “The It”, Creation of new artworks from the paintings of Nickos Chouliaras, Tempera on aquarelle paper 32.3 cm. X 17.5 cm., April 1996  • “Tο Αυτό”, Τέμπερα σε χαρτί ακουαρέλλας 32.3 εκ. Χ 17.5 εκ., Απρίλιος 1996")
 
-![Imgur](https://i.imgur.com/o2XTXQg.jpg)
+![Imgur](https://i.imgur.com/o2XTXQg.jpg "© Anthia Mega Chavre “Colored cloud in sky”, Tempera on aquarelle paper 41 cm. X 23.7 cm., April 1996  • “Χρωματιστό συννεφο στον ουρανό”, Τέμπερα σε χαρτί ακουαρέλλας 41 εκ. Χ 23.7 εκ., Απρίλιος 1996")
 
 ![Imgur](https://i.imgur.com/3UrzTcF.jpg)
 
