@@ -4,7 +4,7 @@ category: paintings
 creationDate: '2019-06-11'
 featuredImage: /images/uploads/yellowheart_c.jpg
 ---
-![Imgur](https://i.imgur.com/IO1iOBf.jpg)
+![Imgur](https://i.imgur.com/IO1iOBf.jpg "© Anthia Mega Chavre, \"Chameleon bird\", Creation of new artworks from the paintings of Nickos Chouliaras Tempera on aquarelle paper 45 cm. X 34 cm. May 1996 • \"Πουλί χαμαιλέοντας\", Τέμπερα σε χαρτί ακουαρέλλας 45 εκ. Χ 34 εκ. Μάιος 1996")
 
 ![Imgur](https://i.imgur.com/8sefIrM.jpg)
 
@@ -31,4 +31,3 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 ![Imgur](https://i.imgur.com/geDoFZR.jpg)
 
 ![Imgur](https://i.imgur.com/7hO03vj.jpg)
-
