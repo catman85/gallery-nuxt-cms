@@ -4,6 +4,7 @@
 order of photos
 
 dran 'n' drop
+black lightgallery bug fix
 na fainontai orizontia oi eikones sto markdown editor WYSISYG
 
 domain_link 
