@@ -36,13 +36,18 @@
                 <!-- :src="thumbnail(image.src)" -->
                 <img v-if="image" v-lazy="(image.src)" :title="image.title">
               </lazy-component>
-
               <!-- this must match with data-sub-html but there might be duplicates -->
               <!-- ATTENTION for some reason filters don't work (format)-->
-              <div :class="'description '+'caption'+ cleanString(image.title)">
+              <div v-if="$store.state.lang == 'en'" :class="'description '+'caption'+ cleanString(image.title)">
                 <h4>{{image.title | firstPart}}</h4>
                 <p>{{image.title | secondPart}}</p>
                 <p>{{image.title | thirdPart}}</p>
+                
+              </div>
+              <div v-else :class="'description '+'caption'+ cleanString(image.title)">
+                <h4>{{image.alt | firstPart}}</h4>
+                <p>{{image.alt | secondPart}}</p>
+                <p>{{image.alt | thirdPart}}</p>
               </div>
             </a>
           </masonry>
