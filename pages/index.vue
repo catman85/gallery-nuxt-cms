@@ -2,14 +2,12 @@
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
 order of photos
-data-entry
 
 dran 'n' drop
 na fainontai orizontia oi eikones sto markdown editor WYSISYG
 
 domain_link 
 analytics 
-deploy_minifications_compress_images
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">

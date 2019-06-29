@@ -11,6 +11,10 @@ h1{
   text-align: center;
   font-weight: 200;
 }
+h2{
+  text-align: center;
+  font-weight: 600;
+}
 h2,p{
   color: map-get($palette , grey4 );
 }
@@ -38,6 +42,7 @@ form{
     @include border();
     border-width: 0px;
     padding-left: 0.5em;
+    color: map-get($palette , grey4);
   }
   textarea{
     border-radius: 0.5em;
