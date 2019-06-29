@@ -5,9 +5,7 @@ order of photos
 data-entry
 
 dran 'n' drop
-na fainontai orizontia oi eikones sto markdown editor
-logo en/gr
-lezanta eikonas en/gr
+na fainontai orizontia oi eikones sto markdown editor WYSISYG
 
 domain_link 
 analytics 
@@ -95,12 +93,12 @@ robots.txt sitemap.xml ggl_search_console -->
     },
     mounted() {
       // $emit method will propagate data to receiver components
-      this.$nuxt.$emit('index', this.pages); // receiver is MyHeader
+      // this.$nuxt.$emit('index', this.pages); // receiver is MyHeader
 
       // $on method will receive the data from the sender component
-      this.$nuxt.$on('en', (english) => { // sender is MyHeader
+      // this.$nuxt.$on('en', (english) => { // sender is MyHeader
         // your code goes here
-      })
+      // })
     },
     asyncData: async ({
       app,

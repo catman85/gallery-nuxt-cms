@@ -20,6 +20,16 @@
         margin: 0;
     }
 }
+
+.legal{
+  .row *{
+    display: block;
+    margin: 0 auto;
+    p{
+      margin-top: 2em;
+    }
+  }
+}
   
   /* Clear floats after the columns */
   .row:after {

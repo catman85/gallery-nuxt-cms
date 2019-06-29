@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1>{{ t('legal') }}</h1>
+    <h2>{{ t('legal') }}</h2>
     <!-- this.$refs.bioText.innerHTML -->
+    <div class="legal">
     <div class="row">
       <div ref="legalText">
         {{lang}}
       </div>
+    </div>
     </div>
   </div>
 </template>
