@@ -164,6 +164,9 @@
     },
     filters: {
       firstPart(s) {
+        if(s.length > 110 && screen.width < 400){
+          return "";
+        }
         // if(s.includes(",")){
         // (s.split(',').length - 1) // how many times "," appears inside a string
         if ((s.split(',').length - 1) >= 1) {
@@ -174,6 +177,10 @@
         }
       },
       secondPart(s) {
+        if(s.length > 110 && screen.width < 400){
+          return s;
+        }
+
         if ((s.split(',').length - 1) == 1) { //one comma, two parts
           //from last index to end
           //in this case last index and first index are the same
@@ -184,6 +191,9 @@
         }
       },
       thirdPart(s) {
+        if(s.length > 110 && screen.width < 400){
+          return "";
+        }
         if ((s.split(',').length - 1) >= 2) {
           //from last index to end
           return s.substring(s.lastIndexOf(',') + 1);
