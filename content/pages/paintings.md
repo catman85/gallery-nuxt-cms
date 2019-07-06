@@ -26,7 +26,7 @@ featuredImage: /images/uploads/yellowheart_c.jpg
 
 ![Imgur](https://i.imgur.com/3UrzTcF.jpg "© Anthia Mega Chavre, “The creation of a red wing”, Creation of new artworks from the paintings of Nickos Chouliaras, Tempera on aquarelle paper 38.5 cm. X 25 cm., April 1996  • “Δημιουργία ενός κόκκινου φτερού”, Τέμπερα σε χαρτί ακουαρέλλας 38.5 εκ. Χ 25 εκ., Απρίλιος 1996")
 
-![© Anthia Mega Chavre, “The hat & the lama”, Tempera on aquarelle paper 38 cm. X 24.5 cm. March 1996](https://i.imgur.com/qA8ciz3.jpg "“Το καπέλο & το λάμα”, Τέμπερα σε χαρτί ακουαρέλλας 38 εκ. Χ 24.5 εκ., Μάρτιος 1996")
+![“Το καπέλο & το λάμα”, Τέμπερα σε χαρτί ακουαρέλλας 38 εκ. Χ 24.5 εκ., Μάρτιος 1996](https://i.imgur.com/qA8ciz3.jpg "© Anthia Mega Chavre, “The hat & the lama”, Tempera on aquarelle paper 38 cm. X 24.5 cm. March 1996")
 
 ![Imgur](https://i.imgur.com/geDoFZR.jpg)
 
