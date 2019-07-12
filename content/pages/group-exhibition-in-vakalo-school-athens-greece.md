@@ -2,7 +2,7 @@
 title: group-exhibition-in-vakalo-school-athens-greece
 category: group-exhibitions
 creationDate: '1997-10-04'
-featuredImage: /images/uploads/2dyfiuq.jpg
+featuredImage: /images/uploads/1997vakaloposter.jpg
 descriptionEn: >-
   10th to 18th of April 1997
 
