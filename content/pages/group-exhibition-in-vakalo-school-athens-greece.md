@@ -6,13 +6,19 @@ featuredImage: /images/uploads/sxvcruj.jpg
 descriptionEn: >-
   10th to 18th of April 1997
 
+  "Creation of new works of Art, inspired by the emblematic Greek artists
+  Spyropoulos, Tetsis, Moralis, Chouliara"
+
   A Group Exhibition of Vakalo students, studying, Art, design, color, in Vakalo
   School of Arts & Design, close to Painter - Engraver Ms Roubina Sarelakou.
 descriptionGr: >-
   10 με 18 Απριλίου 1997
 
-  Μία Ομαδική Έκθεση των σπουδαστών της σχολής Βακαλό, που σπουδαζουν σχεδιο κι
-  χρώμμα, δίπλα στην Ζωγράφο - Χαράκτρια Ρουμπίνα Σαρελάκου.
+  "Δημιουργία νέων εργων τέχνης εμπνευσμένα από τους εμβληματικούς Ελληνες
+  Εικαστικούς Σπυρόπουλο, Τέτση, Μόραλη, Χουλιαρά"
+
+  Μία Ομαδική Έκθεση των σπουδαστών της σχολής Βακαλό, που σπουδαζουν σχέδιο κι
+  χρώμα, δίπλα στην Ζωγράφο - Χαράκτρια Ρουμπίνα Σαρελάκου.
 ---
 ![ ](https://i.imgur.com/sxVcRuj.jpg)
 
