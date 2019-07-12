@@ -32,4 +32,4 @@ descriptionGr: >-
 
 ![ ](https://i.imgur.com/f3xhLba.jpg)
 
-![Graduation day, receiving my deegree from Mrs Vakalo!](https://i.imgur.com/MN9SopD.jpg "Ημέρα ΑποφοιτησηςΠαραλαβή του πτυχείου μου, από την Κα Βακαλό!")
+![Graduation day, receiving my deegree from Mrs Vakalo! 1998](https://i.imgur.com/MN9SopD.jpg "Ημέρα ΑποφοιτησηςΠαραλαβή του πτυχείου μου, από την Κα Βακαλό! 1998")
