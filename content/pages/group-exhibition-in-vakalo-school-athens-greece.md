@@ -1,7 +1,7 @@
 ---
 title: group-exhibition-in-vakalo-school-athens-greece
 category: group-exhibitions
-creationDate: '2019-06-20'
+creationDate: '1997-10-04'
 featuredImage: /images/uploads/sxvcruj.jpg
 ---
 ![ ](https://i.imgur.com/sxVcRuj.jpg)
