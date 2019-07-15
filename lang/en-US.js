@@ -16,7 +16,8 @@ export default {
     categories: 'Categories',
     exhibitions: 'Exhibitions',
     title: 'Title',
-    search: 'Search for...'
+    search: 'Search for...',
+    name: 'Anthia Mega Chavre'
     // pages: { 
     //   home: 'Home',
     //   contacts: 'Contacts'

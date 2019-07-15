@@ -16,7 +16,8 @@ export default {
     categories: 'Κατηγορίες',
     exhibitions: 'Εκθέσεις',
     title: 'Τίτλος',
-    search: 'Αναζήτηση για...'
+    search: 'Αναζήτηση για...',
+    name: 'Άνθια Μέγα Χαβρέ'
     // pages: {
     //   home: 'Kentrikh',
     //   contacts: 'epafes'
