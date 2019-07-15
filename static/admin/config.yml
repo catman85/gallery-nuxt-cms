@@ -15,27 +15,35 @@ collections:
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
-        - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά}
-        - {label: Heading, name: head, widget: string, required: true ,hint: Επικεφαλίδα. Την αλλάζεις όπως θες}
-        - {label: Category, name: category, widget: string, default: "group-exhibitions", required: true ,hint: Μπορείς να βάλεις group-exhibitions solo-exhibitions ή ότι άλλο θές π.χ. sculpture}
-        - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true}
-        - {label: Featured Image, name: featuredImage, widget: image ,required: true}
-        - {label: Description English, name: descriptionEn, widget: text,required: false}
-        - {label: Description Greek, name: descriptionGr, widget: text,required: false}
-        - {label: Images, name: body, widget: markdown,required: false,hint: Πηγαίνεις στο https://catman85.github.io/imgur-uploader/ και μεταφέρεις τον κώδικα}        
+        - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά εάν είναι κενό.}
+        - {label: Heading, name: head, widget: string, required: true ,hint: Επικεφαλίδα της συλλογής. Την αλλάζεις όπως θες.}
+        # - {label: Category, name: category, widget: string, default: "group-exhibitions", required: true ,hint: Μπορείς να βάλεις group-exhibitions solo-exhibitions ή ότι άλλο θές π.χ. sculptures. Εάν βάλεις on-wood θα εμφανιστεί δέυτερη συλλογή για έργα σε ξύλο.}
+        - {label: Category, name: category, widget: relation, collection: categories, default: "group-exhibitions", searchFields: [title], valueField: title, disaplyFields: title}
+        - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true, hint: Με αυτήν την ημερομηνία ταξινομείς την σειρά εμφάνισης στην κεντρική.}
+        - {label: Featured Image, name: featuredImage, widget: image ,required: true, hint: Κεντρική Φωτογραφία Συλλογής.}
+        - {label: Description English, name: descriptionEn, widget: text,required: false, hint: Περιγραφή συλλογής στα Ελληνικά}
+        - {label: Description Greek, name: descriptionGr, widget: text,required: false, hint: Περιγραφή συλλογής στα Αγγλικά}
+        - {label: Images, name: body, widget: markdown,required: false,hint: Πηγαίνεις στο https://catman85.github.io/imgur-uploader/ και μεταφέρεις τον κώδικα που δημιουργείται εδώ. Προσοχή ο διακόπτης να είναι γυρισμένος στο Markdown όχι στο Rich Text}        
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"
         #   field: {label: Image, name: image, widget: image}
+  - name: "categories" # Used in routes, e.g., /admin/collections/blog
+    label: "Categories" # Used in the UI
+    folder: "content/categories" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: Category, name: title, widget: string, required: true}
   - name: "videos" # Used in routes, e.g., /admin/collections/blog
-    label: "Video" # Used in the UI
+    label: "Videos" # Used in the UI
     folder: "content/videos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: Title, name: title, widget: string, required: false}
       - {label: Description, name: description, widget: text, required: false}
-      - {label: Youtube URL, name: ytLink, widget: text, required: true}
+      - {label: Youtube URL, name: ytLink, widget: text, required: true ,hint: Εδώ βάζεις το link για το video απο το Youtube.}
   # - label: "Categories" # Used in the UI
   #   name: "categories" # Used in routes, e.g., /admin/collections/blog
   #   folder: "content/categories" # The path to the folder where the documents are stored

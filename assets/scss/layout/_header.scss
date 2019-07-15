@@ -54,8 +54,8 @@ header {
     // background: url(/assets/images/anthiamegachavre_sign_small_single_svg.svg) no-repeat center;
     fill: map-get($palette, logo-color);
     @include for-tablet-landscape-down{
-      width: 230px;
-      height: 90px;
+      width: 240px;
+      height: 95px;
     }
   }
 
@@ -81,7 +81,7 @@ header {
 
       li {
         display: inline-block; // makes li elements appear side by side
-        padding: 35px 0;
+        padding: 28px 0;
         font-size: 20px;
         // font-weight can also fail to work if the font you are using does not have those weights in existence – you will often hit this when embedding custom fonts.
         font-style: Lucida Console, Consolas;
