@@ -1,6 +1,8 @@
 <template>
-<div v-if="$store.state.lang == 'gr'">
-  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="4268.000000pt" height="948.000000pt"
+<!-- <div v-if="$store.state.lang == 'gr'"> -->
+
+      <svg></svg>
+  <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="4268.000000pt" height="948.000000pt"
     viewBox="0 0 4268.000000 948.000000" preserveAspectRatio="xMidYMid meet">
     <metadata>
       Created by potrace 1.15, written by Peter Selinger 2001-2017
@@ -279,11 +281,7 @@ l-107 -37 -310 1 c-304 0 -312 1 -410 27 -55 15 -133 43 -173 63 -127 62 -262
 108 65 119 31 8 159 128 180 168 30 57 15 110 -39 143 -11 6 -20 29 -23 60 -4
 28 -11 56 -17 63 -13 16 -111 15 -159 -2z" />
     </g>
-  </svg></div>
-  <div v-else>
-      <svg></svg>
-
-  </div>
+  </svg> -->
 </template>
 
 
