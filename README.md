@@ -10,6 +10,8 @@ Visit: https://epic-bhaskara-02f420.netlify.com/
 
 - after tweaking nuxt.config.js you need to restart your live server, or wait a bit longer
 
+- go to netlify: settings -> build and deploy -> build command : npm run generate -> publish dir : dist/ 
+
 ## Build Setup
 
 ``` bash
