@@ -6,7 +6,7 @@ Visit: https://epic-bhaskara-02f420.netlify.com/
 
 - If the live deploy fails, go to : netlify -> deploys -> trigger deploy -> clear cache and deploy site
 
-- after publishing something from the gui you need to run "git pull" and "npm run serve" to get the changes
+- after publishing something from the gui you need to run "git pull" and "npm run serve" to get the changes. Same applies for both **localhost:3000/admin** and **domain/admin**
 
 - after tweaking nuxt.config.js you need to restart your live server, or wait a bit longer
 
