@@ -1,5 +1,6 @@
 ---
 title: designers-dot-gallery-athens
+head: designers-dot-gallery-athens
 category: group-exhibitions
 creationDate: '2019-06-20'
 featuredImage: /images/uploads/7uxsglt.jpg

@@ -1,5 +1,6 @@
 ---
 title: Vernice Forli Italy
+head: Vernice Forli Italy
 category: group-exhibitions
 creationDate: '2019-06-25'
 featuredImage: /images/uploads/ujez9zk.jpg

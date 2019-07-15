@@ -1,5 +1,6 @@
 ---
 title: On the Wood
+head: On the Wood
 category: solo-exhibitions
 creationDate: '2018-01-22'
 featuredImage: /images/uploads/afisa-a3.jpg

@@ -1,5 +1,6 @@
 ---
 title: Stop Syria War Halandri Athens
+head: Stop Syria War Halandri Athens
 category: group-exhibitions
 creationDate: '2019-06-25'
 featuredImage: /images/uploads/3pjch5l.jpg

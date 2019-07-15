@@ -1,5 +1,6 @@
 ---
 title: Paintings
+head: Paintings
 category: paintings
 creationDate: '2019-06-11'
 featuredImage: /images/uploads/yellowheart_c.jpg

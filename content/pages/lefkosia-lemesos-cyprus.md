@@ -1,5 +1,6 @@
 ---
 title: Lefkosia Lemesos Cyprus
+head: Lefkosia Lemesos Cyprus
 category: group-exhibitions
 creationDate: '2019-06-24'
 featuredImage: /images/uploads/2dyfiuq.jpg

@@ -13,15 +13,16 @@ collections:
     name: "pages"
     folder: "content/pages"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
-        - {label: Title, name: title, widget: string, required: true}
+        - {label: Filename, name: title, widget: string, required: true}
+        - {label: Heading, name: head, widget: string, required: true}
         - {label: Category, name: category, widget: string, default: "group-exhibitions", required: true}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true}
-        - {label: Featured Image, name: featuredImage, widget: image}
+        - {label: Featured Image, name: featuredImage, widget: image ,required: false}
         - {label: Description English, name: descriptionEn, widget: text,required: false}
         - {label: Description Greek, name: descriptionGr, widget: text,required: false}
-        - {label: Images, name: body, widget: markdown}        
+        - {label: Images, name: body, widget: markdown,,required: false}        
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"

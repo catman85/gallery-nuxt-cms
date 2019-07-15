@@ -1,5 +1,6 @@
 ---
 title: dimitris potamitis
+head: dimitris potamitis
 category: solo-exhibitions
 creationDate: '2019-06-07'
 featuredImage: /images/uploads/rorbg9c.jpg

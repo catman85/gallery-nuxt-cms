@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>
-      <nuxtdown-body class="title" :body="page.title" />
+      <nuxtdown-body class="title" :body="page.head" />
     </h2>
     <hr>
     <br>
@@ -70,7 +70,7 @@
     // }},
     head: function () {
       return {
-        title: `${this.page.title}`,
+        title: `${this.page.head}`,
         meta: [{
           hid: "description",
           name: "description",

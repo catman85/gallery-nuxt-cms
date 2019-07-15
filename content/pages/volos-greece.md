@@ -1,5 +1,6 @@
 ---
 title: Volos Greece
+head: Volos Greece
 category: group-exhibitions
 creationDate: '2019-06-25'
 featuredImage: /images/uploads/1muzilc.jpg

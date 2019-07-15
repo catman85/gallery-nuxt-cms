@@ -1,5 +1,6 @@
 ---
 title: 6th-13th-of-february-2017-2
+head: 6th-13th-of-february-2017-2
 category: group-exhibitions
 creationDate: '2019-06-19'
 featuredImage: /images/uploads/lkeb013.jpg

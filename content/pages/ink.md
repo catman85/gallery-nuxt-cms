@@ -1,5 +1,6 @@
 ---
 title: Ink
+head: Ink
 category: ink
 creationDate: '2019-06-11'
 featuredImage: /images/uploads/rfzc8kp.jpg

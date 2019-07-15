@@ -1,5 +1,6 @@
 ---
 title: kallithea
+head: kallithea
 category: solo-exhibitions
 creationDate: '2019-06-08'
 featuredImage: /images/uploads/bhgvwq8.jpg

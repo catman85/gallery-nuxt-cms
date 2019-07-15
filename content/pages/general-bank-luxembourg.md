@@ -1,5 +1,6 @@
 ---
 title: General Bank Luxembourg
+head: General Bank Luxembourg
 category: Solo-exhibitions
 creationDate: '2019-06-07'
 featuredImage: /images/uploads/h694qna.jpg

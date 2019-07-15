@@ -1,5 +1,6 @@
 ---
 title: vakalo-school-athens-greece
+head: vakalo-school-athens-greece
 category: group-exhibitions
 creationDate: '1997-10-04'
 featuredImage: /images/uploads/1997vakaloposter.jpg

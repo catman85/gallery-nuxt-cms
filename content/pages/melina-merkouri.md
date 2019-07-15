@@ -1,5 +1,6 @@
 ---
 title: Melina Merkouri
+head: Melina Merkouri
 category: Solo-exhibitions
 creationDate: '2019-06-11'
 featuredImage: /images/uploads/cvbhefa.jpg

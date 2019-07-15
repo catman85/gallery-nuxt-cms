@@ -61,7 +61,7 @@ robots.txt sitemap.xml ggl_search_console -->
           <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
           <div class="cat">
              <!-- | {{page.category}} -->
-            {{ page.title}}
+            {{ page.head}}
           </div>
 
           <!-- <h4>Date:</h4> -->

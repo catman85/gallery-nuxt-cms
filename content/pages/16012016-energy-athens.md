@@ -1,5 +1,6 @@
 ---
 title: 16012016-energy-athens
+head: 16012016-energy-athens
 category: group-exhibitions
 creationDate: '2019-06-19'
 featuredImage: /images/uploads/n0dgtol.jpg

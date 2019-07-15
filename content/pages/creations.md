@@ -1,5 +1,6 @@
 ---
 title: Creations
+head: Creations
 category: creations
 creationDate: '2019-06-11'
 featuredImage: /images/uploads/zsatrgd.jpg

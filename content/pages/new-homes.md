@@ -1,5 +1,6 @@
 ---
 title: New Homes
+head: New Homes
 category: new-homes
 creationDate: '2019-06-08'
 featuredImage: /images/uploads/g0buzal.jpg

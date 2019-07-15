@@ -1,5 +1,6 @@
 ---
 title: Archive
+head: Archive
 category: archive
 creationDate: '2019-06-09'
 featuredImage: /images/uploads/okj0geo.jpg

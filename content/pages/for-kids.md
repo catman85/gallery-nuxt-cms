@@ -1,5 +1,6 @@
 ---
 title: For Kids
+head: For Kids
 category: for-kids
 creationDate: '2019-06-08'
 featuredImage: /images/uploads/5vcekqm.jpg

@@ -1,5 +1,6 @@
 ---
 title: 11th-21st-of-december-2015-cheapart-21-athens
+head: 11th-21st-of-december-2015-cheapart-21-athens
 category: group-exhibitions
 creationDate: '2019-06-20'
 featuredImage: /images/uploads/pcxpyru.jpg
