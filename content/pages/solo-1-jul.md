@@ -1,7 +1,8 @@
 ---
 title: solo-1-jul
-head: nea smurnh
+head: Solo-1-Jul
 category: solo-exhibitions
 creationDate: '2019-06-07'
-featuredImage: /images/uploads/5i8ucvo.jpg
+featuredImage: /images/uploads/1997vakaloposter.jpg
 ---
+
