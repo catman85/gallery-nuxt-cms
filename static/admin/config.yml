@@ -23,7 +23,7 @@ collections:
         - {label: Featured Image, name: featuredImage, widget: image ,required: true, hint: Κεντρική Φωτογραφία Συλλογής.}
         - {label: Description English, name: descriptionEn, widget: text,required: false, hint: Περιγραφή συλλογής στα Ελληνικά}
         - {label: Description Greek, name: descriptionGr, widget: text,required: false, hint: Περιγραφή συλλογής στα Αγγλικά}
-        - {label: Images, name: body, widget: markdown,required: false,hint: Πηγαίνεις στο https://catman85.github.io/imgur-uploader/ και μεταφέρεις τον κώδικα που δημιουργείται εδώ. Προσοχή ο διακόπτης να είναι γυρισμένος στο Markdown όχι στο Rich Text}        
+        - {label: Images, name: body, widget: markdown,required: false,hint: Πηγαίνεις στο https://catman85.github.io/imgur-uploader/ και μεταφέρεις τον κώδικα που δημιουργείται εδώ. Προσοχή ο διακόπτης να είναι γυρισμένος στο Markdown όχι στο Rich Text. Για ταξινόμηση μεταφέρεις τον κώδικα απο εδώ, στο https://catman85.github.io/markdown-image-organizer/ και τον επαναφέρεις.}        
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"
