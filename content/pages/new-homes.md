@@ -5,7 +5,7 @@ category: new-homes
 creationDate: '2019-06-08'
 featuredImage: /images/uploads/g0buzal.jpg
 ---
-![ ](https://i.imgur.com/ZBPEyEZ.jpg start)
+![ ](https://i.imgur.com/ZBPEyEZ.jpg "start")
 
 ![ ](https://i.imgur.com/w1YRkVZ.jpg )
 
