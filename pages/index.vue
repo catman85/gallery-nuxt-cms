@@ -1,11 +1,8 @@
 <!-- ATTENTION asyncData only works in pages, not components or layout -->
 <!-- // https://nuxtjs.org/faq/async-data-components/ -->
 <!-- TODO: 
-order of photos
-
-dran 'n' drop
 black lightgallery bug fix
-na fainontai orizontia oi eikones sto markdown editor WYSISYG
+right arrow goes down masonry bug
 
 domain_link 
 analytics 
