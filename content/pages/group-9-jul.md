@@ -20,64 +20,19 @@ descriptionGr: >-
   μαζί με την ζωγράφο, συμμετείχαν η Φαρίντα Ελ Γκαζάρ, ο Στέφανος Ρόκος, ο
   Τζουλιάνο Καγκλής, ο Γιώργος Τσεριώνης, και η Άνθια Μεγα.
 ---
-!\[ ](https://i.imgur.com/5Ej6huB.jpg)
-
-
-
-!\[ ](https://i.imgur.com/nYEAoJr.jpg)
-
-
-
-!\[ ](https://i.imgur.com/nsxEkVn.jpg)
-
-
-
-!\[ ](https://i.imgur.com/7is8eY0.jpg)
-
-
-
-!\[ ](https://i.imgur.com/UpC14rh.jpg)
-
-
-
-!\[ ](https://i.imgur.com/IB2b8qT.jpg)
-
-
-
-!\[ ](https://i.imgur.com/kdFTcEw.jpg)
-
-
-
-!\[ ](https://i.imgur.com/hWfHStj.jpg)
-
-
-
-!\[ ](https://i.imgur.com/4ZshYKD.jpg)
-
-
-
-!\[ ](https://i.imgur.com/QF4j1lW.jpg)
-
-
-
-!\[ ](https://i.imgur.com/FXC5gNn.jpg)
-
-
-
-!\[ ](https://i.imgur.com/rOfNrkD.jpg)
-
-
-
-!\[ ](https://i.imgur.com/Oxx3RBk.jpg)
-
-
-
-!\[ ](https://i.imgur.com/GtvLuRd.jpg)
-
-
-
-!\[ ](https://i.imgur.com/KuufYfW.jpg)
-
-
-
-!\[ ](https://i.imgur.com/cfqHG9i.jpg)
+![ ](https://i.imgur.com/5Ej6huB.jpg)
+![ ](https://i.imgur.com/nYEAoJr.jpg)
+![ ](https://i.imgur.com/nsxEkVn.jpg)
+![ ](https://i.imgur.com/7is8eY0.jpg)
+![ ](https://i.imgur.com/UpC14rh.jpg)
+![ ](https://i.imgur.com/IB2b8qT.jpg)
+![ ](https://i.imgur.com/kdFTcEw.jpg)
+![ ](https://i.imgur.com/hWfHStj.jpg)
+![ ](https://i.imgur.com/4ZshYKD.jpg)
+![ ](https://i.imgur.com/QF4j1lW.jpg)
+![ ](https://i.imgur.com/FXC5gNn.jpg)
+![ ](https://i.imgur.com/rOfNrkD.jpg)
+![ ](https://i.imgur.com/Oxx3RBk.jpg)
+![ ](https://i.imgur.com/GtvLuRd.jpg)
+![ ](https://i.imgur.com/KuufYfW.jpg)
+![ ](https://i.imgur.com/cfqHG9i.jpg)
