@@ -1,5 +1,5 @@
 ---
-title: Sceanery in Georges Armenis New Greek Theater
+title: sceanery-in-georges-armenis
 head: Sceanery in Georges Armenis New Greek Theater
 category: group-exhibitions
 creationDate: '1999-11-22'
