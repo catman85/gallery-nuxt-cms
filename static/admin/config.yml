@@ -15,15 +15,14 @@ collections:
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
-        - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά εάν είναι κενό (όταν φτιάχνεις νέα συλλογή). Εάν δέν είναι κενό ΔΕΝ το πειράζεις.}
-        - {label: Heading, name: head, widget: string, required: true ,hint: Επικεφαλίδα της συλλογής. Την αλλάζεις όπως θες.}
-        # - {label: Category, name: category, widget: string, default: "group-exhibitions", required: true ,hint: Μπορείς να βάλεις group-exhibitions solo-exhibitions ή ότι άλλο θές π.χ. sculptures. Εάν βάλεις on-wood θα εμφανιστεί δέυτερη συλλογή για έργα σε ξύλο.}
+        - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά εάν είναι κενό (όταν φτιάχνεις νέα συλλογή). ΕΑΝ ΕΙΝΑΙ ΣΥΜΠΛΗΡΩΜΕΝΟ ΔΕΝ ΤΟ ΠΕΙΡΑΖΕΙΣ. Αυτό βλέπουν οι μηχανές αναζήτησης.}
+        - {label: Heading, name: head, widget: string, required: true ,hint: Επικεφαλίδα της συλλογής. Την αλλάζεις όπως θες. Αυτό βλέπουν οι επισκέπτες.}
         - {label: Category, name: category, widget: relation, collection: categories, default: "group-exhibitions", searchFields: [title], valueField: title, disaplyFields: title ,hint: Επιλέγεις σε ποιό menu ανήκει η συλλογή}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true, hint: Με αυτήν την ημερομηνία ταξινομείς την σειρά εμφάνισης στην κεντρική.}
         - {label: Featured Image, name: featuredImage, widget: image ,required: true, hint: Κεντρική Φωτογραφία Συλλογής.}
         - {label: Description English, name: descriptionEn, widget: text,required: false, hint: Περιγραφή συλλογής στα Ελληνικά}
         - {label: Description Greek, name: descriptionGr, widget: text,required: false, hint: Περιγραφή συλλογής στα Αγγλικά}
-        - {label: Images, name: body, widget: markdown,required: false,hint: Ανεβάζεις -> https://catman85.github.io/imgur-uploader/ .Ο διακόπτης να είναι στο Markdown όχι στο Rich Text! Για ταξινόμηση -> https://catman85.github.io/markdown-image-organizer/}        
+        - {label: Images, name: body, widget: markdown,required: false,hint: Ο ΔΙΑΚΟΠΤΗΣ ΝΑ ΕΙΝΑΙ ΓΥΡΙΣΜΕΝΟΣ ΣΤΟ MARKDOWN ΠΡΙΝ ΡΙΞΕΙΣ ΤΟΝ ΚΩΔΙΚΑ! Ανεβάζεις -> https://catman85.github.io/imgur-uploader/ Για ταξινόμηση -> https://catman85.github.io/markdown-image-organizer/}
         # - label: "Gallery"
         #   name: "galleryImages"
         #   widget: "list"

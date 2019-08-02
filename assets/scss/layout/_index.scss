@@ -3,6 +3,7 @@
   margin: 0 auto; // gravity center
   width: 90%;// for large screens
   text-align: center;
+  padding-top: map-get($size , pads-top );
 
   > { // children of .filters (.artwork and .exhibit) each take half the space
     width: 50%; // this is overwriten by 100% center mixin on tablets    
@@ -80,5 +81,15 @@
 .masonry{
   > *{
     margin: 0 auto;
+  }
+}
+
+.container{
+  hr{
+    margin-top: 0;
+    visibility: hidden;
+    @include for-tablet-landscape-down {
+      visibility: initial;
+    }
   }
 }

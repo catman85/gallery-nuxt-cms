@@ -14,6 +14,7 @@ robots.txt sitemap.xml ggl_search_console -->
   <div class="container">
     <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
+    <hr>
     <div class="filters">
       <div class="artwork">
         <h2>{{ t('artworks') }}</h2>

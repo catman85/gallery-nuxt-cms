@@ -1,9 +1,10 @@
 <template>
   <div>
+    <hr class="normal">
     <h2>
       <nuxtdown-body class="title" :body="page.head" />
     </h2>
-    <hr>
+    <hr class="reverse">
     <br>
     <div class="row">
       <p class="pageDescription">{{ this.description }}</p>

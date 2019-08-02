@@ -28,6 +28,22 @@ hr{
     color: map-get($palette , grey1 );
     opacity: 0.5;
 }
+
+
+.normal{
+  visibility: hidden;
+  @include for-phone-only{
+    visibility: initial;
+  }
+}
+
+.reverse{
+  @include for-phone-only{
+    margin-top: 0;
+    margin-bottom: 3em;
+  }
+}
+
 .featured{
     // display: flex;
     // background-size: contain;

@@ -49,13 +49,18 @@ header {
   #logo svg {
     margin: 10px;
     float: left;
-    width: 300px;
-    height: 110px;
+    width: 400px;
+    height: 170px;
     // background: url(/assets/images/anthiamegachavre_sign_small_single_svg.svg) no-repeat center;
     fill: map-get($palette, logo-color);
     @include for-tablet-landscape-down{
-      width: 240px;
-      height: 95px;
+      margin: 0 auto;
+      float: none;
+      max-width: 98%;
+      max-height: 200px;
+    }
+    @include for-phone-only{
+      padding-top: map-get($size , pads-top ) + 0.5;
     }
   }
 
@@ -75,6 +80,10 @@ header {
 
   nav {
     float: right;
+    padding-top: map-get($size , pads-top ) + 1;
+    @include for-phone-only{
+      padding: initial;
+    }
 
     ul {
       display: inline-block; //side by side
