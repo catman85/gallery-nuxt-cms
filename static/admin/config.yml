@@ -40,7 +40,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: Title, name: title, widget: string, required: false}
+      - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά εάν είναι κενό (όταν φτιάχνεις νέα συλλογή). ΕΑΝ ΕΙΝΑΙ ΣΥΜΠΛΗΡΩΜΕΝΟ ΔΕΝ ΤΟ ΠΕΙΡΑΖΕΙΣ. Αυτό βλέπουν οι μηχανές αναζήτησης.}
+      - {label: Heading, name: head, widget: string, required: true ,hint: Τo αλλάζεις όπως θες. Αυτό βλέπουν οι επισκέπτες.}
       - {label: Description, name: description, widget: text, required: false}
       - {label: Youtube URL, name: ytLink, widget: text, required: true ,hint: Εδώ βάζεις το link για το video απο το Youtube.}
   # - label: "Categories" # Used in the UI
