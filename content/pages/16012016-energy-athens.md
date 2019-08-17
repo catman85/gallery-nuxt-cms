@@ -7,12 +7,6 @@ featuredImage: /images/uploads/energyathensopening.jpg
 ---
 ![ ](https://i.imgur.com/XhLa91n.jpg)
 
-![ ](https://i.imgur.com/KtjoFyK.jpg)
-
-![ ](https://i.imgur.com/ycCBTFr.jpg)
-
-![ ](https://i.imgur.com/7jDTgvr.jpg)
-
 ![ ](https://i.imgur.com/IbKCkaI.jpg)
 
 ![ ](https://i.imgur.com/w0viEMy.jpg)
@@ -21,19 +15,9 @@ featuredImage: /images/uploads/energyathensopening.jpg
 
 ![ ](https://i.imgur.com/LfZvBTG.jpg)
 
-![ ](https://i.imgur.com/ZV94p11.jpg)
-
-![ ](https://i.imgur.com/hbsRfI3.jpg)
-
 ![ ](https://i.imgur.com/mR38iAa.jpg)
 
 ![ ](https://i.imgur.com/oQhp96N.jpg)
-
-![ ](https://i.imgur.com/5K9E2K1.jpg)
-
-![ ](https://i.imgur.com/EoefpwR.jpg)
-
-![ ](https://i.imgur.com/mvgaPG4.jpg)
 
 ![ ](https://i.imgur.com/yDVLi2e.jpg)
 
@@ -53,8 +37,6 @@ featuredImage: /images/uploads/energyathensopening.jpg
 
 ![ ](https://i.imgur.com/NKaDYge.jpg)
 
-![ ](https://i.imgur.com/kLR94Dt.jpg)
-
 ![ ](https://i.imgur.com/HqqwWSs.jpg)
 
 ![ ](https://i.imgur.com/PQdNht2.jpg)
@@ -66,8 +48,6 @@ featuredImage: /images/uploads/energyathensopening.jpg
 ![ ](https://i.imgur.com/LKkVkFe.jpg)
 
 ![ ](https://i.imgur.com/k13vqyu.jpg)
-
-![ ](https://i.imgur.com/6VEy6Eh.jpg)
 
 ![ ](https://i.imgur.com/1ep8csO.jpg)
 
