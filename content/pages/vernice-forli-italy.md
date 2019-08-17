@@ -2,8 +2,8 @@
 title: Vernice Forli Italy
 head: Vernice Forli Italy
 category: group-exhibitions
-creationDate: '2019-06-25'
-featuredImage: /images/uploads/ujez9zk.jpg
+creationDate: '2015-03-20'
+featuredImage: /images/uploads/vernice_art_fair_2015_forli.jpg
 ---
 ![ ](https://i.imgur.com/pmfTyiv.jpg)
 
@@ -46,8 +46,3 @@ featuredImage: /images/uploads/ujez9zk.jpg
 ![ ](https://i.imgur.com/Ypyodm9.jpg)
 
 ![ ](https://i.imgur.com/UAIZ4eQ.jpg)
-
-![ ](https://i.imgur.com/hiOB2C4.jpg)
-
-![ ](https://i.imgur.com/uFolNp3.jpg)
-
