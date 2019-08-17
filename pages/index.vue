@@ -152,6 +152,7 @@ robots.txt sitemap.xml ggl_search_console -->
         filteredContent = filteredContent.filter(post => {
           return post.title.toLowerCase().includes(this.query.toLowerCase());
         });
+        // sort by date
         filteredContent = filteredContent.sort(function (a, b) {
           return b.creationDate.replace(/-/g, "") - a.creationDate.replace(/-/g, "");
         });
@@ -168,9 +169,9 @@ robots.txt sitemap.xml ggl_search_console -->
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
         } else {
-          console.debug(option);
-          this.selectedCat = option;
-          event.target.classList.add("selected");
+          this.selectedCat = option.replace("Εκθέσεις","Exhibitions");
+          console.debug(this.selectedCat);
+          event.target.classList.add("selected"); // start css effect
         }
       },
       clearSelectionColors() { // gets all li elements and removes the selected class
