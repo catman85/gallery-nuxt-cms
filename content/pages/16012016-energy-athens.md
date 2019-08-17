@@ -3,7 +3,7 @@ title: 16012016-energy-athens
 head: 16012016-energy-athens
 category: group-exhibitions
 creationDate: '2019-06-19'
-featuredImage: /images/uploads/n0dgtol.jpg
+featuredImage: /images/uploads/energyathensopening.jpg
 ---
 ![ ](https://i.imgur.com/XhLa91n.jpg)
 
@@ -17,19 +17,11 @@ featuredImage: /images/uploads/n0dgtol.jpg
 
 ![ ](https://i.imgur.com/w0viEMy.jpg)
 
-![ ](https://i.imgur.com/5RncKB5.jpg)
-
-![ ](https://i.imgur.com/SqSApsi.jpg)
-
 ![ ](https://i.imgur.com/n0dGtOl.jpg "feat")
 
 ![ ](https://i.imgur.com/LfZvBTG.jpg)
 
 ![ ](https://i.imgur.com/ZV94p11.jpg)
-
-![ ](https://i.imgur.com/7ayMe5L.jpg)
-
-![ ](https://i.imgur.com/D6NA36U.jpg)
 
 ![ ](https://i.imgur.com/hbsRfI3.jpg)
 
@@ -79,10 +71,4 @@ featuredImage: /images/uploads/n0dgtol.jpg
 
 ![ ](https://i.imgur.com/1ep8csO.jpg)
 
-![ ](https://i.imgur.com/H9PHUu2.jpg)
-
 ![ ](https://i.imgur.com/HZf3XoU.jpg)
-
-![ ](https://i.imgur.com/GAx0vTo.jpg)
-
-![ ](https://i.imgur.com/Uc7yNpU.png)
