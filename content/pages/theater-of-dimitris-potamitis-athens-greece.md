@@ -2,8 +2,8 @@
 title: theater-of-dimitris-potamitis-athens-greece
 head: theater-of-dimitris-potamitis-athens-greece
 category: group-exhibitions
-creationDate: '2019-06-20'
-featuredImage: /images/uploads/m00ii8j.jpg
+creationDate: '2001-01-01'
+featuredImage: /images/uploads/ekthesi.jpg
 ---
 ![ ](https://i.imgur.com/m00Ii8j.jpg)
 
