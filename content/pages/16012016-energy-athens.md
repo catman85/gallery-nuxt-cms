@@ -2,7 +2,7 @@
 title: 16012016-energy-athens
 head: 16012016-energy-athens
 category: group-exhibitions
-creationDate: '2019-06-19'
+creationDate: '2016-01-16'
 featuredImage: /images/uploads/energyathensopening.jpg
 ---
 ![ ](https://i.imgur.com/XhLa91n.jpg)
