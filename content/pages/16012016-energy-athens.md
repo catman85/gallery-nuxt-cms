@@ -17,18 +17,6 @@ featuredImage: /images/uploads/energyathensopening.jpg
 
 ![ ](https://i.imgur.com/mR38iAa.jpg)
 
-![ ](https://i.imgur.com/oQhp96N.jpg)
-
-![ ](https://i.imgur.com/yDVLi2e.jpg)
-
-![ ](https://i.imgur.com/qiIWZTR.jpg)
-
-![ ](https://i.imgur.com/PCiyFO4.jpg)
-
-![ ](https://i.imgur.com/1dVn6pB.jpg)
-
-![ ](https://i.imgur.com/bvbYqeD.jpg)
-
 ![ ](https://i.imgur.com/Fr3JkD7.jpg)
 
 ![ ](https://i.imgur.com/sJcmsdd.jpg)
