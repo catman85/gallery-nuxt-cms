@@ -35,8 +35,6 @@ featuredImage: /images/uploads/energyathensopening.jpg
 
 ![ ](https://i.imgur.com/WvaXisn.jpg)
 
-![ ](https://i.imgur.com/NKaDYge.jpg)
-
 ![ ](https://i.imgur.com/HqqwWSs.jpg)
 
 ![ ](https://i.imgur.com/PQdNht2.jpg)
