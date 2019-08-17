@@ -28,6 +28,8 @@ robots.txt sitemap.xml ggl_search_console -->
         <ul>
           <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
           <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
+          <!-- <li @click="pickCategory">Solo-Exhibitions</li> -->
+          <!-- <li @click="pickCategory">Group-{{ t('exhibitions') }}</li> -->
         </ul>
       </div>
     </div>
@@ -162,6 +164,7 @@ robots.txt sitemap.xml ggl_search_console -->
     methods: {
       pickCategory(event) { // handles coloring
         let option = event.target.firstChild.data.trim();
+        option = option.replace("Εκθέσεις","Exhibitions");
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
         //FIXME: bubble effect
