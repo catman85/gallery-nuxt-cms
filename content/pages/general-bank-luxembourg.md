@@ -2,7 +2,7 @@
 title: General Bank Luxembourg
 head: General Bank Luxembourg
 category: group-exhibitions
-creationDate: '2012-01-14'
+creationDate: '2012-10-12'
 featuredImage: /images/uploads/am_poster.jpg
 ---
 ![ ](https://i.imgur.com/MwihV77.jpg "")
