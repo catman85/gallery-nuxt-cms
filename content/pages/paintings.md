@@ -2,7 +2,7 @@
 title: Paintings
 head: Paintings
 category: paintings
-creationDate: '2019-06-11'
+creationDate: '2046-06-01'
 featuredImage: /images/uploads/yellowheart_c.jpg
 ---
 !["Πουλί χαμαιλέοντας", Τέμπερα σε χαρτί ακουαρέλλας 45 εκ. Χ 34 εκ. Μάιος 1996](https://i.imgur.com/IO1iOBf.jpg "© Anthia Mega Chavre, \"Chameleon bird\", Creation of new artworks from the paintings of Nickos Chouliaras Tempera on aquarelle paper 45 cm. X 34 cm. May 1996")
