@@ -1,17 +1,48 @@
-hr{
-	// max-width: 100%; //overrite
-	// width: 25%;
-	margin-top: 3em;
+hr {
+  // max-width: 100%; //overrite
+  // width: 25%;
+  margin-top: 3em;
 }
 
-footer{
-	text-align: center;
-	color: map-get($palette, grey2 );
-	a {
-		color: map-get($palette, grey4 );
-		text-decoration: none;
-		&:hover{
-			color: map-get($palette, a_hover );
-		}
-	}
+.fixedContact {
+  @include border();
+  background-color: map-get($palette, nav-back);
+  position: fixed;
+  padding: 0.5em;
+
+  ul,
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0.1em;
+  }
+
+  bottom: map-get($size, fixedDistanceTB);
+  left: map-get($size, fixedDistanceLR);
+
+  div {
+    color: map-get($palette, grey4);
+    text-decoration: none; // removes underlines on links
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: map-get($palette, logo-color);
+  }
+}
+
+footer {
+  text-align: center;
+  color: map-get($palette, grey2);
+
+  a {
+    color: map-get($palette, grey4);
+    text-decoration: none;
+
+    &:hover {
+      color: map-get($palette, a_hover);
+    }
+  }
+
 }

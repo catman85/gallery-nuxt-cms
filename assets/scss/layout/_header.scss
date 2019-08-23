@@ -129,7 +129,7 @@ header {
 
     nav {
       //menu
-      background: rgba(255, 255, 255, 0.9);
+      background: map-get($palette, nav-back );
       position: fixed;
       top: 3em;
       right: 3em;
@@ -146,8 +146,8 @@ header {
         svg {
           //burger icon
           position: fixed; // is needed
-          top: 1.6em;
-          right: 2em;
+          top: map-get($size, fixedDistanceTB );
+          right: map-get($size, fixedDistanceLR );
           width: 2.2em;
         }
       }

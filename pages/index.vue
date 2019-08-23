@@ -12,6 +12,9 @@ robots.txt sitemap.xml ggl_search_console -->
     <!-- <h1>{{ t('welcome') }}</h1>  -->
     <!-- <h1>TEST</h1> -->
     <hr>
+    <div class="row">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
     <div class="filters">
       <div class="artwork">
         <h2>{{ t('artworks') }}</h2>
@@ -152,7 +155,7 @@ robots.txt sitemap.xml ggl_search_console -->
         });
         //Search
         filteredContent = filteredContent.filter(post => {
-          return post.title.toLowerCase().includes(this.query.toLowerCase());
+          return post.head.toLowerCase().includes(this.query.toLowerCase());
         });
         // sort by date
         filteredContent = filteredContent.sort(function (a, b) {
@@ -167,14 +170,18 @@ robots.txt sitemap.xml ggl_search_console -->
         option = option.replace("Εκθέσεις","Exhibitions");
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
-        //FIXME: bubble effect
-        this.clearSelectionColors();
+        this.clearSelectionColors(); // removes selected class
         if (option == this.selectedCat) { // show all posts when unchecking a category
           this.selectedCat = "";
         } else {
-          this.selectedCat = option.replace("Εκθέσεις","Exhibitions");
-          console.debug(this.selectedCat);
+          this.selectedCat = option;
           event.target.classList.add("selected"); // start css effect
+        }
+
+        // if there is only one page after the filtering, redirect to that page
+        if(this.filteredContent.length == 1){
+          // window.location.href="/"+option;
+          this.$nuxt.$router.replace({ path: '/'+ option })
         }
       },
       clearSelectionColors() { // gets all li elements and removes the selected class

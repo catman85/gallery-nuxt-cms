@@ -23,7 +23,9 @@
 		menu:				22em,
 		pushy-buy:			2em,
 		distance:			0.8em,
-		pads-top:			1.5em
+		pads-top:			1.5em,
+		fixedDistanceTB:	1.6em,
+		fixedDistanceLR:	2em
 	);
 
 // Font.
@@ -49,6 +51,7 @@
 		border:				#491616,
 		border-bg:			rgba(144,144,144,0.075),
 		burger-white:		rgba(255, 255, 255, 0.5),
+		nav-back:			rgba(255, 255, 255, 0.9),
 		a_hover:			#e95e7f,
 		link:				#585858,
 		// grey1:				#c3c3c3,
