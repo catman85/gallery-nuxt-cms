@@ -1,8 +1,8 @@
 ---
 title: Lefkosia Lemesos Cyprus
-head: Lefkosia Lemesos Cyprus
+head: Nicosia Limassol Cyprus
 category: group-exhibitions
-creationDate: '2019-06-24'
+creationDate: '2015-06-11'
 featuredImage: /images/uploads/afisasa.jpg
 ---
 ![ ](https://i.imgur.com/JYAkbKh.jpg "")
