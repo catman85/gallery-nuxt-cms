@@ -4,8 +4,8 @@ head: >-
   CHEAP ART, Thessaloniki – GREECE, 80th Thessaloniki International Fair 2014,
   5th to 14th of September 2015
 category: group-exhibitions
-creationDate: '2019-07-27'
-featuredImage: /images/uploads/10403194_1127473500614635_5931412314128074556_n.jpg
+creationDate: '2015-09-05'
+featuredImage: /images/uploads/11863265_1109459475749371_3607344907967962046_n.jpg
 ---
 ![ ](https://i.imgur.com/1kZyk3R.jpg "")
 
