@@ -2,8 +2,8 @@
 title: 13-22nd-of-october-2017
 head: 13-22nd-of-october-2017
 category: group-exhibitions
-creationDate: '2019-06-18'
-featuredImage: /images/uploads/nobllx5.jpg
+creationDate: '2016-05-27'
+featuredImage: /images/uploads/afisa.jpg
 ---
 ![ ](https://i.imgur.com/nOBLlX5.jpg)
 ![ ](https://i.imgur.com/tlUEnKc.jpg)
