@@ -1,7 +1,7 @@
 ---
 title: General Bank Luxembourg
 head: General Bank Luxembourg
-category: Solo-exhibitions
+category: group-exhibitions
 creationDate: '2012-01-14'
 featuredImage: /images/uploads/am_poster.jpg
 ---
