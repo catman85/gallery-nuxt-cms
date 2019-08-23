@@ -15,7 +15,7 @@
     <br>
     <div class="row">
       <nuxtdown-body class="category" :body="page.category" />
-      <nuxtdown-body class="date" :body="page.creationDate" />
+      <nuxtdown-body class="date" :body="page.creationDate | checkIfFutureDate" />
     </div>
     <br>
 
@@ -43,7 +43,7 @@
                 <h4>{{image.title | firstPart}}</h4>
                 <p>{{image.title | secondPart}}</p>
                 <p>{{image.title | thirdPart}}</p>
-                
+
               </div>
               <div v-else :class="'description '+'caption'+ cleanString(image.title)">
                 <h4>{{image.alt | firstPart}}</h4>
@@ -110,10 +110,10 @@
       await this.stringToHTML(this.page.body);
       await this.imagesToArray();
       await Array.prototype.forEach.call(this.imagesArray, child => {
-          let img = child;
-          img.src = this.thumbnail(img.src);
-          this.thumbnailsArray.push(img);
-        });
+        let img = child;
+        img.src = this.thumbnail(img.src);
+        this.thumbnailsArray.push(img);
+      });
       this.startLightGallery('lightgallery');
     },
     computed: {
@@ -123,6 +123,8 @@
         } else {
           return this.page.descriptionGr;
         }
+      },
+      date: function (){
       }
     },
     methods: {
@@ -155,17 +157,17 @@
         s = s.substring(0, n) + this.compressionLevel + s.substring(n);
         return s;
       },
-      original(s){
+      original(s) {
         let n = s.lastIndexOf(this.compressionLevel);
-        if((s.substring(n)).length == 5){ // already thumbnailed
-          s = s.substring(0,n) + s.substring(n+1);
+        if ((s.substring(n)).length == 5) { // already thumbnailed
+          s = s.substring(0, n) + s.substring(n + 1);
         }
         return s;
       }
     },
     filters: {
       firstPart(s) {
-        if(s.length > 110 && screen.width < 400){
+        if (s.length > 110 && screen.width < 400) {
           return "";
         }
         // if(s.includes(",")){
@@ -178,7 +180,7 @@
         }
       },
       secondPart(s) {
-        if(s.length > 110 && screen.width < 400){
+        if (s.length > 110 && screen.width < 400) {
           return s;
         }
 
@@ -192,12 +194,28 @@
         }
       },
       thirdPart(s) {
-        if(s.length > 110 && screen.width < 400){
+        if (s.length > 110 && screen.width < 400) {
           return "";
         }
         if ((s.split(',').length - 1) >= 2) {
           //from last index to end
           return s.substring(s.lastIndexOf(',') + 1);
+        }
+      },
+      checkIfFutureDate: function (date) {
+        let dateinMs = Date.parse(date)
+        let pageDateFull = new Date(dateinMs);
+        // console.debug(date + "\n In ms: " + dateinMs + "\n Full version " + pageDateFull +
+          // "\n Current Date in Ms: " + Date.now());
+        if (dateinMs > Date.now()) {
+          let current_datetime = new Date();
+          let formatted_date = current_datetime.getFullYear() + "-" + (current_datetime.getMonth()+1) + "-" + current_datetime.getDate();
+          // + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds()
+          console.debug("We are in the future")
+          return formatted_date;
+        } else {
+          console.debug("Not Pinned");
+          return date;
         }
       }
     }
