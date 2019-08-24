@@ -15,7 +15,7 @@ descriptionGr: σε ξύλο
 
 ![© Anthia Mega Chavre,  "Ταξίδι στον Ήλιο" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/CIPCZ2y.jpg "© Anthia Mega Chavre, \"Journey to the sun\" 35 cm. x 50 cm. Acrylics on wood")
 
-![ ](https://i.imgur.com/leHZCNq.jpg)
+![ © Anthia Mega Chavre, "Σκάλες σε Καταιγίδα" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/leHZCNq.jpg "© Anthia Mega Chavre, \"Ladders in a Storm\" 29.5 cm. x 43 cm. Acrylics & ink on wood")
 
 ![ ](https://i.imgur.com/VNRmJF7.jpg)
 
