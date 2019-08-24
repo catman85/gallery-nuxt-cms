@@ -11,7 +11,7 @@ descriptionGr: σε ξύλο
 
 !["Σκάλα στην πλυμμήρα" 33 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/2uUBnK4.jpg "© Anthia Mega Chavre, \"Flood Ladder\", 33 cm. x 50 cm. Acrylics on wood ")
 
-!["H2O.. my loving element" 33 cm. x 50 cm. Acrylics & ink on wood ](https://i.imgur.com/FNXdZsR.jpg "\\"H2O.. το αγαπημένο στοιχείο μου\\" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο")
+!["H2O.. το αγαπημένο στοιχείο μου" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο](https://i.imgur.com/FNXdZsR.jpg "© Anthia Mega Chavre, \"H2O.. my loving element\" 33 cm. x 50 cm. Acrylics & ink on wood ")
 
 ![ ](https://i.imgur.com/CIPCZ2y.jpg)
 
