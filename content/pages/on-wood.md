@@ -23,7 +23,7 @@ descriptionGr: σε ξύλο
 
 ![  © Anthia Mega Chavre, "Πιτσιλιές" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/ecVUgrV.jpg " © Anthia Mega Chavre, \"Raindrops Splashes\" 35 cm. x 50 cm. Acrylics on wood")
 
-![ ](https://i.imgur.com/jXUG5lk.jpg)
+![ © Anthia Mega Chavre, "Σκαλιά στην Βροχή" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/jXUG5lk.jpg " © Anthia Mega Chavre, \"Rain Steps\" 29.5 cm. x 43 cm. Acrylics on wood")
 
 ![ ](https://i.imgur.com/9v3Zz1h.jpg)
 
