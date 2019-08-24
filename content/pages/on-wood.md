@@ -7,7 +7,6 @@ featuredImage: /images/uploads/artworkscover-2.jpg
 descriptionEn: on wood
 descriptionGr: σε ξύλο
 ---
-
 ![ ](https://i.imgur.com/gjlUG9z.jpg "")
 
 ![ ](https://i.imgur.com/2uUBnK4.jpg "")
@@ -37,8 +36,6 @@ descriptionGr: σε ξύλο
 ![ ](https://i.imgur.com/GzJZN3g.jpg "")
 
 ![ ](https://i.imgur.com/HKch0sg.jpg "")
-
-![ ](https://i.imgur.com/EyRi56D.jpg "")
 
 ![ ](https://i.imgur.com/gTOjxgR.jpg "")
 
@@ -152,23 +149,13 @@ descriptionGr: σε ξύλο
 
 ![ ](https://i.imgur.com/QwawZpl.jpg "")
 
-![ ](https://i.imgur.com/hBFpdl4.jpg "")
-
 ![ ](https://i.imgur.com/OraJwm7.jpg "")
 
 ![ ](https://i.imgur.com/YkeXPUF.jpg "")
 
-![ ](https://i.imgur.com/cNGrVcZ.jpg "")
-
 ![ ](https://i.imgur.com/K71yUxk.jpg "")
 
-![ ](https://i.imgur.com/H0xRqTd.jpg "")
-
-![ ](https://i.imgur.com/WpIg1XL.jpg "")
-
 ![ ](https://i.imgur.com/3jnjad0.jpg "")
-
-![ ](https://i.imgur.com/E5vuBwc.jpg "")
 
 ![ ](https://i.imgur.com/tuQqEl6.jpg "")
 
@@ -176,7 +163,15 @@ descriptionGr: σε ξύλο
 
 ![ ](https://i.imgur.com/oVxRGdv.jpg "")
 
-![ ](https://i.imgur.com/MD7kBNf.jpg "")
+![ ](https://i.imgur.com/EyRi56D.jpg "")
+
+![ ](https://i.imgur.com/cNGrVcZ.jpg "")
+
+![ ](https://i.imgur.com/hBFpdl4.jpg "")
+
+![ ](https://i.imgur.com/H0xRqTd.jpg "")
+
+![ ](https://i.imgur.com/WpIg1XL.jpg "")
 
 ![ ](https://i.imgur.com/m5uKp3k.jpg "")
 
@@ -212,9 +207,13 @@ descriptionGr: σε ξύλο
 
 ![ ](https://i.imgur.com/3Ze1mBH.jpg "")
 
+![ ](https://i.imgur.com/E5vuBwc.jpg "")
+
 ![ ](https://i.imgur.com/7078rWX.jpg "")
 
 ![ ](https://i.imgur.com/b9FNbZL.jpg "")
+
+![ ](https://i.imgur.com/MD7kBNf.jpg "")
 
 ![ ](https://i.imgur.com/VXZtpIF.jpg "")
 
@@ -291,3 +290,4 @@ descriptionGr: σε ξύλο
 ![ ](https://i.imgur.com/AtiTt62.jpg "")
 
 ![ ](https://i.imgur.com/YP5TJDL.jpg "")
+
