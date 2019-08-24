@@ -2,8 +2,8 @@
 title: Stop Syria War Halandri Athens
 head: Stop Syria War Halandri Athens
 category: group-exhibitions
-creationDate: '2019-06-25'
-featuredImage: /images/uploads/3pjch5l.jpg
+creationDate: '2015-04-16'
+featuredImage: /images/uploads/afisa-stop-syria-war-11.jpg
 ---
 ![ ](https://i.imgur.com/hysIQVY.jpg)
 
