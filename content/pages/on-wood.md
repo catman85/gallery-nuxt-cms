@@ -7,11 +7,11 @@ featuredImage: /images/uploads/artworkscover-2.jpg
 descriptionEn: on wood
 descriptionGr: σε ξύλο
 ---
-![ "Explosion", 35 cm. x 50 cm. Acrylics & ink on wood](https://i.imgur.com/gjlUG9z.jpg "\"Έκρηξη\", 35 εκ. x 50 εκ. Ακρυλικά και μελάνια σε ξύλο")
+!["Έκρηξη", 35 εκ. x 50 εκ. Ακρυλικά και μελάνια σε ξύλο](https://i.imgur.com/gjlUG9z.jpg "© Anthia Mega Chavre, \"Explosion\", 35 cm. x 50 cm. Acrylics & ink on wood")
 
-!["Flood Ladder", 33 cm. x 50 cm. Acrylics on wood ](https://i.imgur.com/2uUBnK4.jpg "\"Σκάλα στην πλυμμήρα\" 33 εκ. x 50 εκ. Aκρυλικά σε ξύλο")
+!["Σκάλα στην πλυμμήρα" 33 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/2uUBnK4.jpg "© Anthia Mega Chavre, \"Flood Ladder\", 33 cm. x 50 cm. Acrylics on wood ")
 
-!["H2O.. my loving element" 33 cm. x 50 cm. Acrylics & ink on wood ](https://i.imgur.com/FNXdZsR.jpg "\"H2O.. το αγαπημένο στοιχείο μου\" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο")
+!["H2O.. my loving element" 33 cm. x 50 cm. Acrylics & ink on wood ](https://i.imgur.com/FNXdZsR.jpg "\\"H2O.. το αγαπημένο στοιχείο μου\\" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο")
 
 ![ ](https://i.imgur.com/CIPCZ2y.jpg)
 
