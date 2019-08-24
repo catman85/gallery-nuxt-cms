@@ -25,7 +25,7 @@ descriptionGr: σε ξύλο
 
 ![ © Anthia Mega Chavre, "Σκαλιά στην Βροχή" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/jXUG5lk.jpg " © Anthia Mega Chavre, \"Rain Steps\" 29.5 cm. x 43 cm. Acrylics on wood")
 
-![ ](https://i.imgur.com/9v3Zz1h.jpg)
+![  © Anthia Mega Chavre, "Κόκκινες σκάλες" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/9v3Zz1h.jpg " © Anthia Mega Chavre, \"Red Ladders\" 29.5 cm. x 43 cm. Acrylics and ink on wood")
 
 ![ ](https://i.imgur.com/qskmB5c.jpg)
 
