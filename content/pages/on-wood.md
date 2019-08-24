@@ -3,7 +3,7 @@ title: On Wood
 head: On Wood
 category: on-wood
 creationDate: '2019-05-01'
-featuredImage: /images/uploads/redladder29.5x43-c.jpg
+featuredImage: /images/uploads/artworkscover-2.jpg
 descriptionEn: on wood
 descriptionGr: σε ξύλο
 ---
