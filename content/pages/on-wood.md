@@ -29,7 +29,7 @@ descriptionGr: σε ξύλο
 
 ![ © Anthia Mega Chavre, "Φιδάκι" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/qskmB5c.jpg " © Anthia Mega Chavre,  \"Shoot & ladder\" 33 cm. x 50 cm. Acrylics & ink on wood")
 
-![© Anthia Mega Chavre, "Βουτιά" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/Hp4Dm82.jpg " © Anthia Mega Chavre, \"Splash\" 29.5 cm. x 43 cm. Acrylics on wood")
+![© Anthia Mega Chavre, "Τσαλαβουτιά" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/Hp4Dm82.jpg " © Anthia Mega Chavre, \"Splash\" 29.5 cm. x 43 cm. Acrylics on wood")
 
 ![ ](https://i.imgur.com/GzJZN3g.jpg)
 
