@@ -19,7 +19,7 @@ descriptionGr: σε ξύλο
 
 ![ © Anthia Mega Chavre, "Ωκεανός. Δρόμος προς τον παράδεισο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/VNRmJF7.jpg "© Anthia Mega Chavre, \"Ocean. Way to heaven\" 33 cm. x 50 cm. Acrylics & ink on wood")
 
-![ ](https://i.imgur.com/qGpotbm.jpg)
+![ © Anthia Mega Chavre, "Μολύβια" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/qGpotbm.jpg " © Anthia Mega Chavre, \"Pencils\" 29.5 cm. x 43 cm. Acrylics on wood")
 
 ![ ](https://i.imgur.com/ecVUgrV.jpg)
 
