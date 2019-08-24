@@ -31,9 +31,9 @@ descriptionGr: σε ξύλο
 
 ![© Anthia Mega Chavre, "Τσαλαβουτιά" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/Hp4Dm82.jpg " © Anthia Mega Chavre, \"Splash\" 29.5 cm. x 43 cm. Acrylics on wood")
 
-![ ](https://i.imgur.com/GzJZN3g.jpg)
+![© Anthia Mega Chavre, "Νερό στον ανεμοστρόβιλο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ](https://i.imgur.com/GzJZN3g.jpg "© Anthia Mega Chavre, \"Water in Tornado\" 33 cm. x 50 cm. Acrylics & ink on wood")
 
-![ ](https://i.imgur.com/HKch0sg.jpg)
+![© Anthia Mega Chavre, "Μονόπλευρα" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/HKch0sg.jpg "© Anthia Mega Chavre, \"One sided\" 35 cm. x 50 cm. Acrylics on wood")
 
 ![ ](https://i.imgur.com/KajKW9R.jpg)
 
