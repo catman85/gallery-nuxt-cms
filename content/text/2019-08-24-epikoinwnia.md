@@ -1,7 +1,14 @@
 ---
 title: Epikoinwnia
-text: >-
-  Fermentum posuere urna nec tincidunt praesent semper feugiat. Ut enim blandit
-  volutpat maecenas. Pellentesque eu tincidunt tortor aliquam nulla
+textEn: >-
+  English Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+  commodo consequat. 
+textGr: >-
+  Greek Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
 ---
 
