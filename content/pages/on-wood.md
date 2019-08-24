@@ -27,7 +27,7 @@ descriptionGr: σε ξύλο
 
 ![  © Anthia Mega Chavre, "Κόκκινες σκάλες" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/9v3Zz1h.jpg " © Anthia Mega Chavre, \"Red Ladders\" 29.5 cm. x 43 cm. Acrylics and ink on wood")
 
-![ © Anthia Mega Chavre,  "Shoot & ladder" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/qskmB5c.jpg " © Anthia Mega Chavre,  \"Shoot & ladder\" 33 cm. x 50 cm. Acrylics & ink on wood")
+![ © Anthia Mega Chavre,  "Φιδάκι και σκάλα" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/qskmB5c.jpg " © Anthia Mega Chavre,  \"Shoot & ladder\" 33 cm. x 50 cm. Acrylics & ink on wood")
 
 ![ ](https://i.imgur.com/Hp4Dm82.jpg)
 
