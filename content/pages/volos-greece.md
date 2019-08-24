@@ -1,8 +1,8 @@
 ---
 title: Volos Greece
-head: Volos Greece
+head: Greek Artists Society Exhibition in Volos
 category: group-exhibitions
-creationDate: '2019-06-25'
+creationDate: '2015-04-16'
 featuredImage: /images/uploads/1muzilc.jpg
 ---
 ![ ](https://i.imgur.com/MeVUH5h.jpg "")
