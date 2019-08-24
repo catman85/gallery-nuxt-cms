@@ -1,5 +1,8 @@
 <template>
   <div>
+        <div class="row">
+      <p>{{this.paragraph}}</p>
+    </div>
     <h1>{{t('contact')}}</h1>
     <h1>{{t('name')}}</h1>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/success/">
@@ -17,7 +20,8 @@
       </p>
     </form>
     <br>
-    <h2>{{t('clinks')}}:</h2>
+    <hr>
+    <h1>{{t('clinks')}}:</h1>
     <ul id="clinks">
       <li><a href="https://www.facebook.com/VisualArtistAnthiaMegaChavre/">facebook</a></li>
       <li><a
@@ -42,6 +46,42 @@
         }]
       };
     },
+    asyncData: async ({
+      app,
+      route,
+      payload
+    }) => {
+      return {
+        paragraphs: await app.$content('/text')
+          .query({
+            // exclude: ['attributes', 'body']
+          })
+          .getAll()
+      };
+    },
+    computed: {
+      paragraph: function(){
+        let para;
+        this.paragraphs.forEach(par => {
+          // console.debug(par.title + " " + par.text);
+          if(par.title == "Epikoinwnia"){
+            if (this.$store.state.lang == "en") {
+            para = par.textEn;
+            }else{
+              para = par.textGr;
+            }
+            // ATTENTION you can't return or break here
+          }
+        })
+        return para;
+      }
+    }
   }
 
 </script>
+
+<style scoped>
+  hr{
+    margin-top: 0;
+  }
+</style>

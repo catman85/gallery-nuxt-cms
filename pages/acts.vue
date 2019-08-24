@@ -1,6 +1,13 @@
 <template>
   <div class="acts">
     <h1>{{t('acts')}} - {{t('features')}} - {{t('links')}}</h1>
+
+    <div v-for="column in this.columns" :key="column.t">
+      <div v-for="item in column" :key="item.title">
+        <!-- {{item.url}} -->
+      </div>
+    </div>
+
     <div class="row">
       <div class="column">
         <p><a href="http://roubinasarelakou.gr/">roubinasarelakou</a></p>
@@ -74,6 +81,35 @@
         }]
       };
     },
+    asyncData: async ({
+      app,
+      route,
+      payload
+    }) => {
+      return {
+        links: await app.$content('/links')
+          .query({
+            // exclude: ['attributes', 'body']
+          })
+          .getAll()
+      };
+    },
+    data: function () {
+      return {
+        cols: 3
+      }
+    },
+    computed: {
+      columns: function () {
+        let columns = []
+        let mid = Math.ceil(this.links.length / this.cols)
+        console.debug(mid);
+        for (let col = 0; col < this.cols; col++) {
+          columns.push(this.links.slice(col * mid, col * mid + mid))
+        }
+        return columns;
+      }
+    }
   }
 
 </script>

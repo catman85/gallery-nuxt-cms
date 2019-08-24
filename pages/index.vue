@@ -9,11 +9,9 @@ analytics
 robots.txt sitemap.xml ggl_search_console -->
 <template>
   <div class="container">
-    <!-- <h1>{{ t('welcome') }}</h1>  -->
-    <!-- <h1>TEST</h1> -->
     <hr>
     <div class="row">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>{{this.paragraph}}</p>
     </div>
     <div class="filters">
       <div class="artwork">
@@ -101,6 +99,7 @@ robots.txt sitemap.xml ggl_search_console -->
       // this.$nuxt.$on('en', (english) => { // sender is MyHeader
         // your code goes here
       // })
+      console.debug(this.paragraph);
     },
     asyncData: async ({
       app,
@@ -109,6 +108,11 @@ robots.txt sitemap.xml ggl_search_console -->
     }) => {
       return {
         pages: await app.$content('/pages')
+          .query({
+            // exclude: ['attributes', 'body']
+          })
+          .getAll(),
+        paragraphs: await app.$content('/text')
           .query({
             // exclude: ['attributes', 'body']
           })
@@ -147,6 +151,21 @@ robots.txt sitemap.xml ggl_search_console -->
         // cats = [...new Set(cats)]; // removes duplicates from cats array
         cats = this.uniq(cats); // removes duplicates from cats array (plugin mixin)
         return cats;
+      },
+      paragraph: function () {
+        let para;
+        this.paragraphs.forEach(par => {
+          // console.debug(par.title + " " + par.text);
+          if(par.title == "Kentrikh"){
+            if (this.$store.state.lang == "en") {
+              para = par.textEn;
+            }else{
+              para = par.textGr;
+            }
+            // ATTENTION you can't return or break here
+          }
+        })
+        return para;
       },
       filteredContent: function () {
         //Toggle Categories

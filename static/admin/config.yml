@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
-        - {label: Filename, name: title, widget: string ,required: true ,hint: Το πειράζεις μόνο μιά φορά εάν είναι κενό (όταν φτιάχνεις νέα συλλογή). ΕΑΝ ΕΙΝΑΙ ΣΥΜΠΛΗΡΩΜΕΝΟ ΔΕΝ ΤΟ ΠΕΙΡΑΖΕΙΣ. Αυτό βλέπουν οι μηχανές αναζήτησης.}
+        - {label: Filename, name: title, widget: string ,required: true ,hint: ΕΑΝ ΕΙΝΑΙ ΣΥΜΠΛΗΡΩΜΕΝΟ ΔΕΝ ΤΟ ΠΕΙΡΑΖΕΙΣ. Το πειράζεις μόνο μιά φορά εάν είναι κενό (όταν φτιάχνεις νέα συλλογή). Αυτό βλέπουν οι μηχανές αναζήτησης. Βάζεις αυτό που θέλεις να γράψει ο επισκέπτης για να σε βρεί.}
         - {label: Heading, name: head, widget: string, required: true ,hint: Επικεφαλίδα της συλλογής. Την αλλάζεις όπως θες. Αυτό βλέπουν οι επισκέπτες.}
         - {label: Category, name: category, widget: relation, collection: categories, default: "group-exhibitions", searchFields: [title], valueField: title, disaplyFields: title ,hint: Επιλέγεις σε ποιό menu ανήκει η συλλογή}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true, hint: Με αυτήν την ημερομηνία ταξινομείς την σειρά εμφάνισης στην κεντρική.}
@@ -44,6 +44,23 @@ collections:
       - {label: Heading, name: head, widget: string, required: true ,hint: Τo αλλάζεις όπως θες. Αυτό βλέπουν οι επισκέπτες.}
       - {label: Description, name: description, widget: text, required: false}
       - {label: Youtube URL, name: ytLink, widget: text, required: true ,hint: Εδώ βάζεις το link για το video απο το Youtube.}
+  - name: "text"
+    label: "Paragraphs"
+    folder: "content/text"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: Filename, name: title, widget: string ,required: true}
+      - {label: RichText English, name: textEn, widget: markdown, required: true}
+      - {label: RichText Greek, name: textGr, widget: markdown, required: true}
+  - name: "links"    
+    label: "Links" 
+    folder: "content/links"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Link Title, name: title, widget: string ,required: true}
+      - {label: Link URL, name: url, widget: string ,required: true}
   # - label: "Categories" # Used in the UI
   #   name: "categories" # Used in routes, e.g., /admin/collections/blog
   #   folder: "content/categories" # The path to the folder where the documents are stored
