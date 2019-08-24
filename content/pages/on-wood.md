@@ -61,6 +61,8 @@ descriptionGr: σε ξύλο
 
 ![ ](https://i.imgur.com/HekOPAT.jpg "")
 
+![ ](https://i.imgur.com/dbauFJm.jpg)
+
 ![ ](https://i.imgur.com/ZJakW56.jpg "")
 
 ![ ](https://i.imgur.com/67q4Ea8.jpg "")
