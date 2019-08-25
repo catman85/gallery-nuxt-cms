@@ -40,7 +40,6 @@ header {
   }
 
   a {
-    // color: _palette(fg);//FIXME: wtf happened?
     color: map-get($palette, grey4);
     text-decoration: none; // removes underlines on links
     padding: 15px 15px;
