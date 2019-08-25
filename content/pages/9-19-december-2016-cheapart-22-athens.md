@@ -3,7 +3,7 @@ title: 9-19-december-2016-cheapart-22-athens
 head: 9-19-december-2016-cheapart-22-athens
 category: group-exhibitions
 creationDate: '2019-06-17'
-featuredImage: /images/uploads/0xcnyb8.jpg
+featuredImage: /images/uploads/15253528_1482787605083221_9173312878685035555_n.jpg
 ---
 ![ ](https://i.imgur.com/QMWEv1o.jpg)
 
