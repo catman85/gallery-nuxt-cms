@@ -1,8 +1,8 @@
 ---
 title: Melina Merkouri
-head: Melina Merkouri
+head: Melina Merkouri Cultural Center of Kallithea
 category: Solo-exhibitions
-creationDate: '2019-06-11'
+creationDate: '2012-10-10'
 featuredImage: /images/uploads/cvbhefa.jpg
 ---
 ![ ](https://i.imgur.com/FadRCuR.jpg)
