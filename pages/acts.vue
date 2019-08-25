@@ -2,9 +2,12 @@
   <div class="acts">
     <h1>{{t('acts')}} - {{t('features')}} - {{t('links')}}</h1>
 
-    <div v-for="column in this.columns" :key="column.t">
-      <div v-for="item in column" :key="item.title">
-        <!-- {{item.url}} -->
+    <div class="row">
+      <div class="column" v-for="column in this.columns" :key="column.t">
+        <p v-for="item in column" :key="item.title">
+          <!-- {{item.url}} -->
+          <a :href="item.url" target="_blank">{{item.title}}</a>
+        </p>
       </div>
     </div>
 
