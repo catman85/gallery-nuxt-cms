@@ -9,11 +9,15 @@ featuredImage: /images/uploads/afisamelmer.jpg
 
 ![ ](https://i.imgur.com/tEAMgXz.jpg "")
 
+![ ](https://i.imgur.com/u1xgI2O.jpg "")
+
+![ ](https://i.imgur.com/3ljLeKf.jpg "")
+
 ![ ](https://i.imgur.com/kLohEyO.jpg "")
 
-![ ](https://i.imgur.com/Or3JxVf.jpg "")
+![ ](https://i.imgur.com/DVQ0HPB.jpg "")
 
-![ ](https://i.imgur.com/jw5CsUL.jpg "")
+![ ](https://i.imgur.com/Or3JxVf.jpg "")
 
 ![ ](https://i.imgur.com/quKerzt.jpg "")
 
@@ -59,8 +63,6 @@ featuredImage: /images/uploads/afisamelmer.jpg
 
 ![ ](https://i.imgur.com/vk1nrkB.jpg "")
 
-![ ](https://i.imgur.com/4z1Xy6Z.jpg "")
-
 ![ ](https://i.imgur.com/CfMeP6c.jpg "")
 
 ![ ](https://i.imgur.com/AsUBWki.jpg "")
@@ -81,17 +83,11 @@ featuredImage: /images/uploads/afisamelmer.jpg
 
 ![ ](https://i.imgur.com/t5SwZNj.jpg "")
 
-![ ](https://i.imgur.com/5xRVCJN.jpg "")
-
-![ ](https://i.imgur.com/ZYyLp1E.jpg "")
-
 ![ ](https://i.imgur.com/PYs0hZQ.jpg "")
 
 ![ ](https://i.imgur.com/ecz9zUj.jpg "")
 
 ![ ](https://i.imgur.com/z3VizfQ.jpg "")
-
-![ ](https://i.imgur.com/4cfsroY.jpg "")
 
 ![ ](https://i.imgur.com/tR5OsfP.jpg "")
 
@@ -137,17 +133,13 @@ featuredImage: /images/uploads/afisamelmer.jpg
 
 ![ ](https://i.imgur.com/2MFlJTD.jpg "")
 
-![ ](https://i.imgur.com/3ljLeKf.jpg "")
-
-![ ](https://i.imgur.com/u1xgI2O.jpg "")
-
 ![ ](https://i.imgur.com/iegRzeX.jpg "")
 
 ![ ](https://i.imgur.com/komFLS8.jpg "")
 
 ![ ](https://i.imgur.com/061OSpx.jpg "")
 
-![ ](https://i.imgur.com/DVQ0HPB.jpg "")
+![ ](https://i.imgur.com/5xRVCJN.jpg "")
 
 ![ ](https://i.imgur.com/hY4vYjV.jpg "")
 
