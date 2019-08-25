@@ -2,8 +2,8 @@
 title: designers-dot-gallery-athens
 head: designers-dot-gallery-athens
 category: group-exhibitions
-creationDate: '2019-06-20'
-featuredImage: /images/uploads/7uxsglt.jpg
+creationDate: '2011-01-10'
+featuredImage: /images/uploads/des.jpg
 ---
 ![ ](https://i.imgur.com/2KaKnA9.jpg)
 
