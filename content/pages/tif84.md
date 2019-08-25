@@ -1,6 +1,6 @@
 ---
 title: tif84
-head: Cheapart TIF 84
+head: Cheapart TIF 84 7th to 15th of September 2019
 category: group-exhibitions
 creationDate: '2019-09-07'
 featuredImage: /images/uploads/68735253_3021972707831362_3652044643505274880_o.jpg
