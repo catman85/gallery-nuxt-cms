@@ -1,9 +1,9 @@
 ---
 title: dimitris potamitis
 head: dimitris potamitis
-category: solo-exhibitions
+category: group-exhibitions
 creationDate: '2019-06-07'
-featuredImage: /images/uploads/rorbg9c.jpg
+featuredImage: /images/uploads/ekthesi.jpg
 ---
 ![ ](https://i.imgur.com/ROrBG9C.jpg)
 
