@@ -20,6 +20,8 @@ descriptionGr: >-
   μαζί με την ζωγράφο, συμμετείχαν η Φαρίντα Ελ Γκαζάρ, ο Στέφανος Ρόκος, ο
   Τζουλιάνο Καγκλής, ο Γιώργος Τσεριώνης, και η Άνθια Μεγα.
 ---
+![ ](https://i.imgur.com/bih0X1L.jpg)
+
 ![ ](https://i.imgur.com/DzgGrTc.jpg "")
 
 ![ ](https://i.imgur.com/OsACwvI.jpg "")
