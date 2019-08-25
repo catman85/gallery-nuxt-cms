@@ -1,7 +1,7 @@
 ---
 title: theater-of-dimitris-potamitis-athens-greece
 head: Τheater-of-dimitris-potamitis December 2009 - March 2010
-category: group-exhibitions
+category: solo-exhibitions
 creationDate: '2009-12-20'
 featuredImage: /images/uploads/afisa-ekthesiα3-small.jpg
 ---
