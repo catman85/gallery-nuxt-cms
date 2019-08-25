@@ -1,8 +1,8 @@
 ---
 title: 6th-13th-of-february-2017-2
-head: 6th-13th-of-february-2017-2
+head: '6th to 13th of February 2017 in Aliko Gallery, Psyri Athens'
 category: group-exhibitions
-creationDate: '2019-06-19'
+creationDate: '2017-02-06'
 featuredImage: /images/uploads/16298936_1730890547201641_6382222678383606352_n.jpg
 ---
 ![ ](https://i.imgur.com/lkEB013.jpg "red windows")
