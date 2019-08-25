@@ -11,7 +11,11 @@
     </div>
     <br>
     <div class="featured">
-      <img :src="page.featuredImage" alt="" /></div>
+      <lazy-component>
+      <img v-lazy="page.featuredImage" alt="" />
+      </lazy-component>
+      <!-- <img :src="page.featuredImage" alt="" /> -->
+    </div>
     <br>
     <div class="row">
       <nuxtdown-body class="category" :body="page.category" />
