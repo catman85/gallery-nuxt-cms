@@ -1,5 +1,5 @@
 ---
-title: kids-in-actio-festival
+title: kids-in-action-festival
 head: Kids in Action Festival Thessaloniki
 category: group-exhibitions
 creationDate: '2008-05-25'
