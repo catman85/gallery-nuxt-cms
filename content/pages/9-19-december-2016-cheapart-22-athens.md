@@ -1,5 +1,5 @@
 ---
-title: 9-19-december-2016-cheapart-22-athens
+title: cheapart-22-athens
 head: Cheapart 22 Athens 9th to 19 of December 2016
 category: group-exhibitions
 creationDate: '2019-06-17'
