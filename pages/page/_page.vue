@@ -123,8 +123,6 @@
         } else {
           return this.page.descriptionGr;
         }
-      },
-      date: function (){
       }
     },
     methods: {
@@ -205,18 +203,23 @@
       checkIfFutureDate: function (date) {
         let dateinMs = Date.parse(date)
         let pageDateFull = new Date(dateinMs);
-        // console.debug(date + "\n In ms: " + dateinMs + "\n Full version " + pageDateFull +
-          // "\n Current Date in Ms: " + Date.now());
+
         if (dateinMs > Date.now()) {
           let current_datetime = new Date();
-          let formatted_date = current_datetime.getFullYear() + "-" + (current_datetime.getMonth()+1) + "-" + current_datetime.getDate();
-          // + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds()
-          
-          // console.debug("We are in the future. Pinned");
+          let formatted_date = formatDate(current_datetime);
           return formatted_date;
         } else {
-          // console.debug("Not Pinned");
-          return date;
+          let formatted_date = formatDate(pageDateFull);
+          return formatted_date;
+        }
+
+
+        function formatDate(date) {
+          let string;
+          string = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+          // current_datetime.getFullYear() + "-" + (current_datetime.getMonth()+1) + "-" + current_datetime.getDate();
+          // + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds()
+          return string;
         }
       }
     }

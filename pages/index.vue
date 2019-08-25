@@ -99,7 +99,6 @@ robots.txt sitemap.xml ggl_search_console -->
       // this.$nuxt.$on('en', (english) => { // sender is MyHeader
         // your code goes here
       // })
-      console.debug(this.paragraph);
     },
     asyncData: async ({
       app,
