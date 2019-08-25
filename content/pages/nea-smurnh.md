@@ -1,5 +1,5 @@
 ---
-title: Nea Smyrni
+title: nea-smurnh
 head: Azima Store "Fairy World"
 category: solo-exhibitions
 creationDate: '2008-12-20'
