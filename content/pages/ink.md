@@ -1,9 +1,9 @@
 ---
 title: Ink
-head: Ink
+head: Ink Artworks
 category: ink
 creationDate: '2019-06-11'
-featuredImage: /images/uploads/rfzc8kp.jpg
+featuredImage: /images/uploads/inkartworks.jpg
 ---
 ![ ](https://i.imgur.com/CWFcHuH.jpg "")
 
