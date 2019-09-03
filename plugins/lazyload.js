@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueLazyload from 'vue-lazyload'
+import Vue from 'vue';
+import VueLazyload from 'vue-lazyload';
 
 // or with options
 Vue.use(VueLazyload, {
@@ -17,4 +17,4 @@ Vue.use(VueLazyload, {
     rootMargin: '0px',
     threshold: 0.1
   }
-})
+});

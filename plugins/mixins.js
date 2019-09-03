@@ -57,4 +57,4 @@ Vue.mixin({
       return (match && match[7].length == 11) ? match[7] : false;
     }
   }
-})
+});

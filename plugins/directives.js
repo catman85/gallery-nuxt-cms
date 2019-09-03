@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
 // You will need to add v-vpshow directive to the elements you want to animate when they become visible in the viewport.
 // check the classes  "enter" and "before-enter" in _page.scss

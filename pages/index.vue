@@ -46,16 +46,16 @@ robots.txt sitemap.xml ggl_search_console -->
     </form>
     <br>
 
-    <masonry class="masonry" :cols="{default: 3,700: 2}" :gutter="15">
-      <div v-vpshow v-for="page in filteredContent" :key="page.title">
+    <masonry class="masonry" :cols="{default: 4,700: 2}" :gutter="15">
+      <div v-for="page in filteredContent" :key="page.title">
         <nuxt-link v-if="page" :to="page.title | formatLink">
           <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
           <!-- <h3>{{ $t('title') }}:</h3> -->
           <!-- <nuxtdown-body class="body" :body="page.title" /> -->
 
           <!-- <h3>Featured Image:</h3> -->
-          <lazy-component>
-          <img v-lazy="page.featuredImage" alt="">
+          <lazy-component v-vpshow.native>
+            <img v-lazy="page.featuredImage" alt="">
           </lazy-component>
           <!-- <nuxtdown-body class="body" :body="page.featuredImage" /> -->
 
@@ -63,7 +63,7 @@ robots.txt sitemap.xml ggl_search_console -->
           <!-- <nuxtdown-body class="body" :body="page.title" /> -->
           <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
           <div class="cat">
-             <!-- | {{page.category}} -->
+            <!-- | {{page.category}} -->
             {{ page.head}}
           </div>
 
@@ -99,7 +99,7 @@ robots.txt sitemap.xml ggl_search_console -->
 
       // $on method will receive the data from the sender component
       // this.$nuxt.$on('en', (english) => { // sender is MyHeader
-        // your code goes here
+      // your code goes here
       // })
     },
     asyncData: async ({
@@ -134,7 +134,8 @@ robots.txt sitemap.xml ggl_search_console -->
         if (!link) return ''
         link = link.toString();
         // link = link.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
-        link = link.replace(/[`!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters except the ones netlify cms understands - _
+        link = link.replace(/[`!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi,
+        ''); // remove all special characters except the ones netlify cms understands - _
         link = link.trim(); // remove spaces from beginning and end.
         link = link.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
         return link.toLowerCase();
@@ -157,10 +158,10 @@ robots.txt sitemap.xml ggl_search_console -->
         let para;
         this.paragraphs.forEach(par => {
           // console.debug(par.title + " " + par.text);
-          if(par.title == "Kentrikh"){
+          if (par.title == "Kentrikh") {
             if (this.$store.state.lang == "en") {
               para = par.textEn;
-            }else{
+            } else {
               para = par.textGr;
             }
             // ATTENTION you can't return or break here
@@ -187,7 +188,7 @@ robots.txt sitemap.xml ggl_search_console -->
     methods: {
       pickCategory(event) { // handles coloring
         let option = event.target.firstChild.data.trim();
-        option = option.replace("Εκθέσεις","Exhibitions");
+        option = option.replace("Εκθέσεις", "Exhibitions");
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
         this.clearSelectionColors(); // removes selected class
@@ -199,9 +200,11 @@ robots.txt sitemap.xml ggl_search_console -->
         }
 
         // if there is only one page after the filtering, redirect to that page
-        if(this.filteredContent.length == 1){
+        if (this.filteredContent.length == 1) {
           // window.location.href="/"+option;
-          this.$nuxt.$router.replace({ path: '/'+ option })
+          this.$nuxt.$router.replace({
+            path: '/' + option
+          })
         }
       },
       clearSelectionColors() { // gets all li elements and removes the selected class
