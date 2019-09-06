@@ -3,7 +3,6 @@
 <!-- TODO: 
 black lightgallery bug fix
 right arrow goes down masonry bug
-image bug on reload in pages on live version only
 similar posts $
 
 domain_link 
