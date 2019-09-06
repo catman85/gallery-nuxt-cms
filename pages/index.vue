@@ -47,7 +47,7 @@ robots.txt sitemap.xml ggl_search_console -->
     <br>
 
     <masonry class="masonry" :cols="{default: 4,700: 2}" :gutter="15">
-      <div v-for="page in filteredContent" :key="page.title">
+      <div class="index-card" v-for="page in filteredContent" :key="page.title">
         <nuxt-link v-if="page" :to="page.title | formatLink">
           <!-- <nuxt-link :to="localePath({name: 'test',params:{}})"> -->
           <!-- <h3>{{ $t('title') }}:</h3> -->
@@ -64,7 +64,7 @@ robots.txt sitemap.xml ggl_search_console -->
           <!-- <nuxtdown-body class="cat" :body="page.category" /> -->
           <div class="cat">
             <!-- | {{page.category}} -->
-            {{ page.head}}
+            {{ page.head }}
           </div>
 
           <!-- <h4>Date:</h4> -->
