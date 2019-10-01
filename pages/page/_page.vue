@@ -148,7 +148,8 @@
           download: false,
           selector: ".current", // linking the click and the element that pops
           counter: false,
-          preload: 3
+          preload: 3,
+          zoom: true,
           // showAfterLoad: false
           // appendCounterTo: '.lg-sub-html'
           // getCaptionFromTitleOrAlt: false,
