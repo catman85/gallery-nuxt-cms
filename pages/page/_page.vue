@@ -12,7 +12,7 @@
     <br>
     <div class="featured">
       <lazy-component>
-      <img v-lazy="page.featuredImage" alt="" />
+        <img v-lazy="page.featuredImage" alt="" />
       </lazy-component>
       <!-- <img :src="page.featuredImage" alt="" /> -->
     </div>
@@ -40,6 +40,8 @@
                 <!-- :alt="image.alt" shows Imgur everywhere-->
                 <!-- :src="thumbnail(image.src)" -->
                 <img v-if="image" v-lazy="(image.src)" :title="image.title">
+
+                <!-- <pinch :src="(image.src)" :min-zoom="1" :max-zoom="2.5"></pinch> -->
               </lazy-component>
               <!-- this must match with data-sub-html but there might be duplicates -->
               <!-- ATTENTION for some reason filters don't work (format)-->
@@ -66,7 +68,11 @@
 </template>
 
 <script>
+import pinch from "@/components/PinchImage.vue";
   export default {
+    components: {
+      pinch
+    },
     // nuxtI18n: false,
     // nuxtI18n: {
     // paths: {
@@ -119,6 +125,20 @@
         this.thumbnailsArray.push(img);
       });
       this.startLightGallery('lightgallery');
+
+      // var myElement = document.querySelectorAll(".current");
+      // var pz = new PinchZoom.default(myElement, {
+      //   draggableUnzoomed: false,
+      //   minZoom: 1,
+      //   onZoomStart: function (object, event) {
+      //     // Do something on zoom start
+      //     // You can use any Pinchzoom method by calling object.method()
+      //   },
+      //   onZoomEnd: function (object, event) {
+      //     // Do something on zoom end
+      //   }
+      // })
+
     },
     computed: {
       description: function () {
@@ -149,6 +169,7 @@
           selector: ".current", // linking the click and the element that pops
           counter: false,
           preload: 3,
+          zoomFromImage: false,
           zoom: true,
           // showAfterLoad: false
           // appendCounterTo: '.lg-sub-html'

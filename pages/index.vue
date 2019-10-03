@@ -3,6 +3,7 @@
 <!-- TODO: 
 black lightgallery bug fix
 right arrow goes down masonry bug
+pinch zoom
 similar posts $
 
 domain_link 
