@@ -18,7 +18,7 @@
     </div>
 
     <!-- TODO: add relative posts -->
-    <div class="row">
+    <!-- <div class="row">
       <div v-if="relativePosts[0]">
         <nuxt-link :to="relativePosts[0].title | formatLink">Previous post: {{relativePosts[0].head}}
           <lazy-component>
@@ -33,7 +33,8 @@
           </lazy-component>
         </nuxt-link>
       </div>
-    </div>
+    </div> -->
+
     <br>
     <div class="row">
       <nuxtdown-body class="category" :body="page.category" />
