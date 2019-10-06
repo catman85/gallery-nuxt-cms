@@ -1,9 +1,9 @@
 ---
 title: Creations
-head: Creations
+head: 'Instalation, Sculpture, Jewlery'
 category: creations
 creationDate: '2019-06-11'
-featuredImage: /images/uploads/zsatrgd.jpg
+featuredImage: /images/uploads/artworkscover6.jpg
 ---
 ![ ](https://i.imgur.com/Ua0LrFV.jpg "")
 
