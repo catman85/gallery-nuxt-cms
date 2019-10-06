@@ -7,59 +7,23 @@ featuredImage: /images/uploads/artworkscover6.jpg
 ---
 ![ ](https://i.imgur.com/Ua0LrFV.jpg "")
 
-![ ](https://i.imgur.com/T9R1nl6.jpg "")
-
-![ ](https://i.imgur.com/56YrAGT.jpg "")
-
-![ ](https://i.imgur.com/F9AMLFh.jpg "")
-
-![ ](https://i.imgur.com/deSVjFp.jpg "")
-
-![ ](https://i.imgur.com/cJNdjny.jpg "")
-
-![ ](https://i.imgur.com/b0nN6wg.jpg "")
-
-![ ](https://i.imgur.com/eRxaoDz.jpg "")
-
-![ ](https://i.imgur.com/7lqxRW2.jpg "")
-
-![ ](https://i.imgur.com/nLwPBSJ.jpg "")
-
-![ ](https://i.imgur.com/EeET1Br.jpg "")
-
 ![ ](https://i.imgur.com/q9WYVmU.jpg "")
-
-![ ](https://i.imgur.com/93ePAJw.jpg "")
 
 ![ ](https://i.imgur.com/VOrPApR.jpg "")
 
-![ ](https://i.imgur.com/Wd8ZWQq.jpg "")
+![ ](https://i.imgur.com/xkZyGeL.jpg "")
+
+![ ](https://i.imgur.com/cJNdjny.jpg "")
 
 ![ ](https://i.imgur.com/a65oyrU.jpg "")
 
-![ ](https://i.imgur.com/juD9uuA.jpg "")
+![ ](https://i.imgur.com/Wd8ZWQq.jpg "")
 
-![ ](https://i.imgur.com/xkZyGeL.jpg "")
+![ ](https://i.imgur.com/juD9uuA.jpg "")
 
 ![ ](https://i.imgur.com/1XJNNqm.jpg "")
 
-![ ](https://i.imgur.com/FHEVuGW.jpg "")
-
 ![ ](https://i.imgur.com/TlW6nN1.jpg "")
-
-![ ](https://i.imgur.com/XxpbVl0.jpg "")
-
-![ ](https://i.imgur.com/se2tvVG.jpg "")
-
-![ ](https://i.imgur.com/6lOR1HZ.jpg "")
-
-![ ](https://i.imgur.com/V45syJM.jpg "")
-
-![ ](https://i.imgur.com/YaAAS1k.jpg "")
-
-![ ](https://i.imgur.com/fH66jA8.jpg "")
-
-![ ](https://i.imgur.com/yG0FUVE.jpg "")
 
 ![ ](https://i.imgur.com/rlLPXFT.jpg "")
 
@@ -113,8 +77,6 @@ featuredImage: /images/uploads/artworkscover6.jpg
 
 ![ ](https://i.imgur.com/qUnHxVc.jpg "")
 
-![ ](https://i.imgur.com/TTjvS5k.jpg "")
-
 ![ ](https://i.imgur.com/cnkpk7h.jpg "")
 
 ![ ](https://i.imgur.com/PWVaNZe.jpg "")
@@ -129,13 +91,13 @@ featuredImage: /images/uploads/artworkscover6.jpg
 
 ![ ](https://i.imgur.com/NfDjO7d.jpg "")
 
+![ ](https://i.imgur.com/TTjvS5k.jpg "")
+
 ![ ](https://i.imgur.com/AHrTjxk.jpg "")
 
 ![ ](https://i.imgur.com/C5jQXgn.jpg "")
 
 ![ ](https://i.imgur.com/dQBkwfG.jpg "")
-
-![ ](https://i.imgur.com/nKEMYSE.jpg "")
 
 ![ ](https://i.imgur.com/KOjoV8R.jpg "")
 
@@ -160,6 +122,8 @@ featuredImage: /images/uploads/artworkscover6.jpg
 ![ ](https://i.imgur.com/aeSdalC.jpg "")
 
 ![ ](https://i.imgur.com/5UtQ7bo.jpg "")
+
+![ ](https://i.imgur.com/nKEMYSE.jpg "")
 
 ![ ](https://i.imgur.com/k17ijWK.jpg "")
 
