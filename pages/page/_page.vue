@@ -16,6 +16,24 @@
       </lazy-component>
       <!-- <img :src="page.featuredImage" alt="" /> -->
     </div>
+
+    <!-- TODO: add relative posts -->
+    <div class="row">
+      <div v-if="relativePosts[0]">
+        <nuxt-link :to="relativePosts[0].title | formatLink">Previous post: {{relativePosts[0].head}}
+          <lazy-component>
+            <img v-lazy="relativePosts[0].image" alt="" />
+          </lazy-component>
+        </nuxt-link>
+      </div>
+      <div v-if="relativePosts[1]">
+        <nuxt-link :to="relativePosts[1].title | formatLink">Next post: {{relativePosts[1].head}}
+          <lazy-component>
+            <img v-lazy="relativePosts[1].image" alt="" />
+          </lazy-component>
+        </nuxt-link>
+      </div>
+    </div>
     <br>
     <div class="row">
       <nuxtdown-body class="category" :body="page.category" />
@@ -68,7 +86,7 @@
 </template>
 
 <script>
-import pinch from "@/components/PinchImage.vue";
+  import pinch from "@/components/PinchImage.vue";
   export default {
     components: {
       pinch
@@ -98,7 +116,14 @@ import pinch from "@/components/PinchImage.vue";
       payload
     }) => {
       return {
-        page: (await app.$content("/pages").get(route.path)) || payload
+        page: (await app.$content("/pages").get(route.path)) || payload,
+        pages: await app.$content('/pages') // for relative posts
+          .query({
+            // this is wrong doesn't work that way
+            // exclude: ['category','descriptionEn','descriptionGr','body','head']
+            // exclude: ['attributes'] // if you exclude attributes it breaks
+          })
+          .getAll(),
       };
     },
     data: function () {
@@ -147,6 +172,77 @@ import pinch from "@/components/PinchImage.vue";
         } else {
           return this.page.descriptionGr;
         }
+      },
+      relativePosts: function () {
+        let prevPost;
+        let nextPost;
+        let refDate = parseInt(this.page.creationDate.replace(/-/g, ""));
+        let refTitle = this.page.title;
+        let posts = [];
+        let newerPosts = [];
+        let olderPosts = [];
+
+        // IMPROVEMENT if you have manually added the relatives do an early return
+        // IMPROVEMENT handle the same date somehow
+
+        // creating two groups, newer and older
+        this.pages.forEach(page => {
+          let head = page.head;
+          let title = page.title;
+          let image = page.featuredImage;
+          let date = parseInt(page.creationDate.replace(/-/g, ""));
+
+          if (date > refDate) {
+            prevPost = {
+              title,
+              date,
+              head,
+              image
+            };
+            if (prevPost.title != refTitle) {
+              newerPosts.push(prevPost);
+            }
+          }
+          if (refDate > date) {
+            nextPost = {
+              title,
+              date,
+              head,
+              image
+            };
+            if (nextPost.title != refTitle) {
+              olderPosts.push(nextPost);
+            }
+          }
+        });
+
+        // getting the ones that is closer to the current page
+        // from the 2 groups
+        olderPosts.forEach(post => { // we want the biggest date
+          if (post.date > nextPost.date) {
+            // if(post.date == nextPost.date){
+            // if(post.title < nextPost.title){
+            // nextPost = post;
+            // }
+            // }else{
+            nextPost = post;
+            // }
+          }
+        });
+
+        newerPosts.forEach(post => { // we want the smallets date
+          if (post.date < prevPost.date) {
+            // if(post.date == nextPost.date){
+            // if(post.title > nextPost.title){
+            // nextPost = post;
+            // }
+            // }else{
+            prevPost = post;
+            // }
+          }
+        });
+        posts = [prevPost, nextPost];
+        return posts;
       }
     },
     methods: {

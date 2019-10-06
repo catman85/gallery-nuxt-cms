@@ -30,7 +30,10 @@ module.exports = {
     ['nuxtdown',{}]
   ],
   plugins: [{
-    src: "~/plugins/mixins"
+    src: "~/plugins/mixins.js"
+  },{
+    src: "~/plugins/filters.js",
+    ssr: false
   }, {
     src: "~/plugins/lightgallery.client.js",
     ssr: false

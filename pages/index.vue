@@ -4,7 +4,8 @@
 black lightgallery bug fix
 right arrow goes down masonry bug
 pinch zoom
-similar posts $
+eur date: mera mhnas xronos
+similar posts (same date bug)
 
 domain_link 
 analytics 
@@ -78,7 +79,7 @@ robots.txt sitemap.xml ggl_search_console -->
 </template>
 
 <script>
-  // import MyHeader from "@/components/MyHeader";
+  
   export default {
     // components: {
     // MyHeader
@@ -125,20 +126,6 @@ robots.txt sitemap.xml ggl_search_console -->
         selectedCat: "",
         query: "",
         hello: ""
-      }
-    },
-    filters: {
-      formatLink: function (link) {
-        // ATTENTION if you get "Request failed with status code 404"
-        // you probably need to configure something here...
-        if (!link) return ''
-        link = link.toString();
-        // link = link.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); // remove all special characters
-        link = link.replace(/[`!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi,
-        ''); // remove all special characters except the ones netlify cms understands - _
-        link = link.trim(); // remove spaces from beginning and end.
-        link = link.replace(/ /g, "-"); //   / /g is a global replacement of the space character with dash
-        return link.toLowerCase();
       }
     },
     computed: {

@@ -20,8 +20,8 @@ collections:
         - {label: Category, name: category, widget: relation, collection: categories, default: "group-exhibitions", searchFields: [title], valueField: title, disaplyFields: title ,hint: Επιλέγεις σε ποιό menu ανήκει η συλλογή}
         - {label: Creation Date, name: creationDate ,widget: date ,default: "",format: "YYYY-MM-DD", required: true, hint: Με αυτήν την ημερομηνία ταξινομείς την σειρά εμφάνισης στην κεντρική.}
         - {label: Featured Image, name: featuredImage, widget: image ,required: true, hint: Κεντρική Φωτογραφία Συλλογής.}
-        - {label: Description English, name: descriptionEn, widget: text,required: false, hint: Περιγραφή συλλογής στα Ελληνικά}
-        - {label: Description Greek, name: descriptionGr, widget: text,required: false, hint: Περιγραφή συλλογής στα Αγγλικά}
+        - {label: Description English, name: descriptionEn, widget: text,required: false, hint: Περιγραφή συλλογής στα Αγγλικά}
+        - {label: Description Greek, name: descriptionGr, widget: text,required: false, hint: Περιγραφή συλλογής στα Ελληνικά}
         - {label: Images, name: body, widget: markdown,required: false,hint: Ο ΔΙΑΚΟΠΤΗΣ ΝΑ ΕΙΝΑΙ ΓΥΡΙΣΜΕΝΟΣ ΣΤΟ MARKDOWN ΠΡΙΝ ΡΙΞΕΙΣ ΤΟΝ ΚΩΔΙΚΑ! Ανεβάζεις -> https://catman85.github.io/imgur-uploader/ Για ταξινόμηση -> https://catman85.github.io/markdown-image-organizer/}
         # - label: "Gallery"
         #   name: "galleryImages"
