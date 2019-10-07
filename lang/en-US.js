@@ -15,6 +15,8 @@ export default {
     legal: 'Legal',
     categories: 'Categories',
     exhibitions: 'Exhibitions',
+    solo: 'Solo',
+    group: 'Group',
     title: 'Title',
     search: 'Search for...',
     name: 'Anthia Mega Chavre'

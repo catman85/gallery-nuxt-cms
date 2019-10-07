@@ -30,8 +30,8 @@ robots.txt sitemap.xml ggl_search_console -->
       <div class="exhibit">
         <h2>{{ t('exhibitions') }}</h2>
         <ul>
-          <li @click="pickCategory">Solo-{{ t('exhibitions') }}</li>
-          <li @click="pickCategory">Group-{{ t('exhibitions') }}</li>
+          <li @click="pickCategory">{{ t('solo')}}-{{ t('exhibitions') }}</li>
+          <li @click="pickCategory">{{ t('group')}}-{{ t('exhibitions') }}</li>
           <!-- <li @click="pickCategory">Solo-Exhibitions</li> -->
           <!-- <li @click="pickCategory">Group-{{ t('exhibitions') }}</li> -->
         </ul>
@@ -176,6 +176,8 @@ import filter from "@/plugins/filters.js"; // not needed just to suspend the war
       pickCategory(event) { // handles coloring
         let option = event.target.firstChild.data.trim();
         option = option.replace("Εκθέσεις", "Exhibitions");
+        option = option.replace("Ατομικές", "Solo");
+        option = option.replace("Ομαδικές", "Group");
         // event.target.parent.classList.remove("selected");
         // let siblings = event.target.parentNode.children;
         this.clearSelectionColors(); // removes selected class

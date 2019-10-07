@@ -15,6 +15,8 @@ export default {
     legal: 'Νομικά',
     categories: 'Κατηγορίες',
     exhibitions: 'Εκθέσεις',
+    solo: 'Ατομικές',
+    group: 'Ομαδικές',
     title: 'Τίτλος',
     search: 'Αναζήτηση για...',
     name: 'Άνθια Μέγα Χαβρέ'
