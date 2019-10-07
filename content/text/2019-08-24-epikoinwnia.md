@@ -1,14 +1,10 @@
 ---
 title: Epikoinwnia
 textEn: >-
-  English Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. 
+  Here we can communicate and you can get answers to any questions created about
+  all artworks you like!
 textGr: >-
-  Greek Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat.
+  Εδώ μπορειτε να επικοινωνήσετε μαζί μου και να έχετε απαντήσεις σε οποιαδήποτε
+  ερώτηση, σας δημιουργήσουν τα έργα μου, που σας άρεσαν!
 ---
 
