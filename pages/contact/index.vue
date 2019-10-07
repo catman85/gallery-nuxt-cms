@@ -1,9 +1,9 @@
 <template>
   <div>
+    <h1>{{t('contact')}}</h1>
         <div class="row">
       <p>{{this.paragraph}}</p>
     </div>
-    <h1>{{t('contact')}}</h1>
     <h1>{{t('name')}}</h1>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/success/">
       <!-- honeypot bot trap (needs to be hidden)-->
