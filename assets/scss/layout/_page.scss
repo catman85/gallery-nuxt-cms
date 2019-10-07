@@ -5,8 +5,9 @@
   margin: 0 35%;
 
   .pageDescription {
-    // text-align: center;
     margin: 0 auto;
+    max-width: 99%;
+    justify-content: center;
   }
 
   @include for-tablet-landscape-down() {
