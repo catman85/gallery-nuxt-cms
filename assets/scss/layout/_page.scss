@@ -1,70 +1,81 @@
 .row {
-    display: flex;
-    overflow: hidden;
-    margin: 0 13em;
-    .pageDescription{
-        // text-align: center;
-        margin: 0 auto;
-    }
-    @include for-tablet-landscape-down(){
-        margin: 0 6em;
-    }
-    @include for-phone-only(){
-        margin: 0 2em;
-    }
+  display: flex;
+  justify-content: center;
+  // overflow: hidden;
+  margin: 0 35%;
+
+  .pageDescription {
+    // text-align: center;
+    margin: 0 auto;
+  }
+
+  @include for-tablet-landscape-down() {
+    margin: 0 6em;
+  }
+
+  @include for-phone-only() {
+    margin: 0 2em;
+  }
+
   .date {
     @include border();
-    @include pageRowCenter(0.5em,0.5em);
+    @include pageRowCenter(0.5em, 0.5em);
   }
 
   .category {
     @include border();
-    @include pageRowCenter(0.5em,0.5em);
+    @include pageRowCenter(0.5em, 0.5em);
   }
 }
 
-hr{
-    max-width: 10%;
-    color: map-get($palette , grey1 );
-    opacity: 0.5;
+hr {
+  max-width: 10%;
+  color: map-get($palette, grey1);
+  opacity: 0.5;
 }
 
 
-.normal{
+.normal {
   visibility: hidden;
-  @include for-phone-only{
+
+  @include for-phone-only {
     visibility: initial;
   }
 }
 
-.reverse{
-  @include for-phone-only{
+.reverse {
+  visibility: hidden;
+  @include for-phone-only {
+    visibility: initial;
     margin-top: 0;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 }
 
-.featured{
-    // display: flex;
-    // background-size: contain;
-    object-fit: contain;
-    img{
-        display: block;
-        margin: 0 auto;
-        max-width: 40%;
-        max-height: 28em;
-        object-fit: contain; //keep images ratio
-        width: auto;
-        height: auto;
-        @include for-tablet-landscape-down(){
-            max-width: 60%;
-            max-height: 22em;
-        }
-        @include for-phone-only(){
-            max-width: 80%;
-            max-height: 18em;
-        }
+.featured {
+  // display: flex;
+  // background-size: contain;
+  object-fit: contain;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+    max-height: 28em;
+    object-fit: contain; //keep images ratio
+    width: auto;
+    height: auto;
+
+    @include for-tablet-landscape-down() {
+      max-width: 60%;
+      max-height: 22em;
     }
+
+    @include for-phone-only() {
+      max-width: 80%;
+      max-height: 18em;
+    }
+  }
 }
 
 
@@ -79,4 +90,24 @@ hr{
     margin: 0;
 
   }
+}
+
+.relative-posts {
+  display: flex;
+  justify-content: center;
+
+  .index-card {
+    max-width: 15%;
+    margin: 0 10%;
+    @include for-tablet-landscape-down() {
+      max-width: 25%;
+    }
+
+    @include for-phone-only() {
+      max-width: 35%;
+    }
+  }
+
+
+  padding-top: map-get($size, distance);
 }

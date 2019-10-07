@@ -5,10 +5,15 @@
       <nuxtdown-body class="title" :body="page.head" />
     </h2>
     <hr class="reverse">
-    <br>
-    <div class="row">
+    <div v-if="this.description" class="row">
       <p class="pageDescription">{{ this.description }}</p>
     </div>
+        <br>
+    <div class="row">
+      <nuxtdown-body class="category" :body="page.category" />
+      <nuxtdown-body class="date" :body="page.creationDate | checkIfFutureDate" />
+    </div>
+    <br>
     <br>
     <div class="featured">
       <lazy-component>
@@ -17,29 +22,20 @@
       <!-- <img :src="page.featuredImage" alt="" /> -->
     </div>
 
-    <!-- TODO: add relative posts -->
-    <!-- <div class="row">
-      <div v-if="relativePosts[0]">
-        <nuxt-link :to="relativePosts[0].title | formatLink">Previous post: {{relativePosts[0].head}}
-          <lazy-component>
-            <img v-lazy="relativePosts[0].image" alt="" />
+    <div class="container relative-posts">
+      <div class="index-card" v-for="post in relativePosts"  :key="post.title">
+        <nuxt-link v-if="post" :to="post.title | formatLink">
+          <lazy-component class=""> 
+            <img v-lazy="post.image" alt="" />
           </lazy-component>
+          <div class="cat">
+            {{post.head}}
+          </div>
         </nuxt-link>
       </div>
-      <div v-if="relativePosts[1]">
-        <nuxt-link :to="relativePosts[1].title | formatLink">Next post: {{relativePosts[1].head}}
-          <lazy-component>
-            <img v-lazy="relativePosts[1].image" alt="" />
-          </lazy-component>
-        </nuxt-link>
-      </div>
-    </div> -->
-
-    <br>
-    <div class="row">
-      <nuxtdown-body class="category" :body="page.category" />
-      <nuxtdown-body class="date" :body="page.creationDate | checkIfFutureDate" />
     </div>
+
+
     <br>
 
     <div class="images">
@@ -216,6 +212,14 @@
             }
           }
         });
+
+        if(newerPosts.length == 0){
+          prevPost = {};
+        }
+
+        if(olderPosts.length == 0){
+          nextPost = {};
+        }
 
         // getting the ones that is closer to the current page
         // from the 2 groups
