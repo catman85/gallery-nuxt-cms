@@ -79,7 +79,7 @@ robots.txt sitemap.xml ggl_search_console -->
 </template>
 
 <script>
-  
+import filter from "@/plugins/filters.js"; // not needed just to suspend the warnings
   export default {
     // components: {
     // MyHeader
