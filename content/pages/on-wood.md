@@ -7,33 +7,75 @@ featuredImage: /images/uploads/artworkscover-2.jpg
 descriptionEn: on wood
 descriptionGr: σε ξύλο
 ---
-![© Anthia Mega Chavre, "Έκρηξη", 35 εκ. x 50 εκ. Ακρυλικά και μελάνια σε ξύλο](https://i.imgur.com/gjlUG9z.jpg "© Anthia Mega Chavre, \"Explosion\", 35 cm. x 50 cm. Acrylics & ink on wood")
+![ ](https://i.imgur.com/G55IBBv.jpg)
 
-![© Anthia Mega Chavre, "Σκάλα στην πλυμμήρα" 33 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/2uUBnK4.jpg "© Anthia Mega Chavre, \"Flood Ladder\", 33 cm. x 50 cm. Acrylics on wood ")
+![ ](https://i.imgur.com/BAePwaa.jpg)
 
-![© Anthia Mega Chavre, "H2O.. το αγαπημένο στοιχείο μου" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο](https://i.imgur.com/FNXdZsR.jpg "© Anthia Mega Chavre, \"H2O.. my loving element\" 33 cm. x 50 cm. Acrylics & ink on wood ")
+![ ](https://i.imgur.com/EVSH07U.jpg)
 
-![© Anthia Mega Chavre,  "Ταξίδι στον Ήλιο" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/CIPCZ2y.jpg "© Anthia Mega Chavre, \"Journey to the sun\" 35 cm. x 50 cm. Acrylics on wood")
+![ ](https://i.imgur.com/55xdVeu.jpg)
 
-![ © Anthia Mega Chavre, "Σκάλες σε Καταιγίδα" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/leHZCNq.jpg "© Anthia Mega Chavre, \"Ladders in a Storm\" 29.5 cm. x 43 cm. Acrylics & ink on wood")
+![ ](https://i.imgur.com/fHsZhZL.jpg)
 
-![ © Anthia Mega Chavre, "Ωκεανός. Δρόμος προς τον παράδεισο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/VNRmJF7.jpg "© Anthia Mega Chavre, \"Ocean. Way to heaven\" 33 cm. x 50 cm. Acrylics & ink on wood")
+![ ](https://i.imgur.com/UdUBo7b.jpg)
 
-![ © Anthia Mega Chavre, "Μολύβια" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/qGpotbm.jpg " © Anthia Mega Chavre, \"Pencils\" 29.5 cm. x 43 cm. Acrylics on wood")
+![ ](https://i.imgur.com/q9IdK7F.jpg)
 
-![  © Anthia Mega Chavre, "Πιτσιλιές" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/ecVUgrV.jpg " © Anthia Mega Chavre, \"Raindrops Splashes\" 35 cm. x 50 cm. Acrylics on wood")
+![ ](https://i.imgur.com/0Fo8cp7.jpg)
 
-![ © Anthia Mega Chavre, "Σκαλιά στην Βροχή" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/jXUG5lk.jpg " © Anthia Mega Chavre, \"Rain Steps\" 29.5 cm. x 43 cm. Acrylics on wood")
+![ ](https://i.imgur.com/chhucqE.jpg)
 
-![  © Anthia Mega Chavre, "Κόκκινες σκάλες" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/9v3Zz1h.jpg " © Anthia Mega Chavre, \"Red Ladders\" 29.5 cm. x 43 cm. Acrylics and ink on wood")
+![ ](https://i.imgur.com/aaTLlej.jpg)
 
-![ © Anthia Mega Chavre, "Φιδάκι" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/qskmB5c.jpg " © Anthia Mega Chavre,  \"Shoot & ladder\" 33 cm. x 50 cm. Acrylics & ink on wood")
+![ ](https://i.imgur.com/01w58Ud.jpg)
 
-![© Anthia Mega Chavre, "Τσαλαβουτιά" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/Hp4Dm82.jpg " © Anthia Mega Chavre, \"Splash\" 29.5 cm. x 43 cm. Acrylics on wood")
+![ ](https://i.imgur.com/yY68lEU.jpg)
 
-![© Anthia Mega Chavre, "Νερό στον ανεμοστρόβιλο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ](https://i.imgur.com/GzJZN3g.jpg "© Anthia Mega Chavre, \"Water in Tornado\" 33 cm. x 50 cm. Acrylics & ink on wood")
+![ ](https://i.imgur.com/D3iKKst.jpg)
 
-![© Anthia Mega Chavre, "Μονόπλευρα" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/HKch0sg.jpg "© Anthia Mega Chavre, \"One sided\" 35 cm. x 50 cm. Acrylics on wood")
+![ ](https://i.imgur.com/jxSgU7C.jpg)
+
+![ ](https://i.imgur.com/W4v9xzJ.jpg)
+
+![ ](https://i.imgur.com/osGTald.jpg)
+
+![ ](https://i.imgur.com/9B0585s.jpg)
+
+![ ](https://i.imgur.com/n8a1QyI.jpg)
+
+![ ](https://i.imgur.com/58Kxwi4.jpg)
+
+![ ](https://i.imgur.com/4huYIkU.jpg)
+
+![ ](https://i.imgur.com/T7fejaW.jpg)
+
+![© Anthia Mega Chavre, "Έκρηξη", 35 εκ. x 50 εκ. Ακρυλικά και μελάνια σε ξύλο](https://i.imgur.com/gjlUG9z.jpg "© Anthia Mega Chavre, \\"Explosion\\", 35 cm. x 50 cm. Acrylics & ink on wood")
+
+![© Anthia Mega Chavre, "Σκάλα στην πλυμμήρα" 33 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/2uUBnK4.jpg "© Anthia Mega Chavre, \\"Flood Ladder\\", 33 cm. x 50 cm. Acrylics on wood ")
+
+![© Anthia Mega Chavre, "H2O.. το αγαπημένο στοιχείο μου" 33 εκ. x 50 εκ. Aκρυλικά και μελάνια σε ξύλο](https://i.imgur.com/FNXdZsR.jpg "© Anthia Mega Chavre, \\"H2O.. my loving element\\" 33 cm. x 50 cm. Acrylics & ink on wood ")
+
+![© Anthia Mega Chavre,  "Ταξίδι στον Ήλιο" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/CIPCZ2y.jpg "© Anthia Mega Chavre, \\"Journey to the sun\\" 35 cm. x 50 cm. Acrylics on wood")
+
+![ © Anthia Mega Chavre, "Σκάλες σε Καταιγίδα" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/leHZCNq.jpg "© Anthia Mega Chavre, \\"Ladders in a Storm\\" 29.5 cm. x 43 cm. Acrylics & ink on wood")
+
+![ © Anthia Mega Chavre, "Ωκεανός. Δρόμος προς τον παράδεισο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/VNRmJF7.jpg "© Anthia Mega Chavre, \\"Ocean. Way to heaven\\" 33 cm. x 50 cm. Acrylics & ink on wood")
+
+![ © Anthia Mega Chavre, "Μολύβια" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/qGpotbm.jpg " © Anthia Mega Chavre, \\"Pencils\\" 29.5 cm. x 43 cm. Acrylics on wood")
+
+![  © Anthia Mega Chavre, "Πιτσιλιές" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/ecVUgrV.jpg " © Anthia Mega Chavre, \\"Raindrops Splashes\\" 35 cm. x 50 cm. Acrylics on wood")
+
+![ © Anthia Mega Chavre, "Σκαλιά στην Βροχή" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/jXUG5lk.jpg " © Anthia Mega Chavre, \\"Rain Steps\\" 29.5 cm. x 43 cm. Acrylics on wood")
+
+![  © Anthia Mega Chavre, "Κόκκινες σκάλες" 29.5 εκ. x 43 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/9v3Zz1h.jpg " © Anthia Mega Chavre, \\"Red Ladders\\" 29.5 cm. x 43 cm. Acrylics and ink on wood")
+
+![ © Anthia Mega Chavre, "Φιδάκι" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ξύλο](https://i.imgur.com/qskmB5c.jpg " © Anthia Mega Chavre,  \\"Shoot & ladder\\" 33 cm. x 50 cm. Acrylics & ink on wood")
+
+![© Anthia Mega Chavre, "Τσαλαβουτιά" 29.5 εκ. x 43 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/Hp4Dm82.jpg " © Anthia Mega Chavre, \\"Splash\\" 29.5 cm. x 43 cm. Acrylics on wood")
+
+![© Anthia Mega Chavre, "Νερό στον ανεμοστρόβιλο" 33 εκ. x 50 εκ. Aκρυλικά & μελάνια σε ](https://i.imgur.com/GzJZN3g.jpg "© Anthia Mega Chavre, \\"Water in Tornado\\" 33 cm. x 50 cm. Acrylics & ink on wood")
+
+![© Anthia Mega Chavre, "Μονόπλευρα" 35 εκ. x 50 εκ. Aκρυλικά σε ξύλο](https://i.imgur.com/HKch0sg.jpg "© Anthia Mega Chavre, \\"One sided\\" 35 cm. x 50 cm. Acrylics on wood")
 
 ![ ](https://i.imgur.com/KajKW9R.jpg)
 
