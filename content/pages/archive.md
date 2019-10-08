@@ -5,8 +5,6 @@ category: archive
 creationDate: '2019-06-09'
 featuredImage: /images/uploads/okj0geo.jpg
 ---
-![ ](https://i.imgur.com/1RykCl2.jpg "")
-
 ![ ](https://i.imgur.com/yGXEU7b.jpg "")
 
 ![ ](https://i.imgur.com/WT8p0kt.jpg "Working on an Installation, 'We can stop counting II'")
