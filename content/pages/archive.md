@@ -3,7 +3,7 @@ title: Archive
 head: Archive
 category: archive
 creationDate: '2019-06-09'
-featuredImage: /images/uploads/okj0geo.jpg
+featuredImage: /images/uploads/artworkscover9.jpg
 ---
 ![ ](https://i.imgur.com/yGXEU7b.jpg "")
 
